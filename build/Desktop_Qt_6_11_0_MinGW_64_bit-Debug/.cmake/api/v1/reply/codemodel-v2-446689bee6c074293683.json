@@ -1,0 +1,115 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-8167e5fc8b6172bf6c33.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "FinanceApp",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "FinanceApp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-FinanceApp-Debug-00edc2f36cd8e0f2eef3.json",
+					"name" : "FinanceApp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "FinanceApp_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-FinanceApp_autogen-Debug-e34703a37f31f44f8666.json",
+					"name" : "FinanceApp_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "FinanceApp_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-FinanceApp_autogen_timestamp_deps-Debug-4153c87b1cf851660d97.json",
+					"name" : "FinanceApp_autogen_timestamp_deps",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "FinanceApp_lrelease::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-FinanceApp_lrelease-Debug-42c325350d341926682e.json",
+					"name" : "FinanceApp_lrelease",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "FinanceApp_lupdate::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-FinanceApp_lupdate-Debug-ca3490e6020f204845f9.json",
+					"name" : "FinanceApp_lupdate",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "release_translations::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-release_translations-Debug-245b9c7d3c85ee48bcdf.json",
+					"name" : "release_translations",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "update_translations::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-update_translations-Debug-ceec3acb736e3c36c1b6.json",
+					"name" : "update_translations",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/apkproject/FinanceApp/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug",
+		"source" : "C:/apkproject/FinanceApp"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}
