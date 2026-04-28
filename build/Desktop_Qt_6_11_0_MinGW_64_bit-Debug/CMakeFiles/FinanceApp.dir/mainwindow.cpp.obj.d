@@ -451,6 +451,11 @@ CMakeFiles/FinanceApp.dir/mainwindow.cpp.obj: \
  C:/qt/6.11.0/mingw_64/include/QtWidgets/qrubberband.h \
  C:/qt/6.11.0/mingw_64/include/QtWidgets/qframe.h \
  C:/qt/6.11.0/mingw_64/include/QtCore/qabstractitemmodel.h \
+ C:/qt/6.11.0/mingw_64/include/QtWidgets/QDateEdit \
+ C:/qt/6.11.0/mingw_64/include/QtWidgets/qdatetimeedit.h \
+ C:/qt/6.11.0/mingw_64/include/QtCore/qtimezone.h \
+ C:/qt/6.11.0/mingw_64/include/QtCore/qdatetime.h \
+ C:/qt/6.11.0/mingw_64/include/QtCore/qcalendar.h \
  C:/qt/6.11.0/mingw_64/include/QtWidgets/QHeaderView \
  C:/qt/6.11.0/mingw_64/include/QtWidgets/qheaderview.h \
  C:/qt/6.11.0/mingw_64/include/QtWidgets/qabstractitemview.h \
@@ -528,4 +533,6 @@ CMakeFiles/FinanceApp.dir/mainwindow.cpp.obj: \
  C:/qt/6.11.0/mingw_64/include/QtCharts/qpieseries.h \
  C:/qt/6.11.0/mingw_64/include/QtCharts/QPieSlice \
  C:/qt/6.11.0/mingw_64/include/QtCharts/qpieslice.h \
- C:/qt/6.11.0/mingw_64/include/QtCore/QMap
+ C:/qt/6.11.0/mingw_64/include/QtCore/QMap \
+ C:/qt/6.11.0/mingw_64/include/QtCore/QDate \
+ C:/qt/6.11.0/mingw_64/include/QtCore/QLocale
