@@ -10,27 +10,32 @@
 #include <QMap>
 #include <QDate>
 #include <QLocale>
+#include <QNetworkRequest>
+#include <QUrl>
+#include <QJsonDocument>
+#include <QJsonObject>
+double currentRate = 0;
 
-// CONSTRUCTOR
+//CONSTRUCTOR
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
 
-    //default tanggal hari ini
+    // tanggal default
     ui->inputDate->setDate(QDate::currentDate());
 
-    //style tombol
+    // style tombol
     ui->btnAdd->setStyleSheet("background-color: #4CAF50; color: white;");
     ui->btnDelete->setStyleSheet("background-color: #f44336; color: white;");
     ui->btnChart->setStyleSheet("background-color: #2196F3; color: white;");
 
-    //table
+    // table setting
     ui->tableWidget->setAlternatingRowColors(true);
     ui->tableWidget->setSelectionBehavior(QAbstractItemView::SelectRows);
 
-    //tombol
+    // connect tombol
     connect(ui->btnAdd, &QPushButton::clicked,
             this, &MainWindow::addTransaction);
 
@@ -40,6 +45,16 @@ MainWindow::MainWindow(QWidget *parent)
     connect(ui->btnChart, &QPushButton::clicked,
             this, &MainWindow::showChart);
 
+    // API INIT
+    networkManager = new QNetworkAccessManager(this);
+
+    connect(networkManager, &QNetworkAccessManager::finished,
+            this, &MainWindow::onApiResult);
+
+    //tombol API (WAJIB ADA di UI)
+    connect(ui->btnAPI, &QPushButton::clicked,
+            this, &MainWindow::getExchangeRate);
+
     loadData();
 }
 
@@ -48,7 +63,7 @@ MainWindow::~MainWindow()
     delete ui;
 }
 
-// ADD
+//ADD
 void MainWindow::addTransaction()
 {
     if (ui->inputCategory->text().isEmpty() || ui->inputAmount->text().isEmpty()) {
@@ -69,7 +84,6 @@ void MainWindow::addTransaction()
     int row = ui->tableWidget->rowCount();
     ui->tableWidget->insertRow(row);
 
-    //FIX UTAMA DI SINI
     QString formattedAmount = QString::number(amount, 'f', 0);
 
     ui->tableWidget->setItem(row, 0, new QTableWidgetItem(date));
@@ -117,7 +131,6 @@ void MainWindow::updateBalance()
             total -= a;
     }
 
-    //supya 0nya banyakkk
     ui->labelBalance->setText("Total Saldo: Rp " + QString::number(total, 'f', 0));
 }
 
@@ -175,13 +188,10 @@ void MainWindow::loadData()
 void MainWindow::showChart()
 {
     QMap<QString, double> categoryTotal;
-    QLocale indo(QLocale::Indonesian, QLocale::Indonesia);
 
     for (int i = 0; i < ui->tableWidget->rowCount(); i++) {
         QString category = ui->tableWidget->item(i, 2)->text();
-
-        QString amountText = ui->tableWidget->item(i, 3)->text();
-        double amount = indo.toDouble(amountText);
+        double amount = ui->tableWidget->item(i, 3)->text().toDouble();
 
         categoryTotal[category] += amount;
     }
@@ -192,11 +202,8 @@ void MainWindow::showChart()
         series->append(it.key(), it.value());
     }
 
-    int i = 0;
     for (auto slice : series->slices()) {
         slice->setLabelVisible();
-        slice->setExploded(i == 0);
-        i++;
     }
 
     QChart *chart = new QChart();
@@ -208,4 +215,40 @@ void MainWindow::showChart()
 
     chartView->resize(500, 400);
     chartView->show();
+}
+
+//API REQUEST
+void MainWindow::getExchangeRate()
+{
+    QUrl url("https://api.exchangerate-api.com/v4/latest/USD");
+    QNetworkRequest request(url);
+
+    networkManager->get(request);
+}
+
+//API RESPONSE
+void MainWindow::onApiResult(QNetworkReply *reply)
+{
+    if (reply->error() != QNetworkReply::NoError) {
+        QMessageBox::warning(this, "Error", "Gagal ambil data API");
+        reply->deleteLater();
+        return;
+    }
+
+    QByteArray response = reply->readAll();
+
+    QJsonDocument doc = QJsonDocument::fromJson(response);
+    QJsonObject obj = doc.object();
+
+    QJsonObject rates = obj["rates"].toObject();
+
+    double idr = rates["IDR"].toDouble();
+
+    // 🔥 SIMPAN KURS
+    currentRate = idr;
+
+    // 🔥 TAMPIL DI LABEL (PASTIKAN ADA labelKurs di UI)
+    ui->labelKurs->setText("Kurs USD: Rp " + QString::number(idr, 'f', 0));
+
+    reply->deleteLater();
 }

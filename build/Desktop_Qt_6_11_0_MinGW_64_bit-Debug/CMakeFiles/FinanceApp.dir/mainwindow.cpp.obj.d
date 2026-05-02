@@ -421,8 +421,45 @@ CMakeFiles/FinanceApp.dir/mainwindow.cpp.obj: \
  C:/qt/6.11.0/mingw_64/include/QtGui/qcursor.h \
  C:/qt/6.11.0/mingw_64/include/QtGui/qbitmap.h \
  C:/qt/6.11.0/mingw_64/include/QtWidgets/qtabwidget.h \
- C:/apkproject/FinanceApp/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/FinanceApp_autogen/include/ui_mainwindow.h \
+ C:/qt/6.11.0/mingw_64/include/QtNetwork/QNetworkAccessManager \
+ C:/qt/6.11.0/mingw_64/include/QtNetwork/qnetworkaccessmanager.h \
+ C:/qt/6.11.0/mingw_64/include/QtNetwork/qtnetworkglobal.h \
+ C:/qt/6.11.0/mingw_64/include/QtNetwork/qtnetwork-config.h \
+ C:/qt/6.11.0/mingw_64/include/QtNetwork/qtnetworkexports.h \
+ C:/qt/6.11.0/mingw_64/include/QtNetwork/qnetworkrequest.h \
+ C:/qt/6.11.0/mingw_64/include/QtNetwork/qhttpheaders.h \
+ C:/qt/6.11.0/mingw_64/include/QtCore/qdatetime.h \
+ C:/qt/6.11.0/mingw_64/include/QtCore/qcalendar.h \
+ C:/qt/6.11.0/mingw_64/include/QtCore/qlocale.h \
+ C:/qt/6.11.0/mingw_64/include/QtCore/qmetaobject.h \
+ C:/qt/6.11.0/mingw_64/include/QtCore/QSharedDataPointer \
+ C:/qt/6.11.0/mingw_64/include/QtCore/QString \
+ C:/qt/6.11.0/mingw_64/include/QtCore/QUrl \
+ C:/qt/6.11.0/mingw_64/include/QtCore/qurl.h \
  C:/qt/6.11.0/mingw_64/include/QtCore/QVariant \
+ C:/qt/6.11.0/mingw_64/include/QtCore/q26numeric.h \
+ C:/qt/6.11.0/mingw_64/include/QtCore/QList \
+ C:/qt/6.11.0/mingw_64/include/QtCore/QObject \
+ C:/qt/6.11.0/mingw_64/include/QtNetwork/QSslConfiguration \
+ C:/qt/6.11.0/mingw_64/include/QtNetwork/qsslconfiguration.h \
+ C:/qt/6.11.0/mingw_64/include/QtNetwork/qsslsocket.h \
+ C:/qt/6.11.0/mingw_64/include/QtNetwork/qtcpsocket.h \
+ C:/qt/6.11.0/mingw_64/include/QtNetwork/qabstractsocket.h \
+ C:/qt/6.11.0/mingw_64/include/QtNetwork/qhostaddress.h \
+ C:/qt/6.11.0/mingw_64/include/QtNetwork/qsslerror.h \
+ C:/qt/6.11.0/mingw_64/include/QtNetwork/qsslcertificate.h \
+ C:/qt/6.11.0/mingw_64/include/QtCore/qcryptographichash.h \
+ C:/qt/6.11.0/mingw_64/include/QtNetwork/qssl.h \
+ C:/qt/6.11.0/mingw_64/include/QtCore/QFlags \
+ C:/qt/6.11.0/mingw_64/include/QtNetwork/QSslPreSharedKeyAuthenticator \
+ C:/qt/6.11.0/mingw_64/include/QtNetwork/qsslpresharedkeyauthenticator.h \
+ C:/qt/6.11.0/mingw_64/include/QtCore/QMetaType \
+ C:/qt/6.11.0/mingw_64/include/QtNetwork/QNetworkReply \
+ C:/qt/6.11.0/mingw_64/include/QtNetwork/qnetworkreply.h \
+ C:/qt/6.11.0/mingw_64/include/QtCore/QIODevice \
+ C:/qt/6.11.0/mingw_64/include/QtNetwork/QNetworkRequest \
+ C:/qt/6.11.0/mingw_64/include/QtNetwork/QNetworkAccessManager \
+ C:/apkproject/FinanceApp/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/FinanceApp_autogen/include/ui_mainwindow.h \
  C:/qt/6.11.0/mingw_64/include/QtWidgets/QApplication \
  C:/qt/6.11.0/mingw_64/include/QtWidgets/qapplication.h \
  C:/qt/6.11.0/mingw_64/include/QtCore/qcoreapplication.h \
@@ -435,7 +472,6 @@ CMakeFiles/FinanceApp.dir/mainwindow.cpp.obj: \
  C:/qt/6.11.0/mingw_64/include/QtCore/qcoreapplication_platform.h \
  C:/qt/6.11.0/mingw_64/include/QtGui/qguiapplication.h \
  C:/qt/6.11.0/mingw_64/include/QtGui/qinputmethod.h \
- C:/qt/6.11.0/mingw_64/include/QtCore/qlocale.h \
  C:/qt/6.11.0/mingw_64/include/QtGui/qguiapplication_platform.h \
  C:/qt/6.11.0/mingw_64/include/QtWidgets/QComboBox \
  C:/qt/6.11.0/mingw_64/include/QtWidgets/qcombobox.h \
@@ -454,8 +490,6 @@ CMakeFiles/FinanceApp.dir/mainwindow.cpp.obj: \
  C:/qt/6.11.0/mingw_64/include/QtWidgets/QDateEdit \
  C:/qt/6.11.0/mingw_64/include/QtWidgets/qdatetimeedit.h \
  C:/qt/6.11.0/mingw_64/include/QtCore/qtimezone.h \
- C:/qt/6.11.0/mingw_64/include/QtCore/qdatetime.h \
- C:/qt/6.11.0/mingw_64/include/QtCore/qcalendar.h \
  C:/qt/6.11.0/mingw_64/include/QtWidgets/QHeaderView \
  C:/qt/6.11.0/mingw_64/include/QtWidgets/qheaderview.h \
  C:/qt/6.11.0/mingw_64/include/QtWidgets/qabstractitemview.h \
@@ -465,7 +499,6 @@ CMakeFiles/FinanceApp.dir/mainwindow.cpp.obj: \
  C:/qt/6.11.0/mingw_64/include/QtWidgets/qlabel.h \
  C:/qt/6.11.0/mingw_64/include/QtGui/qpicture.h \
  C:/qt/6.11.0/mingw_64/include/QtGui/qtextdocument.h \
- C:/qt/6.11.0/mingw_64/include/QtCore/qurl.h \
  C:/qt/6.11.0/mingw_64/include/QtWidgets/QLineEdit \
  C:/qt/6.11.0/mingw_64/include/QtWidgets/qlineedit.h \
  C:/qt/6.11.0/mingw_64/include/QtGui/qtextcursor.h \
@@ -497,7 +530,6 @@ CMakeFiles/FinanceApp.dir/mainwindow.cpp.obj: \
  C:/qt/6.11.0/mingw_64/include/QtCharts/qtchartsexports.h \
  C:/qt/6.11.0/mingw_64/include/QtGui/QPen \
  C:/qt/6.11.0/mingw_64/include/QtGui/QFont \
- C:/qt/6.11.0/mingw_64/include/QtCore/QObject \
  C:/qt/6.11.0/mingw_64/include/QtCharts/QAbstractSeries \
  C:/qt/6.11.0/mingw_64/include/QtCharts/qabstractseries.h \
  C:/qt/6.11.0/mingw_64/include/QtCharts/QChart \
@@ -514,7 +546,6 @@ CMakeFiles/FinanceApp.dir/mainwindow.cpp.obj: \
  C:/qt/6.11.0/mingw_64/include/QtGui/qpointingdevice.h \
  C:/qt/6.11.0/mingw_64/include/QtGui/qinputdevice.h \
  C:/qt/6.11.0/mingw_64/include/QtGui/qscreen.h \
- C:/qt/6.11.0/mingw_64/include/QtCore/QList \
  C:/qt/6.11.0/mingw_64/include/QtCore/QRect \
  C:/qt/6.11.0/mingw_64/include/QtCore/QSize \
  C:/qt/6.11.0/mingw_64/include/QtCore/QSizeF \
@@ -535,4 +566,15 @@ CMakeFiles/FinanceApp.dir/mainwindow.cpp.obj: \
  C:/qt/6.11.0/mingw_64/include/QtCharts/qpieslice.h \
  C:/qt/6.11.0/mingw_64/include/QtCore/QMap \
  C:/qt/6.11.0/mingw_64/include/QtCore/QDate \
- C:/qt/6.11.0/mingw_64/include/QtCore/QLocale
+ C:/qt/6.11.0/mingw_64/include/QtCore/QLocale \
+ C:/qt/6.11.0/mingw_64/include/QtNetwork/QNetworkRequest \
+ C:/qt/6.11.0/mingw_64/include/QtCore/QUrl \
+ C:/qt/6.11.0/mingw_64/include/QtCore/QJsonDocument \
+ C:/qt/6.11.0/mingw_64/include/QtCore/qjsondocument.h \
+ C:/qt/6.11.0/mingw_64/include/QtCore/qjsonparseerror.h \
+ C:/qt/6.11.0/mingw_64/include/QtCore/QJsonObject \
+ C:/qt/6.11.0/mingw_64/include/QtCore/qjsonobject.h \
+ C:/qt/6.11.0/mingw_64/include/QtCore/qjsonvalue.h \
+ C:/qt/6.11.0/mingw_64/include/QtCore/qcborvalue.h \
+ C:/qt/6.11.0/mingw_64/include/QtCore/qcborcommon.h \
+ C:/qt/6.11.0/mingw_64/include/QtCore/quuid.h

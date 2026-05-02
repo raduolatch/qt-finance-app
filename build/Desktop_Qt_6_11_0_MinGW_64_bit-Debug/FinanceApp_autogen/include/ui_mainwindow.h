@@ -37,6 +37,8 @@ public:
     QPushButton *btnDelete;
     QPushButton *btnChart;
     QDateEdit *inputDate;
+    QPushButton *btnAPI;
+    QLabel *labelKurs;
     QStatusBar *statusbar;
 
     void setupUi(QMainWindow *MainWindow)
@@ -83,10 +85,16 @@ public:
         btnDelete->setGeometry(QRect(700, 80, 91, 31));
         btnChart = new QPushButton(centralwidget);
         btnChart->setObjectName("btnChart");
-        btnChart->setGeometry(QRect(230, 410, 211, 51));
+        btnChart->setGeometry(QRect(130, 410, 211, 51));
         inputDate = new QDateEdit(centralwidget);
         inputDate->setObjectName("inputDate");
         inputDate->setGeometry(QRect(0, 70, 121, 41));
+        btnAPI = new QPushButton(centralwidget);
+        btnAPI->setObjectName("btnAPI");
+        btnAPI->setGeometry(QRect(430, 410, 191, 51));
+        labelKurs = new QLabel(centralwidget);
+        labelKurs->setObjectName("labelKurs");
+        labelKurs->setGeometry(QRect(80, 490, 171, 31));
         MainWindow->setCentralWidget(centralwidget);
         statusbar = new QStatusBar(MainWindow);
         statusbar->setObjectName("statusbar");
@@ -116,6 +124,8 @@ public:
         ___qtablewidgetitem3->setText(QCoreApplication::translate("MainWindow", "Amount", nullptr));
         btnDelete->setText(QCoreApplication::translate("MainWindow", "Delete", nullptr));
         btnChart->setText(QCoreApplication::translate("MainWindow", "Show Chart", nullptr));
+        btnAPI->setText(QCoreApplication::translate("MainWindow", "Cek Kurs USD", nullptr));
+        labelKurs->setText(QCoreApplication::translate("MainWindow", "Kurs: -", nullptr));
     } // retranslateUi
 
 };

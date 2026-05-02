@@ -43,16 +43,18 @@
 			"build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/.qtcreator/cmake-helper/maintenance_tool_provider.cmake",
 			"C:/qt/6.11.0/mingw_64/lib/cmake/Qt6Widgets/Qt6WidgetsTargets.cmake",
 			"C:/qt/6.11.0/mingw_64/lib/cmake/Qt6Widgets/Qt6WidgetsConfig.cmake",
+			"C:/qt/6.11.0/mingw_64/lib/cmake/Qt6Gui/Qt6GuiTargets.cmake",
+			"C:/qt/6.11.0/mingw_64/lib/cmake/Qt6Gui/Qt6GuiConfig.cmake",
+			"C:/qt/Tools/CMake_64/share/cmake-3.30/Modules/CMakeFindDependencyMacro.cmake",
+			"C:/qt/6.11.0/mingw_64/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake",
+			"C:/qt/6.11.0/mingw_64/lib/cmake/Qt6Widgets/Qt6WidgetsDependencies.cmake",
 			"C:/qt/6.11.0/mingw_64/lib/cmake/Qt6Core/Qt6CoreTargets.cmake",
 			"C:/qt/6.11.0/mingw_64/lib/cmake/Qt6Core/Qt6CoreConfig.cmake",
 			"C:/qt/6.11.0/mingw_64/lib/cmake/Qt6EntryPointPrivate/Qt6EntryPointPrivateTargets.cmake",
 			"C:/qt/6.11.0/mingw_64/lib/cmake/Qt6EntryPointPrivate/Qt6EntryPointPrivateConfig.cmake",
-			"C:/qt/Tools/CMake_64/share/cmake-3.30/Modules/CMakeFindDependencyMacro.cmake",
-			"C:/qt/6.11.0/mingw_64/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake",
 			"C:/qt/6.11.0/mingw_64/lib/cmake/Qt6Core/Qt6CoreDependencies.cmake",
-			"C:/qt/6.11.0/mingw_64/lib/cmake/Qt6Gui/Qt6GuiTargets.cmake",
-			"C:/qt/6.11.0/mingw_64/lib/cmake/Qt6Gui/Qt6GuiConfig.cmake",
-			"C:/qt/6.11.0/mingw_64/lib/cmake/Qt6Widgets/Qt6WidgetsDependencies.cmake",
+			"C:/qt/6.11.0/mingw_64/lib/cmake/Qt6Network/Qt6NetworkTargets.cmake",
+			"C:/qt/6.11.0/mingw_64/lib/cmake/Qt6Network/Qt6NetworkConfig.cmake",
 			"build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/.qtcreator/cmake-helper/qtcreator-project.cmake",
 			"C:/qt/6.11.0/mingw_64/lib/cmake/Qt6LinguistTools/Qt6LinguistToolsMacros.cmake",
 			"C:/qt/6.11.0/mingw_64/lib/cmake/Qt6LinguistTools/Qt6LinguistToolsMacros.cmake:844:EVAL"
@@ -89,7 +91,7 @@
 			{
 				"command" : 4,
 				"file" : 1,
-				"line" : 30,
+				"line" : 31,
 				"parent" : 0
 			},
 			{
@@ -157,6 +159,60 @@
 				"parent" : 16
 			},
 			{
+				"command" : 7,
+				"file" : 6,
+				"line" : 40,
+				"parent" : 14
+			},
+			{
+				"file" : 11,
+				"parent" : 18
+			},
+			{
+				"command" : 10,
+				"file" : 11,
+				"line" : 50,
+				"parent" : 19
+			},
+			{
+				"command" : 9,
+				"file" : 10,
+				"line" : 142,
+				"parent" : 20
+			},
+			{
+				"command" : 8,
+				"file" : 9,
+				"line" : 76,
+				"parent" : 21
+			},
+			{
+				"command" : 8,
+				"file" : 4,
+				"line" : 252,
+				"parent" : 22
+			},
+			{
+				"file" : 8,
+				"parent" : 23
+			},
+			{
+				"command" : 7,
+				"file" : 8,
+				"line" : 55,
+				"parent" : 24
+			},
+			{
+				"file" : 7,
+				"parent" : 25
+			},
+			{
+				"command" : 6,
+				"file" : 7,
+				"line" : 61,
+				"parent" : 26
+			},
+			{
 				"command" : 5,
 				"file" : 0,
 				"line" : 688,
@@ -169,138 +225,110 @@
 				"parent" : 7
 			},
 			{
-				"file" : 8,
-				"parent" : 19
-			},
-			{
-				"command" : 7,
-				"file" : 8,
-				"line" : 57,
-				"parent" : 20
-			},
-			{
-				"file" : 7,
-				"parent" : 21
-			},
-			{
-				"command" : 6,
-				"file" : 7,
-				"line" : 61,
-				"parent" : 22
-			},
-			{
-				"command" : 7,
-				"file" : 8,
-				"line" : 42,
-				"parent" : 20
-			},
-			{
 				"file" : 13,
-				"parent" : 24
-			},
-			{
-				"command" : 10,
-				"file" : 13,
-				"line" : 51,
-				"parent" : 25
-			},
-			{
-				"command" : 9,
-				"file" : 12,
-				"line" : 142,
-				"parent" : 26
-			},
-			{
-				"command" : 8,
-				"file" : 11,
-				"line" : 76,
-				"parent" : 27
-			},
-			{
-				"command" : 8,
-				"file" : 4,
-				"line" : 252,
-				"parent" : 28
-			},
-			{
-				"file" : 10,
 				"parent" : 29
 			},
 			{
 				"command" : 7,
-				"file" : 10,
-				"line" : 55,
+				"file" : 13,
+				"line" : 57,
 				"parent" : 30
 			},
 			{
-				"file" : 9,
+				"file" : 12,
 				"parent" : 31
 			},
 			{
 				"command" : 6,
-				"file" : 9,
+				"file" : 12,
 				"line" : 61,
 				"parent" : 32
 			},
 			{
-				"command" : 6,
-				"file" : 9,
-				"line" : 87,
-				"parent" : 32
-			},
-			{
 				"command" : 7,
-				"file" : 6,
-				"line" : 40,
-				"parent" : 14
+				"file" : 13,
+				"line" : 42,
+				"parent" : 30
 			},
 			{
 				"file" : 16,
-				"parent" : 35
+				"parent" : 34
 			},
 			{
 				"command" : 10,
 				"file" : 16,
-				"line" : 50,
-				"parent" : 36
+				"line" : 51,
+				"parent" : 35
 			},
 			{
 				"command" : 9,
-				"file" : 12,
+				"file" : 10,
 				"line" : 142,
-				"parent" : 37
+				"parent" : 36
 			},
 			{
 				"command" : 8,
-				"file" : 11,
+				"file" : 9,
 				"line" : 76,
-				"parent" : 38
+				"parent" : 37
 			},
 			{
 				"command" : 8,
 				"file" : 4,
 				"line" : 252,
-				"parent" : 39
+				"parent" : 38
 			},
 			{
 				"file" : 15,
-				"parent" : 40
+				"parent" : 39
 			},
 			{
 				"command" : 7,
 				"file" : 15,
 				"line" : 55,
-				"parent" : 41
+				"parent" : 40
 			},
 			{
 				"file" : 14,
+				"parent" : 41
+			},
+			{
+				"command" : 6,
+				"file" : 14,
+				"line" : 61,
 				"parent" : 42
 			},
 			{
 				"command" : 6,
 				"file" : 14,
+				"line" : 87,
+				"parent" : 42
+			},
+			{
+				"command" : 8,
+				"file" : 4,
+				"line" : 234,
+				"parent" : 7
+			},
+			{
+				"file" : 18,
+				"parent" : 45
+			},
+			{
+				"command" : 7,
+				"file" : 18,
+				"line" : 55,
+				"parent" : 46
+			},
+			{
+				"file" : 17,
+				"parent" : 47
+			},
+			{
+				"command" : 6,
+				"file" : 17,
 				"line" : 61,
-				"parent" : 43
+				"parent" : 48
 			},
 			{
 				"command" : 12,
@@ -309,14 +337,14 @@
 				"parent" : 0
 			},
 			{
-				"file" : 17,
-				"parent" : 45
+				"file" : 19,
+				"parent" : 50
 			},
 			{
 				"command" : 11,
-				"file" : 17,
+				"file" : 19,
 				"line" : 81,
-				"parent" : 46
+				"parent" : 51
 			},
 			{
 				"file" : 1,
@@ -325,44 +353,14 @@
 			},
 			{
 				"command" : 16,
-				"file" : 19,
+				"file" : 21,
 				"line" : 1,
-				"parent" : 48
-			},
-			{
-				"command" : 15,
-				"file" : 18,
-				"line" : 889,
-				"parent" : 49
-			},
-			{
-				"command" : 14,
-				"file" : 0,
-				"line" : 2245,
-				"parent" : 50
-			},
-			{
-				"command" : 13,
-				"file" : 0,
-				"line" : 2320,
-				"parent" : 51
-			},
-			{
-				"command" : 18,
-				"file" : 18,
-				"line" : 922,
-				"parent" : 49
-			},
-			{
-				"command" : 17,
-				"file" : 0,
-				"line" : 419,
 				"parent" : 53
 			},
 			{
 				"command" : 15,
-				"file" : 0,
-				"line" : 2460,
+				"file" : 20,
+				"line" : 889,
 				"parent" : 54
 			},
 			{
@@ -378,34 +376,64 @@
 				"parent" : 56
 			},
 			{
+				"command" : 18,
+				"file" : 20,
+				"line" : 922,
+				"parent" : 54
+			},
+			{
+				"command" : 17,
+				"file" : 0,
+				"line" : 419,
+				"parent" : 58
+			},
+			{
 				"command" : 15,
 				"file" : 0,
-				"line" : 2529,
-				"parent" : 54
+				"line" : 2460,
+				"parent" : 59
 			},
 			{
 				"command" : 14,
 				"file" : 0,
 				"line" : 2245,
-				"parent" : 58
+				"parent" : 60
 			},
 			{
 				"command" : 13,
 				"file" : 0,
 				"line" : 2320,
+				"parent" : 61
+			},
+			{
+				"command" : 15,
+				"file" : 0,
+				"line" : 2529,
 				"parent" : 59
+			},
+			{
+				"command" : 14,
+				"file" : 0,
+				"line" : 2245,
+				"parent" : 63
+			},
+			{
+				"command" : 13,
+				"file" : 0,
+				"line" : 2320,
+				"parent" : 64
 			},
 			{
 				"command" : 19,
 				"file" : 0,
 				"line" : 2655,
-				"parent" : 54
+				"parent" : 59
 			},
 			{
 				"command" : 13,
 				"file" : 0,
 				"line" : 2195,
-				"parent" : 61
+				"parent" : 66
 			}
 		]
 	},
@@ -421,7 +449,7 @@
 			"defines" : 
 			[
 				{
-					"backtrace" : 18,
+					"backtrace" : 28,
 					"define" : "MINGW_HAS_SECURE_API=1"
 				},
 				{
@@ -429,7 +457,7 @@
 					"define" : "QT_CHARTS_LIB"
 				},
 				{
-					"backtrace" : 18,
+					"backtrace" : 28,
 					"define" : "QT_CORE_LIB"
 				},
 				{
@@ -437,8 +465,12 @@
 					"define" : "QT_GUI_LIB"
 				},
 				{
-					"backtrace" : 18,
+					"backtrace" : 28,
 					"define" : "QT_NEEDS_QMAIN"
+				},
+				{
+					"backtrace" : 6,
+					"define" : "QT_NETWORK_LIB"
 				},
 				{
 					"backtrace" : 6,
@@ -449,7 +481,7 @@
 					"define" : "QT_OPENGL_LIB"
 				},
 				{
-					"backtrace" : 47,
+					"backtrace" : 52,
 					"define" : "QT_QML_DEBUG"
 				},
 				{
@@ -457,27 +489,27 @@
 					"define" : "QT_WIDGETS_LIB"
 				},
 				{
-					"backtrace" : 18,
+					"backtrace" : 28,
 					"define" : "UNICODE"
 				},
 				{
-					"backtrace" : 18,
+					"backtrace" : 28,
 					"define" : "WIN32"
 				},
 				{
-					"backtrace" : 18,
+					"backtrace" : 28,
 					"define" : "WIN64"
 				},
 				{
-					"backtrace" : 18,
+					"backtrace" : 28,
 					"define" : "_ENABLE_EXTENDED_ALIGNED_STORAGE"
 				},
 				{
-					"backtrace" : 18,
+					"backtrace" : 28,
 					"define" : "_UNICODE"
 				},
 				{
-					"backtrace" : 18,
+					"backtrace" : 28,
 					"define" : "_WIN64"
 				}
 			],
@@ -488,17 +520,17 @@
 					"path" : "C:/apkproject/FinanceApp/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/FinanceApp_autogen/include"
 				},
 				{
-					"backtrace" : 18,
+					"backtrace" : 28,
 					"isSystem" : true,
 					"path" : "C:/qt/6.11.0/mingw_64/include/QtCore"
 				},
 				{
-					"backtrace" : 18,
+					"backtrace" : 28,
 					"isSystem" : true,
 					"path" : "C:/qt/6.11.0/mingw_64/include"
 				},
 				{
-					"backtrace" : 18,
+					"backtrace" : 28,
 					"isSystem" : true,
 					"path" : "C:/qt/6.11.0/mingw_64/mkspecs/win32-g++"
 				},
@@ -526,6 +558,11 @@
 					"backtrace" : 6,
 					"isSystem" : true,
 					"path" : "C:/qt/6.11.0/mingw_64/include/QtOpenGLWidgets"
+				},
+				{
+					"backtrace" : 6,
+					"isSystem" : true,
+					"path" : "C:/qt/6.11.0/mingw_64/include/QtNetwork"
 				}
 			],
 			"language" : "CXX",
@@ -581,6 +618,11 @@
 				"role" : "libraries"
 			},
 			{
+				"backtrace" : 6,
+				"fragment" : "C:\\qt\\6.11.0\\mingw_64\\lib\\libQt6Network.a",
+				"role" : "libraries"
+			},
+			{
 				"backtrace" : 12,
 				"fragment" : "C:\\qt\\6.11.0\\mingw_64\\lib\\libQt6OpenGLWidgets.a",
 				"role" : "libraries"
@@ -601,58 +643,63 @@
 				"role" : "libraries"
 			},
 			{
-				"backtrace" : 18,
-				"fragment" : "C:\\qt\\6.11.0\\mingw_64\\lib\\libQt6Core.a",
-				"role" : "libraries"
-			},
-			{
-				"backtrace" : 23,
-				"fragment" : "-lmpr",
-				"role" : "libraries"
-			},
-			{
-				"backtrace" : 23,
-				"fragment" : "-luserenv",
-				"role" : "libraries"
-			},
-			{
-				"backtrace" : 33,
-				"fragment" : "-lmingw32",
-				"role" : "libraries"
-			},
-			{
-				"backtrace" : 33,
-				"fragment" : "C:\\qt\\6.11.0\\mingw_64\\lib\\libQt6EntryPoint.a",
-				"role" : "libraries"
-			},
-			{
-				"backtrace" : 34,
-				"fragment" : "-lshell32",
-				"role" : "libraries"
-			},
-			{
-				"backtrace" : 44,
+				"backtrace" : 27,
 				"fragment" : "-ld3d11",
 				"role" : "libraries"
 			},
 			{
-				"backtrace" : 44,
+				"backtrace" : 27,
 				"fragment" : "-ldxgi",
 				"role" : "libraries"
 			},
 			{
-				"backtrace" : 44,
+				"backtrace" : 27,
 				"fragment" : "-ldxguid",
 				"role" : "libraries"
 			},
 			{
-				"backtrace" : 44,
+				"backtrace" : 27,
 				"fragment" : "-ld3d12",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 12,
 				"fragment" : "-luser32",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 28,
+				"fragment" : "C:\\qt\\6.11.0\\mingw_64\\lib\\libQt6Core.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 33,
+				"fragment" : "-lmpr",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 33,
+				"fragment" : "-luserenv",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 43,
+				"fragment" : "-lmingw32",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 43,
+				"fragment" : "C:\\qt\\6.11.0\\mingw_64\\lib\\libQt6EntryPoint.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 44,
+				"fragment" : "-lshell32",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 49,
+				"fragment" : "-lws2_32",
 				"role" : "libraries"
 			},
 			{
@@ -760,24 +807,24 @@
 			"sourceGroupIndex" : 3
 		},
 		{
-			"backtrace" : 52,
+			"backtrace" : 57,
 			"path" : "FinanceApp_id_ID.ts",
 			"sourceGroupIndex" : 4
 		},
 		{
-			"backtrace" : 57,
+			"backtrace" : 62,
 			"isGenerated" : true,
 			"path" : "build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/.qt/rcc/FinanceApp_translations.qrc",
 			"sourceGroupIndex" : 5
 		},
 		{
-			"backtrace" : 60,
+			"backtrace" : 65,
 			"isGenerated" : true,
 			"path" : "build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/FinanceApp_id_ID.qm",
 			"sourceGroupIndex" : 4
 		},
 		{
-			"backtrace" : 62,
+			"backtrace" : 67,
 			"compileGroupIndex" : 0,
 			"isGenerated" : true,
 			"path" : "build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/.qt/rcc/qrc_FinanceApp_translations.cpp",

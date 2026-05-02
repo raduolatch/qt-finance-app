@@ -1,6 +1,9 @@
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
 #include <QMainWindow>
+#include <QNetworkAccessManager>
+#include <QNetworkReply>
+
 QT_BEGIN_NAMESPACE
 namespace Ui {
 class MainWindow;
@@ -20,8 +23,15 @@ private slots:
     void DeleteTransaction();    // tombol Delete
     void showChart();            // tombol Chart
 
+    //API SLOT
+    void getExchangeRate();
+    void onApiResult(QNetworkReply *reply);
+
 private:
     Ui::MainWindow *ui;
+
+    //API MANAGER
+    QNetworkAccessManager *networkManager;
 
     // fungsi helper
     void updateBalance();

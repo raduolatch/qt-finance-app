@@ -156,6 +156,7 @@ FinanceApp.exe: CMakeFiles/FinanceApp.dir/mainwindow.cpp.obj
 FinanceApp.exe: CMakeFiles/FinanceApp.dir/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/.qt/rcc/qrc_FinanceApp_translations.cpp.obj
 FinanceApp.exe: CMakeFiles/FinanceApp.dir/build.make
 FinanceApp.exe: C:/qt/6.11.0/mingw_64/lib/libQt6Charts.a
+FinanceApp.exe: C:/qt/6.11.0/mingw_64/lib/libQt6Network.a
 FinanceApp.exe: C:/qt/6.11.0/mingw_64/lib/libQt6OpenGLWidgets.a
 FinanceApp.exe: C:/qt/6.11.0/mingw_64/lib/libQt6Widgets.a
 FinanceApp.exe: C:/qt/6.11.0/mingw_64/lib/libQt6OpenGL.a

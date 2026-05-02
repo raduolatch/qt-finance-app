@@ -3,6 +3,15 @@ C:/apkproject/FinanceApp/mainwindow.h
  mmc:Q_OBJECT
  mdp:C:/apkproject/FinanceApp/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/FinanceApp_autogen/moc_predefs.h
  mdp:C:/apkproject/FinanceApp/mainwindow.h
+ mdp:C:/qt/6.11.0/mingw_64/include/QtCore/QFlags
+ mdp:C:/qt/6.11.0/mingw_64/include/QtCore/QIODevice
+ mdp:C:/qt/6.11.0/mingw_64/include/QtCore/QList
+ mdp:C:/qt/6.11.0/mingw_64/include/QtCore/QMetaType
+ mdp:C:/qt/6.11.0/mingw_64/include/QtCore/QObject
+ mdp:C:/qt/6.11.0/mingw_64/include/QtCore/QSharedDataPointer
+ mdp:C:/qt/6.11.0/mingw_64/include/QtCore/QString
+ mdp:C:/qt/6.11.0/mingw_64/include/QtCore/QUrl
+ mdp:C:/qt/6.11.0/mingw_64/include/QtCore/QVariant
  mdp:C:/qt/6.11.0/mingw_64/include/QtCore/q17memory.h
  mdp:C:/qt/6.11.0/mingw_64/include/QtCore/q20bit.h
  mdp:C:/qt/6.11.0/mingw_64/include/QtCore/q20functional.h
@@ -12,6 +21,7 @@ C:/apkproject/FinanceApp/mainwindow.h
  mdp:C:/qt/6.11.0/mingw_64/include/QtCore/q20utility.h
  mdp:C:/qt/6.11.0/mingw_64/include/QtCore/q23type_traits.h
  mdp:C:/qt/6.11.0/mingw_64/include/QtCore/q23utility.h
+ mdp:C:/qt/6.11.0/mingw_64/include/QtCore/q26numeric.h
  mdp:C:/qt/6.11.0/mingw_64/include/QtCore/qalgorithms.h
  mdp:C:/qt/6.11.0/mingw_64/include/QtCore/qalloc.h
  mdp:C:/qt/6.11.0/mingw_64/include/QtCore/qanystringview.h
@@ -27,6 +37,7 @@ C:/apkproject/FinanceApp/mainwindow.h
  mdp:C:/qt/6.11.0/mingw_64/include/QtCore/qbytearrayalgorithms.h
  mdp:C:/qt/6.11.0/mingw_64/include/QtCore/qbytearraylist.h
  mdp:C:/qt/6.11.0/mingw_64/include/QtCore/qbytearrayview.h
+ mdp:C:/qt/6.11.0/mingw_64/include/QtCore/qcalendar.h
  mdp:C:/qt/6.11.0/mingw_64/include/QtCore/qchar.h
  mdp:C:/qt/6.11.0/mingw_64/include/QtCore/qcheckedint_impl.h
  mdp:C:/qt/6.11.0/mingw_64/include/QtCore/qcompare.h
@@ -39,8 +50,10 @@ C:/apkproject/FinanceApp/mainwindow.h
  mdp:C:/qt/6.11.0/mingw_64/include/QtCore/qcontainerinfo.h
  mdp:C:/qt/6.11.0/mingw_64/include/QtCore/qcontainertools_impl.h
  mdp:C:/qt/6.11.0/mingw_64/include/QtCore/qcontiguouscache.h
+ mdp:C:/qt/6.11.0/mingw_64/include/QtCore/qcryptographichash.h
  mdp:C:/qt/6.11.0/mingw_64/include/QtCore/qdarwinhelpers.h
  mdp:C:/qt/6.11.0/mingw_64/include/QtCore/qdatastream.h
+ mdp:C:/qt/6.11.0/mingw_64/include/QtCore/qdatetime.h
  mdp:C:/qt/6.11.0/mingw_64/include/QtCore/qdebug.h
  mdp:C:/qt/6.11.0/mingw_64/include/QtCore/qendian.h
  mdp:C:/qt/6.11.0/mingw_64/include/QtCore/qexceptionhandling.h
@@ -54,18 +67,21 @@ C:/apkproject/FinanceApp/mainwindow.h
  mdp:C:/qt/6.11.0/mingw_64/include/QtCore/qglobalstatic.h
  mdp:C:/qt/6.11.0/mingw_64/include/QtCore/qhash.h
  mdp:C:/qt/6.11.0/mingw_64/include/QtCore/qhashfunctions.h
+ mdp:C:/qt/6.11.0/mingw_64/include/QtCore/qiodevice.h
  mdp:C:/qt/6.11.0/mingw_64/include/QtCore/qiodevicebase.h
  mdp:C:/qt/6.11.0/mingw_64/include/QtCore/qiterable.h
  mdp:C:/qt/6.11.0/mingw_64/include/QtCore/qiterator.h
  mdp:C:/qt/6.11.0/mingw_64/include/QtCore/qlatin1stringview.h
  mdp:C:/qt/6.11.0/mingw_64/include/QtCore/qline.h
  mdp:C:/qt/6.11.0/mingw_64/include/QtCore/qlist.h
+ mdp:C:/qt/6.11.0/mingw_64/include/QtCore/qlocale.h
  mdp:C:/qt/6.11.0/mingw_64/include/QtCore/qlogging.h
  mdp:C:/qt/6.11.0/mingw_64/include/QtCore/qmalloc.h
  mdp:C:/qt/6.11.0/mingw_64/include/QtCore/qmap.h
  mdp:C:/qt/6.11.0/mingw_64/include/QtCore/qmargins.h
  mdp:C:/qt/6.11.0/mingw_64/include/QtCore/qmath.h
  mdp:C:/qt/6.11.0/mingw_64/include/QtCore/qmetacontainer.h
+ mdp:C:/qt/6.11.0/mingw_64/include/QtCore/qmetaobject.h
  mdp:C:/qt/6.11.0/mingw_64/include/QtCore/qmetatype.h
  mdp:C:/qt/6.11.0/mingw_64/include/QtCore/qminmax.h
  mdp:C:/qt/6.11.0/mingw_64/include/QtCore/qnamespace.h
@@ -125,6 +141,7 @@ C:/apkproject/FinanceApp/mainwindow.h
  mdp:C:/qt/6.11.0/mingw_64/include/QtCore/qtversionchecks.h
  mdp:C:/qt/6.11.0/mingw_64/include/QtCore/qtypeinfo.h
  mdp:C:/qt/6.11.0/mingw_64/include/QtCore/qtypes.h
+ mdp:C:/qt/6.11.0/mingw_64/include/QtCore/qurl.h
  mdp:C:/qt/6.11.0/mingw_64/include/QtCore/qutf8stringview.h
  mdp:C:/qt/6.11.0/mingw_64/include/QtCore/qvariant.h
  mdp:C:/qt/6.11.0/mingw_64/include/QtCore/qvarlengtharray.h
@@ -157,6 +174,27 @@ C:/apkproject/FinanceApp/mainwindow.h
  mdp:C:/qt/6.11.0/mingw_64/include/QtGui/qtransform.h
  mdp:C:/qt/6.11.0/mingw_64/include/QtGui/qwindowdefs.h
  mdp:C:/qt/6.11.0/mingw_64/include/QtGui/qwindowdefs_win.h
+ mdp:C:/qt/6.11.0/mingw_64/include/QtNetwork/QNetworkAccessManager
+ mdp:C:/qt/6.11.0/mingw_64/include/QtNetwork/QNetworkReply
+ mdp:C:/qt/6.11.0/mingw_64/include/QtNetwork/QNetworkRequest
+ mdp:C:/qt/6.11.0/mingw_64/include/QtNetwork/QSslConfiguration
+ mdp:C:/qt/6.11.0/mingw_64/include/QtNetwork/QSslPreSharedKeyAuthenticator
+ mdp:C:/qt/6.11.0/mingw_64/include/QtNetwork/qabstractsocket.h
+ mdp:C:/qt/6.11.0/mingw_64/include/QtNetwork/qhostaddress.h
+ mdp:C:/qt/6.11.0/mingw_64/include/QtNetwork/qhttpheaders.h
+ mdp:C:/qt/6.11.0/mingw_64/include/QtNetwork/qnetworkaccessmanager.h
+ mdp:C:/qt/6.11.0/mingw_64/include/QtNetwork/qnetworkreply.h
+ mdp:C:/qt/6.11.0/mingw_64/include/QtNetwork/qnetworkrequest.h
+ mdp:C:/qt/6.11.0/mingw_64/include/QtNetwork/qssl.h
+ mdp:C:/qt/6.11.0/mingw_64/include/QtNetwork/qsslcertificate.h
+ mdp:C:/qt/6.11.0/mingw_64/include/QtNetwork/qsslconfiguration.h
+ mdp:C:/qt/6.11.0/mingw_64/include/QtNetwork/qsslerror.h
+ mdp:C:/qt/6.11.0/mingw_64/include/QtNetwork/qsslpresharedkeyauthenticator.h
+ mdp:C:/qt/6.11.0/mingw_64/include/QtNetwork/qsslsocket.h
+ mdp:C:/qt/6.11.0/mingw_64/include/QtNetwork/qtcpsocket.h
+ mdp:C:/qt/6.11.0/mingw_64/include/QtNetwork/qtnetwork-config.h
+ mdp:C:/qt/6.11.0/mingw_64/include/QtNetwork/qtnetworkexports.h
+ mdp:C:/qt/6.11.0/mingw_64/include/QtNetwork/qtnetworkglobal.h
  mdp:C:/qt/6.11.0/mingw_64/include/QtWidgets/QMainWindow
  mdp:C:/qt/6.11.0/mingw_64/include/QtWidgets/qmainwindow.h
  mdp:C:/qt/6.11.0/mingw_64/include/QtWidgets/qsizepolicy.h
