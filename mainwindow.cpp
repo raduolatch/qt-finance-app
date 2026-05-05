@@ -4,9 +4,6 @@
 #include "ui_mainwindow.h"
 #include <QTableWidgetItem>
 #include <QMessageBox>
-#include <QtCharts/QChartView>
-#include <QtCharts/QPieSeries>
-#include <QtCharts/QChart>
 #include <QMap>
 #include <QDate>
 #include <QLocale>
@@ -14,46 +11,34 @@
 #include <QUrl>
 #include <QJsonDocument>
 #include <QJsonObject>
+#include "chartdialog.h"   // ← TAMBAHAN
+
 double currentRate = 0;
 
-//CONSTRUCTOR
+// ─── CONSTRUCTOR ─────────────────────────────────────────────────────────────
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
 
-    // tanggal default
     ui->inputDate->setDate(QDate::currentDate());
 
-    // style tombol
     ui->btnAdd->setStyleSheet("background-color: #4CAF50; color: white;");
     ui->btnDelete->setStyleSheet("background-color: #f44336; color: white;");
     ui->btnChart->setStyleSheet("background-color: #2196F3; color: white;");
 
-    // table setting
     ui->tableWidget->setAlternatingRowColors(true);
     ui->tableWidget->setSelectionBehavior(QAbstractItemView::SelectRows);
 
-    // connect tombol
-    connect(ui->btnAdd, &QPushButton::clicked,
-            this, &MainWindow::addTransaction);
+    connect(ui->btnAdd,    &QPushButton::clicked, this, &MainWindow::addTransaction);
+    connect(ui->btnDelete, &QPushButton::clicked, this, &MainWindow::DeleteTransaction);
+    connect(ui->btnChart,  &QPushButton::clicked, this, &MainWindow::showChart);
 
-    connect(ui->btnDelete, &QPushButton::clicked,
-            this, &MainWindow::DeleteTransaction);
-
-    connect(ui->btnChart, &QPushButton::clicked,
-            this, &MainWindow::showChart);
-
-    // API INIT
     networkManager = new QNetworkAccessManager(this);
-
     connect(networkManager, &QNetworkAccessManager::finished,
             this, &MainWindow::onApiResult);
-
-    //tombol API (WAJIB ADA di UI)
-    connect(ui->btnAPI, &QPushButton::clicked,
-            this, &MainWindow::getExchangeRate);
+    connect(ui->btnAPI, &QPushButton::clicked, this, &MainWindow::getExchangeRate);
 
     loadData();
 }
@@ -63,7 +48,7 @@ MainWindow::~MainWindow()
     delete ui;
 }
 
-//ADD
+// ─── ADD ─────────────────────────────────────────────────────────────────────
 void MainWindow::addTransaction()
 {
     if (ui->inputCategory->text().isEmpty() || ui->inputAmount->text().isEmpty()) {
@@ -71,10 +56,10 @@ void MainWindow::addTransaction()
         return;
     }
 
-    QString date = ui->inputDate->date().toString("dd/MM/yyyy");
-    QString type = ui->comboType->currentText();
+    QString date     = ui->inputDate->date().toString("dd/MM/yyyy");
+    QString type     = ui->comboType->currentText();
     QString category = ui->inputCategory->text();
-    double amount = ui->inputAmount->text().toDouble();
+    double  amount   = ui->inputAmount->text().toDouble();
 
     if (amount <= 0) {
         QMessageBox::warning(this, "Error", "Amount harus lebih dari 0!");
@@ -83,150 +68,115 @@ void MainWindow::addTransaction()
 
     int row = ui->tableWidget->rowCount();
     ui->tableWidget->insertRow(row);
-
-    QString formattedAmount = QString::number(amount, 'f', 0);
-
     ui->tableWidget->setItem(row, 0, new QTableWidgetItem(date));
     ui->tableWidget->setItem(row, 1, new QTableWidgetItem(type));
     ui->tableWidget->setItem(row, 2, new QTableWidgetItem(category));
-    ui->tableWidget->setItem(row, 3, new QTableWidgetItem(formattedAmount));
-
+    ui->tableWidget->setItem(row, 3, new QTableWidgetItem(QString::number(amount, 'f', 0)));
     ui->tableWidget->selectRow(row);
 
     updateBalance();
     saveData();
-
     ui->inputCategory->clear();
     ui->inputAmount->clear();
 }
 
-//DELETE
+// ─── DELETE ──────────────────────────────────────────────────────────────────
 void MainWindow::DeleteTransaction()
 {
     int row = ui->tableWidget->currentRow();
-
     if (row < 0) {
         QMessageBox::warning(this, "Error", "Pilih data dulu!");
         return;
     }
-
     ui->tableWidget->removeRow(row);
-
     updateBalance();
     saveData();
 }
 
-//UPDATE BALANCE
+// ─── UPDATE BALANCE ──────────────────────────────────────────────────────────
 void MainWindow::updateBalance()
 {
     double total = 0;
-
     for (int i = 0; i < ui->tableWidget->rowCount(); i++) {
         QString t = ui->tableWidget->item(i, 1)->text();
-        double a = ui->tableWidget->item(i, 3)->text().toDouble();
-
-        if (t == "Income")
-            total += a;
-        else
-            total -= a;
+        double  a = ui->tableWidget->item(i, 3)->text().toDouble();
+        if (t == "Income") total += a;
+        else               total -= a;
     }
-
     ui->labelBalance->setText("Total Saldo: Rp " + QString::number(total, 'f', 0));
 }
 
-//SAVE
+// ─── SAVE ────────────────────────────────────────────────────────────────────
 void MainWindow::saveData()
 {
     QFile file("data.csv");
-
     if (file.open(QIODevice::WriteOnly)) {
         QTextStream out(&file);
-
         for (int i = 0; i < ui->tableWidget->rowCount(); i++) {
-            QString date = ui->tableWidget->item(i, 0)->text();
-            QString type = ui->tableWidget->item(i, 1)->text();
-            QString category = ui->tableWidget->item(i, 2)->text();
-            QString amount = ui->tableWidget->item(i, 3)->text();
-
-            out << date << "," << type << "," << category << "," << amount << "\n";
+            out << ui->tableWidget->item(i, 0)->text() << ","
+                << ui->tableWidget->item(i, 1)->text() << ","
+                << ui->tableWidget->item(i, 2)->text() << ","
+                << ui->tableWidget->item(i, 3)->text() << "\n";
         }
-
         file.close();
     }
 }
 
-//LOAD
+// ─── LOAD ────────────────────────────────────────────────────────────────────
 void MainWindow::loadData()
 {
     QFile file("data.csv");
-
     if (file.open(QIODevice::ReadOnly)) {
         QTextStream in(&file);
-
         while (!in.atEnd()) {
-            QString line = in.readLine();
-            QStringList data = line.split(",");
-
+            QStringList data = in.readLine().split(",");
             if (data.size() < 4) continue;
-
             int row = ui->tableWidget->rowCount();
             ui->tableWidget->insertRow(row);
-
-            ui->tableWidget->setItem(row, 0, new QTableWidgetItem(data[0]));
-            ui->tableWidget->setItem(row, 1, new QTableWidgetItem(data[1]));
-            ui->tableWidget->setItem(row, 2, new QTableWidgetItem(data[2]));
-            ui->tableWidget->setItem(row, 3, new QTableWidgetItem(data[3]));
+            for (int c = 0; c < 4; c++)
+                ui->tableWidget->setItem(row, c, new QTableWidgetItem(data[c]));
         }
-
         file.close();
     }
-
     updateBalance();
 }
 
-//CHART
-void MainWindow::showChart()
+// ─── GET ALL TRANSACTIONS ────────────────────────────────────────────────────
+QList<Transaction> MainWindow::getAllTransactions()
 {
-    QMap<QString, double> categoryTotal;
-
+    QList<Transaction> list;
     for (int i = 0; i < ui->tableWidget->rowCount(); i++) {
-        QString category = ui->tableWidget->item(i, 2)->text();
-        double amount = ui->tableWidget->item(i, 3)->text().toDouble();
-
-        categoryTotal[category] += amount;
+        Transaction t;
+        t.date     = QDate::fromString(ui->tableWidget->item(i, 0)->text(), "dd/MM/yyyy");
+        t.type     = ui->tableWidget->item(i, 1)->text();
+        t.category = ui->tableWidget->item(i, 2)->text();
+        t.amount   = ui->tableWidget->item(i, 3)->text().toDouble();
+        list.append(t);
     }
-
-    QPieSeries *series = new QPieSeries();
-
-    for (auto it = categoryTotal.begin(); it != categoryTotal.end(); ++it) {
-        series->append(it.key(), it.value());
-    }
-
-    for (auto slice : series->slices()) {
-        slice->setLabelVisible();
-    }
-
-    QChart *chart = new QChart();
-    chart->addSeries(series);
-    chart->setTitle("Pengeluaran per Kategori");
-
-    QChartView *chartView = new QChartView(chart);
-    chartView->setRenderHint(QPainter::Antialiasing);
-
-    chartView->resize(500, 400);
-    chartView->show();
+    return list;
 }
 
-//API REQUEST
+// ─── SHOW CHART (buka ChartDialog) ───────────────────────────────────────────
+void MainWindow::showChart()
+{
+    if (ui->tableWidget->rowCount() == 0) {
+        QMessageBox::information(this, "Info", "Belum ada data transaksi!");
+        return;
+    }
+
+    ChartDialog *dialog = new ChartDialog(getAllTransactions(), this);
+    dialog->setAttribute(Qt::WA_DeleteOnClose);
+    dialog->show();
+}
+
+// ─── API REQUEST ─────────────────────────────────────────────────────────────
 void MainWindow::getExchangeRate()
 {
     QUrl url("https://api.exchangerate-api.com/v4/latest/USD");
-    QNetworkRequest request(url);
-
-    networkManager->get(request);
+    networkManager->get(QNetworkRequest(url));
 }
 
-//API RESPONSE
+// ─── API RESPONSE ─────────────────────────────────────────────────────────────
 void MainWindow::onApiResult(QNetworkReply *reply)
 {
     if (reply->error() != QNetworkReply::NoError) {
@@ -235,20 +185,10 @@ void MainWindow::onApiResult(QNetworkReply *reply)
         return;
     }
 
-    QByteArray response = reply->readAll();
-
-    QJsonDocument doc = QJsonDocument::fromJson(response);
-    QJsonObject obj = doc.object();
-
-    QJsonObject rates = obj["rates"].toObject();
-
-    double idr = rates["IDR"].toDouble();
-
-    // 🔥 SIMPAN KURS
+    QJsonObject rates = QJsonDocument::fromJson(reply->readAll())
+                            .object()["rates"].toObject();
+    double idr  = rates["IDR"].toDouble();
     currentRate = idr;
-
-    // 🔥 TAMPIL DI LABEL (PASTIKAN ADA labelKurs di UI)
     ui->labelKurs->setText("Kurs USD: Rp " + QString::number(idr, 'f', 0));
-
     reply->deleteLater();
 }

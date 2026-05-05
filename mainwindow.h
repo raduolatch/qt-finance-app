@@ -1,8 +1,10 @@
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
+
 #include <QMainWindow>
 #include <QNetworkAccessManager>
 #include <QNetworkReply>
+#include "chartdialog.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
@@ -19,24 +21,24 @@ public:
     ~MainWindow() override;
 
 private slots:
-    void addTransaction();       // tombol Add
-    void DeleteTransaction();    // tombol Delete
-    void showChart();            // tombol Chart
+    void addTransaction();
+    void DeleteTransaction();
+    void showChart();           // ← sekarang buka ChartDialog
 
-    //API SLOT
+    // API SLOT
     void getExchangeRate();
     void onApiResult(QNetworkReply *reply);
 
 private:
     Ui::MainWindow *ui;
-
-    //API MANAGER
     QNetworkAccessManager *networkManager;
 
-    // fungsi helper
     void updateBalance();
     void saveData();
     void loadData();
+
+    // ← TAMBAHAN: helper ambil semua transaksi sebagai list
+    QList<Transaction> getAllTransactions();
 };
 
 #endif // MAINWINDOW_H

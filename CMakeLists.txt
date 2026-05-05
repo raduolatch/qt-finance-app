@@ -1,7 +1,6 @@
 cmake_minimum_required(VERSION 3.19)
 project(FinanceApp LANGUAGES CXX)
 
-#Network + Charts
 find_package(Qt6 6.5 REQUIRED COMPONENTS Core Widgets Charts Network LinguistTools)
 
 qt_standard_project_setup()
@@ -12,6 +11,8 @@ qt_add_executable(FinanceApp
     mainwindow.cpp
     mainwindow.h
     mainwindow.ui
+    chartdialog.cpp
+    chartdialog.h
 )
 
 qt_add_translations(
@@ -19,13 +20,12 @@ qt_add_translations(
     TS_FILES FinanceApp_id_ID.ts
 )
 
-#Qt::Network
 target_link_libraries(FinanceApp
     PRIVATE
-        Qt::Core
-        Qt::Widgets
-        Qt::Charts
-        Qt::Network
+        Qt6::Core
+        Qt6::Widgets
+        Qt6::Charts
+        Qt6::Network
 )
 
 install(TARGETS FinanceApp

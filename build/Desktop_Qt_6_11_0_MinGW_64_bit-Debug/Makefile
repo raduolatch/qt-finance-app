@@ -299,6 +299,30 @@ build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/.qt/rcc/qrc_FinanceApp_translations.c
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\FinanceApp.dir\build.make CMakeFiles/FinanceApp.dir/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/.qt/rcc/qrc_FinanceApp_translations.cpp.s
 .PHONY : build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/.qt/rcc/qrc_FinanceApp_translations.cpp.s
 
+chartdialog.obj: chartdialog.cpp.obj
+.PHONY : chartdialog.obj
+
+# target to build an object file
+chartdialog.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\FinanceApp.dir\build.make CMakeFiles/FinanceApp.dir/chartdialog.cpp.obj
+.PHONY : chartdialog.cpp.obj
+
+chartdialog.i: chartdialog.cpp.i
+.PHONY : chartdialog.i
+
+# target to preprocess a source file
+chartdialog.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\FinanceApp.dir\build.make CMakeFiles/FinanceApp.dir/chartdialog.cpp.i
+.PHONY : chartdialog.cpp.i
+
+chartdialog.s: chartdialog.cpp.s
+.PHONY : chartdialog.s
+
+# target to generate assembly for a file
+chartdialog.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\FinanceApp.dir\build.make CMakeFiles/FinanceApp.dir/chartdialog.cpp.s
+.PHONY : chartdialog.cpp.s
+
 main.obj: main.cpp.obj
 .PHONY : main.obj
 
@@ -372,6 +396,9 @@ help:
 	@echo ... build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/.qt/rcc/qrc_FinanceApp_translations.obj
 	@echo ... build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/.qt/rcc/qrc_FinanceApp_translations.i
 	@echo ... build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/.qt/rcc/qrc_FinanceApp_translations.s
+	@echo ... chartdialog.obj
+	@echo ... chartdialog.i
+	@echo ... chartdialog.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

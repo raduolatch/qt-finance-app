@@ -8,6 +8,7 @@
 
 #include "../../../../mainwindow.h"
 #include <QtNetwork/QSslError>
+#include <QtGui/qtextcursor.h>
 #include <QtCore/qmetatype.h>
 
 #include <QtCore/qtmochelpers.h>

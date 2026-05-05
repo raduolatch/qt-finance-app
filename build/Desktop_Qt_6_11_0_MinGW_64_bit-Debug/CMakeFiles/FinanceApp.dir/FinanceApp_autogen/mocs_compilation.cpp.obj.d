@@ -1,9 +1,9 @@
 CMakeFiles/FinanceApp.dir/FinanceApp_autogen/mocs_compilation.cpp.obj: \
  C:\apkproject\FinanceApp\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\FinanceApp_autogen\mocs_compilation.cpp \
- C:\apkproject\FinanceApp\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\FinanceApp_autogen\EWIEGA46WW/moc_mainwindow.cpp \
- C:/apkproject/FinanceApp/mainwindow.h \
- C:/qt/6.11.0/mingw_64/include/QtWidgets/QMainWindow \
- C:/qt/6.11.0/mingw_64/include/QtWidgets/qmainwindow.h \
+ C:\apkproject\FinanceApp\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\FinanceApp_autogen\EWIEGA46WW/moc_chartdialog.cpp \
+ C:/apkproject/FinanceApp/chartdialog.h \
+ C:/qt/6.11.0/mingw_64/include/QtWidgets/QDialog \
+ C:/qt/6.11.0/mingw_64/include/QtWidgets/qdialog.h \
  C:/qt/6.11.0/mingw_64/include/QtWidgets/qtwidgetsglobal.h \
  C:/qt/6.11.0/mingw_64/include/QtGui/qtguiglobal.h \
  C:/qt/6.11.0/mingw_64/include/QtCore/qglobal.h \
@@ -386,7 +386,129 @@ CMakeFiles/FinanceApp.dir/FinanceApp_autogen/mocs_compilation.cpp.obj: \
  C:/qt/6.11.0/mingw_64/include/QtWidgets/qsizepolicy.h \
  C:/qt/6.11.0/mingw_64/include/QtGui/qcursor.h \
  C:/qt/6.11.0/mingw_64/include/QtGui/qbitmap.h \
+ C:/qt/6.11.0/mingw_64/include/QtCore/QList \
+ C:/qt/6.11.0/mingw_64/include/QtCore/QStringList \
+ C:/qt/6.11.0/mingw_64/include/QtCharts/QChartView \
+ C:/qt/6.11.0/mingw_64/include/QtCharts/qchartview.h \
+ C:/qt/6.11.0/mingw_64/include/QtCharts/QAbstractAxis \
+ C:/qt/6.11.0/mingw_64/include/QtCharts/qabstractaxis.h \
+ C:/qt/6.11.0/mingw_64/include/QtCharts/QChartGlobal \
+ C:/qt/6.11.0/mingw_64/include/QtCharts/qchartglobal.h \
+ C:/qt/6.11.0/mingw_64/include/QtCharts/qtcharts-config.h \
+ C:/qt/6.11.0/mingw_64/include/QtCharts/qtchartsexports.h \
+ C:/qt/6.11.0/mingw_64/include/QtGui/QPen \
+ C:/qt/6.11.0/mingw_64/include/QtGui/qpen.h \
+ C:/qt/6.11.0/mingw_64/include/QtGui/QFont \
+ C:/qt/6.11.0/mingw_64/include/QtCore/QVariant \
+ C:/qt/6.11.0/mingw_64/include/QtCore/QObject \
+ C:/qt/6.11.0/mingw_64/include/QtCharts/QAbstractSeries \
+ C:/qt/6.11.0/mingw_64/include/QtCharts/qabstractseries.h \
+ C:/qt/6.11.0/mingw_64/include/QtCharts/QChart \
+ C:/qt/6.11.0/mingw_64/include/QtCharts/qchart.h \
+ C:/qt/6.11.0/mingw_64/include/QtCharts/QLegend \
+ C:/qt/6.11.0/mingw_64/include/QtCharts/qlegend.h \
+ C:/qt/6.11.0/mingw_64/include/QtWidgets/QGraphicsWidget \
+ C:/qt/6.11.0/mingw_64/include/QtWidgets/qgraphicswidget.h \
+ C:/qt/6.11.0/mingw_64/include/QtWidgets/qgraphicslayoutitem.h \
+ C:/qt/6.11.0/mingw_64/include/QtGui/qevent.h \
+ C:/qt/6.11.0/mingw_64/include/QtCore/qcoreevent.h \
+ C:/qt/6.11.0/mingw_64/include/QtCore/qbasictimer.h \
+ C:/qt/6.11.0/mingw_64/include/QtCore/qabstracteventdispatcher.h \
+ C:/qt/6.11.0/mingw_64/include/QtCore/qeventloop.h \
+ C:/qt/6.11.0/mingw_64/include/QtCore/qdeadlinetimer.h \
+ C:/qt/6.11.0/mingw_64/include/QtCore/qiodevice.h \
+ C:/qt/6.11.0/mingw_64/include/QtCore/qurl.h \
+ C:/qt/6.11.0/mingw_64/include/QtGui/qeventpoint.h \
+ C:/qt/6.11.0/mingw_64/include/QtGui/qvector2d.h \
+ C:/qt/6.11.0/mingw_64/include/QtGui/qvectornd.h \
+ C:/qt/6.11.0/mingw_64/include/QtGui/qpointingdevice.h \
+ C:/qt/6.11.0/mingw_64/include/QtGui/qinputdevice.h \
+ C:/qt/6.11.0/mingw_64/include/QtGui/qscreen.h \
+ C:/qt/6.11.0/mingw_64/include/QtCore/QList \
+ C:/qt/6.11.0/mingw_64/include/QtCore/QRect \
+ C:/qt/6.11.0/mingw_64/include/QtCore/QSize \
+ C:/qt/6.11.0/mingw_64/include/QtCore/QSizeF \
+ C:/qt/6.11.0/mingw_64/include/QtGui/QTransform \
+ C:/qt/6.11.0/mingw_64/include/QtCore/qnativeinterface.h \
+ C:/qt/6.11.0/mingw_64/include/QtGui/qscreen_platform.h \
+ C:/qt/6.11.0/mingw_64/include/QtGui/qguiapplication.h \
+ C:/qt/6.11.0/mingw_64/include/QtCore/qcoreapplication.h \
+ C:/qt/6.11.0/mingw_64/include/QtCore/qcoreapplication_platform.h \
+ C:/qt/6.11.0/mingw_64/include/QtGui/qinputmethod.h \
+ C:/qt/6.11.0/mingw_64/include/QtCore/qlocale.h \
+ C:/qt/6.11.0/mingw_64/include/QtGui/qguiapplication_platform.h \
+ C:/qt/6.11.0/mingw_64/include/QtWidgets/qgraphicsitem.h \
+ C:/qt/6.11.0/mingw_64/include/QtGui/qpainterpath.h \
+ C:/qt/6.11.0/mingw_64/include/QtGui/QBrush \
+ C:/qt/6.11.0/mingw_64/include/QtCore/QMargins \
+ C:/qt/6.11.0/mingw_64/include/QtWidgets/QGraphicsView \
+ C:/qt/6.11.0/mingw_64/include/QtWidgets/qgraphicsview.h \
+ C:/qt/6.11.0/mingw_64/include/QtGui/qpainter.h \
+ C:/qt/6.11.0/mingw_64/include/QtGui/qtextoption.h \
+ C:/qt/6.11.0/mingw_64/include/QtWidgets/qscrollarea.h \
+ C:/qt/6.11.0/mingw_64/include/QtWidgets/qabstractscrollarea.h \
+ C:/qt/6.11.0/mingw_64/include/QtWidgets/qframe.h \
+ C:/qt/6.11.0/mingw_64/include/QtWidgets/qgraphicsscene.h \
+ C:/qt/6.11.0/mingw_64/include/QtCharts/QBarSeries \
+ C:/qt/6.11.0/mingw_64/include/QtCharts/qbarseries.h \
+ C:/qt/6.11.0/mingw_64/include/QtCharts/QAbstractBarSeries \
+ C:/qt/6.11.0/mingw_64/include/QtCharts/qabstractbarseries.h \
+ C:/qt/6.11.0/mingw_64/include/QtCore/QStringList \
+ C:/qt/6.11.0/mingw_64/include/QtCharts/QLineSeries \
+ C:/qt/6.11.0/mingw_64/include/QtCharts/qlineseries.h \
+ C:/qt/6.11.0/mingw_64/include/QtCharts/QXYSeries \
+ C:/qt/6.11.0/mingw_64/include/QtCharts/qxyseries.h \
+ C:/qt/6.11.0/mingw_64/include/QtGui/QImage \
+ C:/qt/6.11.0/mingw_64/include/QtCharts/QPieSeries \
+ C:/qt/6.11.0/mingw_64/include/QtCharts/qpieseries.h \
+ C:/qt/6.11.0/mingw_64/include/QtCharts/QPieSlice \
+ C:/qt/6.11.0/mingw_64/include/QtCharts/qpieslice.h \
+ C:/qt/6.11.0/mingw_64/include/QtWidgets/QDateEdit \
+ C:/qt/6.11.0/mingw_64/include/QtWidgets/qdatetimeedit.h \
+ C:/qt/6.11.0/mingw_64/include/QtCore/qtimezone.h \
+ C:/qt/6.11.0/mingw_64/include/QtCore/qdatetime.h \
+ C:/qt/6.11.0/mingw_64/include/QtCore/qcalendar.h \
+ C:/qt/6.11.0/mingw_64/include/QtWidgets/qabstractspinbox.h \
+ C:/qt/6.11.0/mingw_64/include/QtGui/qvalidator.h \
+ C:/qt/6.11.0/mingw_64/include/QtCore/qregularexpression.h \
+ C:/qt/6.11.0/mingw_64/include/QtWidgets/QComboBox \
+ C:/qt/6.11.0/mingw_64/include/QtWidgets/qcombobox.h \
+ C:/qt/6.11.0/mingw_64/include/QtWidgets/qabstractitemdelegate.h \
+ C:/qt/6.11.0/mingw_64/include/QtWidgets/qstyleoption.h \
+ C:/qt/6.11.0/mingw_64/include/QtWidgets/qslider.h \
+ C:/qt/6.11.0/mingw_64/include/QtWidgets/qabstractslider.h \
+ C:/qt/6.11.0/mingw_64/include/QtWidgets/qstyle.h \
+ C:/qt/6.11.0/mingw_64/include/QtWidgets/qtabbar.h \
  C:/qt/6.11.0/mingw_64/include/QtWidgets/qtabwidget.h \
+ C:/qt/6.11.0/mingw_64/include/QtWidgets/qrubberband.h \
+ C:/qt/6.11.0/mingw_64/include/QtCore/qabstractitemmodel.h \
+ C:/qt/6.11.0/mingw_64/include/QtWidgets/QTabWidget \
+ C:/qt/6.11.0/mingw_64/include/QtWidgets/QPushButton \
+ C:/qt/6.11.0/mingw_64/include/QtWidgets/qpushbutton.h \
+ C:/qt/6.11.0/mingw_64/include/QtWidgets/qabstractbutton.h \
+ C:/qt/6.11.0/mingw_64/include/QtWidgets/QVBoxLayout \
+ C:/qt/6.11.0/mingw_64/include/QtWidgets/qboxlayout.h \
+ C:/qt/6.11.0/mingw_64/include/QtWidgets/qlayout.h \
+ C:/qt/6.11.0/mingw_64/include/QtWidgets/qlayoutitem.h \
+ C:/qt/6.11.0/mingw_64/include/QtWidgets/qgridlayout.h \
+ C:/qt/6.11.0/mingw_64/include/QtWidgets/QHBoxLayout \
+ C:/qt/6.11.0/mingw_64/include/QtWidgets/QLabel \
+ C:/qt/6.11.0/mingw_64/include/QtWidgets/qlabel.h \
+ C:/qt/6.11.0/mingw_64/include/QtGui/qpicture.h \
+ C:/qt/6.11.0/mingw_64/include/QtGui/qtextdocument.h \
+ C:/qt/6.11.0/mingw_64/include/QtWidgets/QGroupBox \
+ C:/qt/6.11.0/mingw_64/include/QtWidgets/qgroupbox.h \
+ C:/qt/6.11.0/mingw_64/include/QtWidgets/QRadioButton \
+ C:/qt/6.11.0/mingw_64/include/QtWidgets/qradiobutton.h \
+ C:/qt/6.11.0/mingw_64/include/QtGui/qtextcursor.h \
+ C:/qt/6.11.0/mingw_64/include/QtGui/qtextformat.h \
+ C:/qt/6.11.0/mingw_64/include/QtCore/qtmochelpers.h \
+ C:/qt/6.11.0/mingw_64/include/QtCore/qtmocconstants.h \
+ C:/qt/6.11.0/mingw_64/include/QtCore/q20algorithm.h \
+ C:\apkproject\FinanceApp\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\FinanceApp_autogen\EWIEGA46WW/moc_mainwindow.cpp \
+ C:/apkproject/FinanceApp/mainwindow.h \
+ C:/qt/6.11.0/mingw_64/include/QtWidgets/QMainWindow \
+ C:/qt/6.11.0/mingw_64/include/QtWidgets/qmainwindow.h \
  C:/qt/6.11.0/mingw_64/include/QtNetwork/QNetworkAccessManager \
  C:/qt/6.11.0/mingw_64/include/QtNetwork/qnetworkaccessmanager.h \
  C:/qt/6.11.0/mingw_64/include/QtNetwork/qtnetworkglobal.h \
@@ -394,24 +516,16 @@ CMakeFiles/FinanceApp.dir/FinanceApp_autogen/mocs_compilation.cpp.obj: \
  C:/qt/6.11.0/mingw_64/include/QtNetwork/qtnetworkexports.h \
  C:/qt/6.11.0/mingw_64/include/QtNetwork/qnetworkrequest.h \
  C:/qt/6.11.0/mingw_64/include/QtNetwork/qhttpheaders.h \
- C:/qt/6.11.0/mingw_64/include/QtCore/qdatetime.h \
- C:/qt/6.11.0/mingw_64/include/QtCore/qcalendar.h \
- C:/qt/6.11.0/mingw_64/include/QtCore/qlocale.h \
  C:/qt/6.11.0/mingw_64/include/QtCore/qmetaobject.h \
  C:/qt/6.11.0/mingw_64/include/QtCore/QSharedDataPointer \
  C:/qt/6.11.0/mingw_64/include/QtCore/QString \
  C:/qt/6.11.0/mingw_64/include/QtCore/QUrl \
- C:/qt/6.11.0/mingw_64/include/QtCore/qurl.h \
- C:/qt/6.11.0/mingw_64/include/QtCore/QVariant \
  C:/qt/6.11.0/mingw_64/include/QtCore/q26numeric.h \
- C:/qt/6.11.0/mingw_64/include/QtCore/QList \
- C:/qt/6.11.0/mingw_64/include/QtCore/QObject \
  C:/qt/6.11.0/mingw_64/include/QtNetwork/QSslConfiguration \
  C:/qt/6.11.0/mingw_64/include/QtNetwork/qsslconfiguration.h \
  C:/qt/6.11.0/mingw_64/include/QtNetwork/qsslsocket.h \
  C:/qt/6.11.0/mingw_64/include/QtNetwork/qtcpsocket.h \
  C:/qt/6.11.0/mingw_64/include/QtNetwork/qabstractsocket.h \
- C:/qt/6.11.0/mingw_64/include/QtCore/qiodevice.h \
  C:/qt/6.11.0/mingw_64/include/QtNetwork/qhostaddress.h \
  C:/qt/6.11.0/mingw_64/include/QtNetwork/qsslerror.h \
  C:/qt/6.11.0/mingw_64/include/QtNetwork/qsslcertificate.h \
@@ -426,7 +540,5 @@ CMakeFiles/FinanceApp.dir/FinanceApp_autogen/mocs_compilation.cpp.obj: \
  C:/qt/6.11.0/mingw_64/include/QtCore/QIODevice \
  C:/qt/6.11.0/mingw_64/include/QtNetwork/QNetworkRequest \
  C:/qt/6.11.0/mingw_64/include/QtNetwork/QNetworkAccessManager \
- C:/qt/6.11.0/mingw_64/include/QtNetwork/QSslError \
- C:/qt/6.11.0/mingw_64/include/QtCore/qtmochelpers.h \
- C:/qt/6.11.0/mingw_64/include/QtCore/qtmocconstants.h \
- C:/qt/6.11.0/mingw_64/include/QtCore/q20algorithm.h
+ C:/apkproject/FinanceApp/chartdialog.h \
+ C:/qt/6.11.0/mingw_64/include/QtNetwork/QSslError
