@@ -1,6 +1,5 @@
 #ifndef CHARTDIALOG_H
 #define CHARTDIALOG_H
-
 #include <QDialog>
 #include <QList>
 #include <QStringList>

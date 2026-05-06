@@ -18,7 +18,7 @@
 ChartDialog::ChartDialog(const QList<Transaction> &transactions, QWidget *parent)
     : QDialog(parent), allTransactions(transactions)
 {
-    setWindowTitle("📊 Laporan Keuangan");
+    setWindowTitle(" Laporan Keuangan");
     setMinimumSize(800, 600);
     setupUI();
     onFilterChanged(); // render awal
@@ -26,7 +26,7 @@ ChartDialog::ChartDialog(const QList<Transaction> &transactions, QWidget *parent
 
 ChartDialog::~ChartDialog() {}
 
-// ─── UI SETUP ────────────────────────────────────────────────────────────────
+// UI SETUP
 void ChartDialog::setupUI()
 {
     QVBoxLayout *mainLayout = new QVBoxLayout(this);
@@ -35,7 +35,7 @@ void ChartDialog::setupUI()
     setupFilterPanel();
 
     // Tambah filter panel ke layout utama
-    QGroupBox *filterBox = new QGroupBox("🔍 Filter Tanggal");
+    QGroupBox *filterBox = new QGroupBox(" Filter Tanggal");
     QVBoxLayout *filterBoxLayout = new QVBoxLayout(filterBox);
 
     // Radio buttons
@@ -95,9 +95,9 @@ void ChartDialog::setupUI()
     barChartView  = new QChartView();
     lineChartView = new QChartView();
     pieChartView  = new QChartView();
-    tabWidget->addTab(barChartView,  "📊 Bar Chart");
-    tabWidget->addTab(lineChartView, "📈 Line Chart");
-    tabWidget->addTab(pieChartView,  "🥧 Pie Chart");
+    tabWidget->addTab(barChartView,  " Bar Chart");
+    tabWidget->addTab(lineChartView, " Line Chart");
+    tabWidget->addTab(pieChartView,  " Pie Chart");
     mainLayout->addWidget(tabWidget);
 
     // Connections
@@ -111,7 +111,7 @@ void ChartDialog::setupUI()
 
 void ChartDialog::setupFilterPanel() {}
 
-// ─── FILTER MODE ─────────────────────────────────────────────────────────────
+//  FILTER MODE
 void ChartDialog::onFilterModeChanged()
 {
     bool isMon   = radioMonth->isChecked();
@@ -126,7 +126,7 @@ void ChartDialog::onFilterModeChanged()
     dateTo->setVisible(isRange);
 }
 
-// ─── APPLY FILTER ────────────────────────────────────────────────────────────
+//  APPLY FILTER
 QList<Transaction> ChartDialog::applyFilter()
 {
     QList<Transaction> result;
@@ -155,7 +155,7 @@ QList<Transaction> ChartDialog::applyFilter()
     return result;
 }
 
-// ─── REFRESH CHARTS ──────────────────────────────────────────────────────────
+//  REFRESH CHARTS
 void ChartDialog::onFilterChanged()
 {
     QList<Transaction> filtered = applyFilter();
@@ -169,16 +169,16 @@ void ChartDialog::onFilterChanged()
     tabWidget->removeTab(1);
     tabWidget->removeTab(0);
 
-    tabWidget->addTab(newBar,  "📊 Bar Chart");
-    tabWidget->addTab(newLine, "📈 Line Chart");
-    tabWidget->addTab(newPie,  "🥧 Pie Chart");
+    tabWidget->addTab(newBar,  " Bar Chart");
+    tabWidget->addTab(newLine, " Line Chart");
+    tabWidget->addTab(newPie,  " Pie Chart");
 
     barChartView  = newBar;
     lineChartView = newLine;
     pieChartView  = newPie;
 }
 
-// ─── BAR CHART ───────────────────────────────────────────────────────────────
+// BAR CHART
 QChartView* ChartDialog::buildBarChart(const QList<Transaction> &data)
 {
     // Kumpulkan income & expense per bulan
@@ -236,7 +236,7 @@ QChartView* ChartDialog::buildBarChart(const QList<Transaction> &data)
     return view;
 }
 
-// ─── LINE CHART ──────────────────────────────────────────────────────────────
+// LINE CHART
 QChartView* ChartDialog::buildLineChart(const QList<Transaction> &data)
 {
     // Sort data by date
@@ -245,7 +245,6 @@ QChartView* ChartDialog::buildLineChart(const QList<Transaction> &data)
         return a.date < b.date;
     });
 
-    // Hitung running balance
     QLineSeries *series = new QLineSeries();
     series->setName("Saldo");
     series->setColor(QColor("#2196F3"));
@@ -253,6 +252,7 @@ QChartView* ChartDialog::buildLineChart(const QList<Transaction> &data)
     double balance = 0;
     QMap<QDate, double> dailyNet;
 
+    // Hitung net per hari
     for (const auto &t : sorted) {
         if (t.type == "Income")
             dailyNet[t.date] += t.amount;
@@ -263,6 +263,7 @@ QChartView* ChartDialog::buildLineChart(const QList<Transaction> &data)
     QList<QDate> dates = dailyNet.keys();
     std::sort(dates.begin(), dates.end());
 
+    // Isi data ke chart
     for (const QDate &d : dates) {
         balance += dailyNet[d];
         series->append(d.startOfDay().toMSecsSinceEpoch(), balance);
@@ -273,23 +274,59 @@ QChartView* ChartDialog::buildLineChart(const QList<Transaction> &data)
     chart->setTitle("Tren Saldo dari Waktu ke Waktu");
     chart->setAnimationOptions(QChart::SeriesAnimations);
 
+    // Kalau tidak ada data
+    if (series->count() == 0) {
+        chart->setTitle("Tidak ada data untuk ditampilkan");
+        return new QChartView(chart);
+    }
+
+    //agar 1 titik kelihatan(jika data 1 tiitk/hri)
+    if (series->count() == 1) {
+        QPointF p = series->points().first();
+        series->append(p.x() + 86400000, p.y());
+    }
+
+    // Axis X (Tanggal)
     QDateTimeAxis *axisX = new QDateTimeAxis();
-    axisX->setFormat("dd/MM/yy");
+    axisX->setFormat("dd MMM");
     axisX->setTitleText("Tanggal");
+    axisX->setTickCount(qMin(series->count(), 6));
     chart->addAxis(axisX, Qt::AlignBottom);
     series->attachAxis(axisX);
 
+    // Axis Y (Saldo)
     QValueAxis *axisY = new QValueAxis();
     axisY->setTitleText("Saldo (Rp)");
+    axisY->setLabelFormat("%,.0f"); //format ribuan
+    axisY->applyNiceNumbers();
     chart->addAxis(axisY, Qt::AlignLeft);
     series->attachAxis(axisY);
 
+    // SET RANGE MANUAL
+    double minY = series->points().first().y();
+    double maxY = minY;
+
+    for (const QPointF &p : series->points()) {
+        if (p.y() < minY) minY = p.y();
+        if (p.y() > maxY) maxY = p.y();
+    }
+
+    double padding = (maxY - minY) * 0.1;
+    if (padding == 0) padding = 1000;
+
+    axisY->setRange(minY - padding, maxY + padding);
+
+    //tampilkan titik
+    series->setPointsVisible(true);
+    series->setMarkerSize(8);
+
     QChartView *view = new QChartView(chart);
     view->setRenderHint(QPainter::Antialiasing);
+
     return view;
 }
 
-// ─── PIE CHART ───────────────────────────────────────────────────────────────
+// PIE CHART
 QChartView* ChartDialog::buildPieChart(const QList<Transaction> &data)
 {
     QMap<QString, double> categoryTotal;

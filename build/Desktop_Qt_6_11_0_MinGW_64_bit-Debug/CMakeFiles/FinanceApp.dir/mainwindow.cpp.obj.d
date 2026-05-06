@@ -606,4 +606,5 @@ CMakeFiles/FinanceApp.dir/mainwindow.cpp.obj: \
  C:/qt/6.11.0/mingw_64/include/QtCore/qjsonvalue.h \
  C:/qt/6.11.0/mingw_64/include/QtCore/qcborvalue.h \
  C:/qt/6.11.0/mingw_64/include/QtCore/qcborcommon.h \
- C:/qt/6.11.0/mingw_64/include/QtCore/quuid.h
+ C:/qt/6.11.0/mingw_64/include/QtCore/quuid.h \
+ C:/qt/6.11.0/mingw_64/include/QtGui/QRegularExpressionValidator

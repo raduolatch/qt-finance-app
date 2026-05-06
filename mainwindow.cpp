@@ -11,16 +11,22 @@
 #include <QUrl>
 #include <QJsonDocument>
 #include <QJsonObject>
-#include "chartdialog.h"   // ← TAMBAHAN
+#include <QRegularExpressionValidator>
+#include "chartdialog.h"
 
 double currentRate = 0;
 
-// ─── CONSTRUCTOR ─────────────────────────────────────────────────────────────
+// CONSTRUCTOR
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+
+    // VALIDATOR (hanya angka & titik)
+    QRegularExpression rx("[0-9.]*");
+    QValidator *validator = new QRegularExpressionValidator(rx, this);
+    ui->inputAmount->setValidator(validator);
 
     ui->inputDate->setDate(QDate::currentDate());
 
@@ -48,7 +54,7 @@ MainWindow::~MainWindow()
     delete ui;
 }
 
-// ─── ADD ─────────────────────────────────────────────────────────────────────
+// ADD
 void MainWindow::addTransaction()
 {
     if (ui->inputCategory->text().isEmpty() || ui->inputAmount->text().isEmpty()) {
@@ -59,28 +65,48 @@ void MainWindow::addTransaction()
     QString date     = ui->inputDate->date().toString("dd/MM/yyyy");
     QString type     = ui->comboType->currentText();
     QString category = ui->inputCategory->text();
-    double  amount   = ui->inputAmount->text().toDouble();
 
-    if (amount <= 0) {
-        QMessageBox::warning(this, "Error", "Amount harus lebih dari 0!");
+    QString text = ui->inputAmount->text().trimmed();
+    text.remove(".");
+
+    bool ok;
+    double amount = text.toDouble(&ok);
+
+    if (!ok || amount <= 0) {
+        QMessageBox::warning(this, "Error", "Amount tidak valid!");
         return;
     }
 
     int row = ui->tableWidget->rowCount();
     ui->tableWidget->insertRow(row);
+
     ui->tableWidget->setItem(row, 0, new QTableWidgetItem(date));
     ui->tableWidget->setItem(row, 1, new QTableWidgetItem(type));
     ui->tableWidget->setItem(row, 2, new QTableWidgetItem(category));
-    ui->tableWidget->setItem(row, 3, new QTableWidgetItem(QString::number(amount, 'f', 0)));
+
+
+    QLocale locale(QLocale::Indonesian, QLocale::Indonesia);//FORMAT + TAMBAH "Rp"
+    QString formatted = "Rp " + locale.toString(static_cast<qlonglong>(amount));
+
+    QTableWidgetItem *item = new QTableWidgetItem(formatted);
+
+
+    item->setData(Qt::UserRole, amount);//simpan nilai asli
+
+    item->setTextAlignment(Qt::AlignRight | Qt::AlignVCenter);
+
+    ui->tableWidget->setItem(row, 3, item);
+
     ui->tableWidget->selectRow(row);
 
     updateBalance();
     saveData();
+
     ui->inputCategory->clear();
     ui->inputAmount->clear();
 }
 
-// ─── DELETE ──────────────────────────────────────────────────────────────────
+// DELETE
 void MainWindow::DeleteTransaction()
 {
     int row = ui->tableWidget->currentRow();
@@ -93,70 +119,100 @@ void MainWindow::DeleteTransaction()
     saveData();
 }
 
-// ─── UPDATE BALANCE ──────────────────────────────────────────────────────────
+// UPDATE BALANCE
 void MainWindow::updateBalance()
 {
     double total = 0;
+
     for (int i = 0; i < ui->tableWidget->rowCount(); i++) {
         QString t = ui->tableWidget->item(i, 1)->text();
-        double  a = ui->tableWidget->item(i, 3)->text().toDouble();
+
+        double a = ui->tableWidget->item(i, 3)->data(Qt::UserRole).toDouble();
+
         if (t == "Income") total += a;
         else               total -= a;
     }
-    ui->labelBalance->setText("Total Saldo: Rp " + QString::number(total, 'f', 0));
+
+    QLocale locale(QLocale::Indonesian, QLocale::Indonesia);
+    ui->labelBalance->setText("Total Saldo: Rp " + locale.toString(static_cast<qlonglong>(total)));
 }
 
-// ─── SAVE ────────────────────────────────────────────────────────────────────
+// SAVE
 void MainWindow::saveData()
 {
     QFile file("data.csv");
     if (file.open(QIODevice::WriteOnly)) {
         QTextStream out(&file);
+
         for (int i = 0; i < ui->tableWidget->rowCount(); i++) {
+
+            double amount = ui->tableWidget->item(i, 3)->data(Qt::UserRole).toDouble(); // simpan angka asli
+
             out << ui->tableWidget->item(i, 0)->text() << ","
                 << ui->tableWidget->item(i, 1)->text() << ","
                 << ui->tableWidget->item(i, 2)->text() << ","
-                << ui->tableWidget->item(i, 3)->text() << "\n";
+                << amount << "\n";
         }
         file.close();
     }
 }
 
-// ─── LOAD ────────────────────────────────────────────────────────────────────
+// LOAD
 void MainWindow::loadData()
 {
     QFile file("data.csv");
     if (file.open(QIODevice::ReadOnly)) {
         QTextStream in(&file);
+
         while (!in.atEnd()) {
             QStringList data = in.readLine().split(",");
             if (data.size() < 4) continue;
+
             int row = ui->tableWidget->rowCount();
             ui->tableWidget->insertRow(row);
-            for (int c = 0; c < 4; c++)
-                ui->tableWidget->setItem(row, c, new QTableWidgetItem(data[c]));
+
+            ui->tableWidget->setItem(row, 0, new QTableWidgetItem(data[0]));
+            ui->tableWidget->setItem(row, 1, new QTableWidgetItem(data[1]));
+            ui->tableWidget->setItem(row, 2, new QTableWidgetItem(data[2]));
+
+            double amount = data[3].toDouble();
+
+            QLocale locale(QLocale::Indonesian, QLocale::Indonesia);//FORMAT + "Rp"
+            QString formatted = "Rp " + locale.toString(static_cast<qlonglong>(amount));
+
+            QTableWidgetItem *item = new QTableWidgetItem(formatted);
+
+            item->setData(Qt::UserRole, amount);//simpan nilai asli
+
+            item->setTextAlignment(Qt::AlignRight | Qt::AlignVCenter);
+
+            ui->tableWidget->setItem(row, 3, item);
         }
+
         file.close();
     }
+
     updateBalance();
 }
 
-// ─── GET ALL TRANSACTIONS ────────────────────────────────────────────────────
+// GET ALL TRANSACTIONS
 QList<Transaction> MainWindow::getAllTransactions()
 {
     QList<Transaction> list;
+
     for (int i = 0; i < ui->tableWidget->rowCount(); i++) {
         Transaction t;
         t.date     = QDate::fromString(ui->tableWidget->item(i, 0)->text(), "dd/MM/yyyy");
         t.type     = ui->tableWidget->item(i, 1)->text();
         t.category = ui->tableWidget->item(i, 2)->text();
-        t.amount   = ui->tableWidget->item(i, 3)->text().toDouble();
+        t.amount   = ui->tableWidget->item(i, 3)->data(Qt::UserRole).toDouble();
         list.append(t);
     }
+
     return list;
 }
 
-// ─── SHOW CHART (buka ChartDialog) ───────────────────────────────────────────
+// SHOW CHART (buka ChartDialog)
 void MainWindow::showChart()
 {
     if (ui->tableWidget->rowCount() == 0) {
@@ -169,14 +225,14 @@ void MainWindow::showChart()
     dialog->show();
 }
 
-// ─── API REQUEST ─────────────────────────────────────────────────────────────
+//  API REQUEST
 void MainWindow::getExchangeRate()
 {
     QUrl url("https://api.exchangerate-api.com/v4/latest/USD");
     networkManager->get(QNetworkRequest(url));
 }
 
-// ─── API RESPONSE ─────────────────────────────────────────────────────────────
+//  API RESPONSE
 void MainWindow::onApiResult(QNetworkReply *reply)
 {
     if (reply->error() != QNetworkReply::NoError) {

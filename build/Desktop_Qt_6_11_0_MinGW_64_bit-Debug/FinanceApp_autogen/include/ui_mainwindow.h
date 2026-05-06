@@ -79,6 +79,7 @@ public:
         tableWidget->setHorizontalHeaderItem(3, __qtablewidgetitem3);
         tableWidget->setObjectName("tableWidget");
         tableWidget->setGeometry(QRect(85, 120, 581, 281));
+        tableWidget->setStyleSheet(QString::fromUtf8(""));
         tableWidget->setColumnCount(4);
         btnDelete = new QPushButton(centralwidget);
         btnDelete->setObjectName("btnDelete");
