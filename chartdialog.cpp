@@ -14,6 +14,7 @@
 #include <QtCharts/QDateTimeAxis>
 #include <QSet>
 #include <algorithm>
+#include <cmath>
 
 ChartDialog::ChartDialog(const QList<Transaction> &transactions, QWidget *parent)
     : QDialog(parent), allTransactions(transactions)
@@ -239,88 +240,171 @@ QChartView* ChartDialog::buildBarChart(const QList<Transaction> &data)
 // LINE CHART
 QChartView* ChartDialog::buildLineChart(const QList<Transaction> &data)
 {
-    // Sort data by date
     QList<Transaction> sorted = data;
-    std::sort(sorted.begin(), sorted.end(), [](const Transaction &a, const Transaction &b){
-        return a.date < b.date;
-    });
 
-    QLineSeries *series = new QLineSeries();
-    series->setName("Saldo");
-    series->setColor(QColor("#2196F3"));
+    std::sort(sorted.begin(), sorted.end(),
+              [](const Transaction &a, const Transaction &b) {
+                  return a.date < b.date;
+              });
 
-    double balance = 0;
-    QMap<QDate, double> dailyNet;
+    // SERIES
+    QLineSeries *saldoSeries = new QLineSeries();
+    saldoSeries->setName("Saldo");
+    saldoSeries->setColor(QColor("#2196F3"));
 
-    // Hitung net per hari
+    QLineSeries *expenseSeries = new QLineSeries();
+    expenseSeries->setName("Pengeluaran");
+    expenseSeries->setColor(QColor("#f44336"));
+
+    double saldo = 0;
+
+    QMap<QDate, double> incomeMap;
+    QMap<QDate, double> expenseMap;
+
+    // Kelompokkan transaksi
     for (const auto &t : sorted) {
+
         if (t.type == "Income")
-            dailyNet[t.date] += t.amount;
+            incomeMap[t.date] += t.amount;
         else
-            dailyNet[t.date] -= t.amount;
+            expenseMap[t.date] += t.amount;
     }
 
-    QList<QDate> dates = dailyNet.keys();
+    // Ambil semua tanggal unik
+    QSet<QDate> allDates;
+
+    for (const auto &d : incomeMap.keys())
+        allDates.insert(d);
+
+    for (const auto &d : expenseMap.keys())
+        allDates.insert(d);
+
+    QList<QDate> dates = allDates.values();
+
     std::sort(dates.begin(), dates.end());
 
-    // Isi data ke chart
+    // MASUKKAN DATA KE SERIES
+
     for (const QDate &d : dates) {
-        balance += dailyNet[d];
-        series->append(d.startOfDay().toMSecsSinceEpoch(), balance);
+
+        double income  = incomeMap.value(d, 0);
+        double expense = expenseMap.value(d, 0);
+
+        saldo += income;
+        saldo -= expense;
+
+        qint64 x = d.startOfDay().toMSecsSinceEpoch();
+
+        saldoSeries->append(x, saldo);
+        expenseSeries->append(x, expense);
     }
 
+    // CHART
     QChart *chart = new QChart();
-    chart->addSeries(series);
-    chart->setTitle("Tren Saldo dari Waktu ke Waktu");
+
+    chart->addSeries(saldoSeries);
+    chart->addSeries(expenseSeries);
+
+    chart->setTitle("Tren Saldo dan Pengeluaran");
     chart->setAnimationOptions(QChart::SeriesAnimations);
 
-    // Kalau tidak ada data
-    if (series->count() == 0) {
-        chart->setTitle("Tidak ada data untuk ditampilkan");
-        return new QChartView(chart);
+    // Kalau kosong
+    if (saldoSeries->count() == 0) {
+
+        chart->setTitle("Tidak ada data");
+
+        QChartView *emptyView = new QChartView(chart);
+        emptyView->setRenderHint(QPainter::Antialiasing);
+
+        return emptyView;
     }
 
-    //agar 1 titik kelihatan(jika data 1 tiitk/hri)
-    if (series->count() == 1) {
-        QPointF p = series->points().first();
-        series->append(p.x() + 86400000, p.y());
+    // Kalau cuma 1 titik
+    if (saldoSeries->count() == 1) {
+
+        QPointF p1 = saldoSeries->points().first();
+        QPointF p2 = expenseSeries->points().first();
+
+        saldoSeries->append(p1.x() + 86400000, p1.y());
+        expenseSeries->append(p2.x() + 86400000, p2.y());
     }
 
-    // Axis X (Tanggal)
+    // AXIS X
     QDateTimeAxis *axisX = new QDateTimeAxis();
+
     axisX->setFormat("dd MMM");
     axisX->setTitleText("Tanggal");
-    axisX->setTickCount(qMin(series->count(), 6));
+    axisX->setTickCount(qMin(dates.size(), 7));
+
     chart->addAxis(axisX, Qt::AlignBottom);
-    series->attachAxis(axisX);
 
-    // Axis Y (Saldo)
+    saldoSeries->attachAxis(axisX);
+    expenseSeries->attachAxis(axisX);
+
+    // MIN MAX
+    double minY = 0;
+    double maxY = 0;
+
+    auto checkSeries = [&](QLineSeries *series)
+    {
+        for (const QPointF &p : series->points()) {
+
+            if (p.y() < minY)
+                minY = p.y();
+
+            if (p.y() > maxY)
+                maxY = p.y();
+        }
+    };
+
+    checkSeries(saldoSeries);
+    checkSeries(expenseSeries);
+
+
+    // KELIPATAN
+    double range = maxY - minY;
+
+    if (range <= 10000)
+        range = 10000;
+
+    double magnitude =
+        pow(10, floor(log10(range)));
+
+    double step = magnitude;
+
+    minY = floor(minY / step) * step;
+    maxY = ceil(maxY / step) * step;
+
+    // AXIS Y
     QValueAxis *axisY = new QValueAxis();
-    axisY->setTitleText("Saldo (Rp)");
-    axisY->setLabelFormat("%,.0f"); //format ribuan
-    axisY->applyNiceNumbers();
+
+    axisY->setTitleText("Jumlah (Rp)");
+
+    axisY->setRange(minY, maxY);
+
+    axisY->setTickCount(6);
+
+    axisY->setLabelFormat("%.0f");
+
     chart->addAxis(axisY, Qt::AlignLeft);
-    series->attachAxis(axisY);
 
-    // SET RANGE MANUAL
-    double minY = series->points().first().y();
-    double maxY = minY;
+    saldoSeries->attachAxis(axisY);
+    expenseSeries->attachAxis(axisY);
 
-    for (const QPointF &p : series->points()) {
-        if (p.y() < minY) minY = p.y();
-        if (p.y() > maxY) maxY = p.y();
-    }
+    // STYLE
+    saldoSeries->setPointsVisible(true);
+    saldoSeries->setMarkerSize(10);
 
-    double padding = (maxY - minY) * 0.1;
-    if (padding == 0) padding = 1000;
+    expenseSeries->setPointsVisible(true);
+    expenseSeries->setMarkerSize(10);
 
-    axisY->setRange(minY - padding, maxY + padding);
+    chart->legend()->setVisible(true);
 
-    //tampilkan titik
-    series->setPointsVisible(true);
-    series->setMarkerSize(8);
+    // Background putih
+    chart->setBackgroundBrush(QBrush(Qt::white));
 
     QChartView *view = new QChartView(chart);
+
     view->setRenderHint(QPainter::Antialiasing);
 
     return view;

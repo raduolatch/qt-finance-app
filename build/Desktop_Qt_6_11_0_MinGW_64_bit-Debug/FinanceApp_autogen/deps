@@ -269,6 +269,10 @@ FinanceApp_autogen/timestamp: \
 	C:/qt/6.11.0/mingw_64/include/QtNetwork/qtnetwork-config.h \
 	C:/qt/6.11.0/mingw_64/include/QtNetwork/qtnetworkexports.h \
 	C:/qt/6.11.0/mingw_64/include/QtNetwork/qtnetworkglobal.h \
+	C:/qt/6.11.0/mingw_64/include/QtTextToSpeech/QTextToSpeech \
+	C:/qt/6.11.0/mingw_64/include/QtTextToSpeech/qtexttospeech.h \
+	C:/qt/6.11.0/mingw_64/include/QtTextToSpeech/qtexttospeech_global.h \
+	C:/qt/6.11.0/mingw_64/include/QtTextToSpeech/qvoice.h \
 	C:/qt/6.11.0/mingw_64/include/QtWidgets/QComboBox \
 	C:/qt/6.11.0/mingw_64/include/QtWidgets/QDateEdit \
 	C:/qt/6.11.0/mingw_64/include/QtWidgets/QDialog \
@@ -372,6 +376,15 @@ FinanceApp_autogen/timestamp: \
 	C:/qt/6.11.0/mingw_64/lib/cmake/Qt6Charts/Qt6ChartsTargets.cmake \
 	C:/qt/6.11.0/mingw_64/lib/cmake/Qt6Charts/Qt6ChartsTargetsPrecheck.cmake \
 	C:/qt/6.11.0/mingw_64/lib/cmake/Qt6Charts/Qt6ChartsVersionlessAliasTargets.cmake \
+	C:/qt/6.11.0/mingw_64/lib/cmake/Qt6Concurrent/Qt6ConcurrentAdditionalTargetInfo.cmake \
+	C:/qt/6.11.0/mingw_64/lib/cmake/Qt6Concurrent/Qt6ConcurrentConfig.cmake \
+	C:/qt/6.11.0/mingw_64/lib/cmake/Qt6Concurrent/Qt6ConcurrentConfigVersion.cmake \
+	C:/qt/6.11.0/mingw_64/lib/cmake/Qt6Concurrent/Qt6ConcurrentConfigVersionImpl.cmake \
+	C:/qt/6.11.0/mingw_64/lib/cmake/Qt6Concurrent/Qt6ConcurrentDependencies.cmake \
+	C:/qt/6.11.0/mingw_64/lib/cmake/Qt6Concurrent/Qt6ConcurrentTargets-relwithdebinfo.cmake \
+	C:/qt/6.11.0/mingw_64/lib/cmake/Qt6Concurrent/Qt6ConcurrentTargets.cmake \
+	C:/qt/6.11.0/mingw_64/lib/cmake/Qt6Concurrent/Qt6ConcurrentTargetsPrecheck.cmake \
+	C:/qt/6.11.0/mingw_64/lib/cmake/Qt6Concurrent/Qt6ConcurrentVersionlessAliasTargets.cmake \
 	C:/qt/6.11.0/mingw_64/lib/cmake/Qt6Core/Qt6CoreAdditionalTargetInfo.cmake \
 	C:/qt/6.11.0/mingw_64/lib/cmake/Qt6Core/Qt6CoreConfig.cmake \
 	C:/qt/6.11.0/mingw_64/lib/cmake/Qt6Core/Qt6CoreConfigExtras.cmake \
@@ -481,6 +494,27 @@ FinanceApp_autogen/timestamp: \
 	C:/qt/6.11.0/mingw_64/lib/cmake/Qt6LinguistTools/Qt6LinguistToolsTargets.cmake \
 	C:/qt/6.11.0/mingw_64/lib/cmake/Qt6LinguistTools/Qt6LinguistToolsTargetsPrecheck.cmake \
 	C:/qt/6.11.0/mingw_64/lib/cmake/Qt6LinguistTools/Qt6LinguistToolsVersionlessTargets.cmake \
+	C:/qt/6.11.0/mingw_64/lib/cmake/Qt6Multimedia/Qt6MultimediaAdditionalTargetInfo.cmake \
+	C:/qt/6.11.0/mingw_64/lib/cmake/Qt6Multimedia/Qt6MultimediaConfig.cmake \
+	C:/qt/6.11.0/mingw_64/lib/cmake/Qt6Multimedia/Qt6MultimediaConfigVersion.cmake \
+	C:/qt/6.11.0/mingw_64/lib/cmake/Qt6Multimedia/Qt6MultimediaConfigVersionImpl.cmake \
+	C:/qt/6.11.0/mingw_64/lib/cmake/Qt6Multimedia/Qt6MultimediaDependencies.cmake \
+	C:/qt/6.11.0/mingw_64/lib/cmake/Qt6Multimedia/Qt6MultimediaMacros.cmake \
+	C:/qt/6.11.0/mingw_64/lib/cmake/Qt6Multimedia/Qt6MultimediaPlugins.cmake \
+	C:/qt/6.11.0/mingw_64/lib/cmake/Qt6Multimedia/Qt6MultimediaTargets-relwithdebinfo.cmake \
+	C:/qt/6.11.0/mingw_64/lib/cmake/Qt6Multimedia/Qt6MultimediaTargets.cmake \
+	C:/qt/6.11.0/mingw_64/lib/cmake/Qt6Multimedia/Qt6MultimediaTargetsPrecheck.cmake \
+	C:/qt/6.11.0/mingw_64/lib/cmake/Qt6Multimedia/Qt6MultimediaVersionlessAliasTargets.cmake \
+	C:/qt/6.11.0/mingw_64/lib/cmake/Qt6Multimedia/Qt6QFFmpegMediaPluginAdditionalTargetInfo.cmake \
+	C:/qt/6.11.0/mingw_64/lib/cmake/Qt6Multimedia/Qt6QFFmpegMediaPluginConfig.cmake \
+	C:/qt/6.11.0/mingw_64/lib/cmake/Qt6Multimedia/Qt6QFFmpegMediaPluginTargets-relwithdebinfo.cmake \
+	C:/qt/6.11.0/mingw_64/lib/cmake/Qt6Multimedia/Qt6QFFmpegMediaPluginTargets.cmake \
+	C:/qt/6.11.0/mingw_64/lib/cmake/Qt6Multimedia/Qt6QFFmpegMediaPluginTargetsPrecheck.cmake \
+	C:/qt/6.11.0/mingw_64/lib/cmake/Qt6Multimedia/Qt6QWindowsMediaPluginAdditionalTargetInfo.cmake \
+	C:/qt/6.11.0/mingw_64/lib/cmake/Qt6Multimedia/Qt6QWindowsMediaPluginConfig.cmake \
+	C:/qt/6.11.0/mingw_64/lib/cmake/Qt6Multimedia/Qt6QWindowsMediaPluginTargets-relwithdebinfo.cmake \
+	C:/qt/6.11.0/mingw_64/lib/cmake/Qt6Multimedia/Qt6QWindowsMediaPluginTargets.cmake \
+	C:/qt/6.11.0/mingw_64/lib/cmake/Qt6Multimedia/Qt6QWindowsMediaPluginTargetsPrecheck.cmake \
 	C:/qt/6.11.0/mingw_64/lib/cmake/Qt6Network/Qt6NetworkAdditionalTargetInfo.cmake \
 	C:/qt/6.11.0/mingw_64/lib/cmake/Qt6Network/Qt6NetworkConfig.cmake \
 	C:/qt/6.11.0/mingw_64/lib/cmake/Qt6Network/Qt6NetworkConfigVersion.cmake \
@@ -529,6 +563,26 @@ FinanceApp_autogen/timestamp: \
 	C:/qt/6.11.0/mingw_64/lib/cmake/Qt6OpenGLWidgets/Qt6OpenGLWidgetsTargets.cmake \
 	C:/qt/6.11.0/mingw_64/lib/cmake/Qt6OpenGLWidgets/Qt6OpenGLWidgetsTargetsPrecheck.cmake \
 	C:/qt/6.11.0/mingw_64/lib/cmake/Qt6OpenGLWidgets/Qt6OpenGLWidgetsVersionlessAliasTargets.cmake \
+	C:/qt/6.11.0/mingw_64/lib/cmake/Qt6TextToSpeech/Qt6QTextToSpeechMockPluginAdditionalTargetInfo.cmake \
+	C:/qt/6.11.0/mingw_64/lib/cmake/Qt6TextToSpeech/Qt6QTextToSpeechMockPluginConfig.cmake \
+	C:/qt/6.11.0/mingw_64/lib/cmake/Qt6TextToSpeech/Qt6QTextToSpeechMockPluginTargets-relwithdebinfo.cmake \
+	C:/qt/6.11.0/mingw_64/lib/cmake/Qt6TextToSpeech/Qt6QTextToSpeechMockPluginTargets.cmake \
+	C:/qt/6.11.0/mingw_64/lib/cmake/Qt6TextToSpeech/Qt6QTextToSpeechMockPluginTargetsPrecheck.cmake \
+	C:/qt/6.11.0/mingw_64/lib/cmake/Qt6TextToSpeech/Qt6QTextToSpeechSapiPluginAdditionalTargetInfo.cmake \
+	C:/qt/6.11.0/mingw_64/lib/cmake/Qt6TextToSpeech/Qt6QTextToSpeechSapiPluginConfig.cmake \
+	C:/qt/6.11.0/mingw_64/lib/cmake/Qt6TextToSpeech/Qt6QTextToSpeechSapiPluginTargets-relwithdebinfo.cmake \
+	C:/qt/6.11.0/mingw_64/lib/cmake/Qt6TextToSpeech/Qt6QTextToSpeechSapiPluginTargets.cmake \
+	C:/qt/6.11.0/mingw_64/lib/cmake/Qt6TextToSpeech/Qt6QTextToSpeechSapiPluginTargetsPrecheck.cmake \
+	C:/qt/6.11.0/mingw_64/lib/cmake/Qt6TextToSpeech/Qt6TextToSpeechAdditionalTargetInfo.cmake \
+	C:/qt/6.11.0/mingw_64/lib/cmake/Qt6TextToSpeech/Qt6TextToSpeechConfig.cmake \
+	C:/qt/6.11.0/mingw_64/lib/cmake/Qt6TextToSpeech/Qt6TextToSpeechConfigVersion.cmake \
+	C:/qt/6.11.0/mingw_64/lib/cmake/Qt6TextToSpeech/Qt6TextToSpeechConfigVersionImpl.cmake \
+	C:/qt/6.11.0/mingw_64/lib/cmake/Qt6TextToSpeech/Qt6TextToSpeechDependencies.cmake \
+	C:/qt/6.11.0/mingw_64/lib/cmake/Qt6TextToSpeech/Qt6TextToSpeechPlugins.cmake \
+	C:/qt/6.11.0/mingw_64/lib/cmake/Qt6TextToSpeech/Qt6TextToSpeechTargets-relwithdebinfo.cmake \
+	C:/qt/6.11.0/mingw_64/lib/cmake/Qt6TextToSpeech/Qt6TextToSpeechTargets.cmake \
+	C:/qt/6.11.0/mingw_64/lib/cmake/Qt6TextToSpeech/Qt6TextToSpeechTargetsPrecheck.cmake \
+	C:/qt/6.11.0/mingw_64/lib/cmake/Qt6TextToSpeech/Qt6TextToSpeechVersionlessAliasTargets.cmake \
 	C:/qt/6.11.0/mingw_64/lib/cmake/Qt6Widgets/Qt6QModernWindowsStylePluginAdditionalTargetInfo.cmake \
 	C:/qt/6.11.0/mingw_64/lib/cmake/Qt6Widgets/Qt6QModernWindowsStylePluginConfig.cmake \
 	C:/qt/6.11.0/mingw_64/lib/cmake/Qt6Widgets/Qt6QModernWindowsStylePluginTargets-relwithdebinfo.cmake \

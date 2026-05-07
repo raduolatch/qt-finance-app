@@ -424,6 +424,10 @@ CMakeFiles/FinanceApp.dir/main.cpp.obj: C:\apkproject\FinanceApp\main.cpp \
  C:/qt/6.11.0/mingw_64/include/QtCore/QIODevice \
  C:/qt/6.11.0/mingw_64/include/QtNetwork/QNetworkRequest \
  C:/qt/6.11.0/mingw_64/include/QtNetwork/QNetworkAccessManager \
+ C:/qt/6.11.0/mingw_64/include/QtTextToSpeech/QTextToSpeech \
+ C:/qt/6.11.0/mingw_64/include/QtTextToSpeech/qtexttospeech.h \
+ C:/qt/6.11.0/mingw_64/include/QtTextToSpeech/qtexttospeech_global.h \
+ C:/qt/6.11.0/mingw_64/include/QtTextToSpeech/qvoice.h \
  C:\apkproject\FinanceApp\chartdialog.h \
  C:/qt/6.11.0/mingw_64/include/QtWidgets/QDialog \
  C:/qt/6.11.0/mingw_64/include/QtWidgets/qdialog.h \

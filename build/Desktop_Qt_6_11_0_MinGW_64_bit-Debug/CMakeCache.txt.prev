@@ -334,6 +334,9 @@ Qt6OpenGLWidgets_DIR:PATH=C:/qt/6.11.0/mingw_64/lib/cmake/Qt6OpenGLWidgets
 //The directory containing a CMake configuration file for Qt6OpenGL.
 Qt6OpenGL_DIR:PATH=C:/qt/6.11.0/mingw_64/lib/cmake/Qt6OpenGL
 
+//The directory containing a CMake configuration file for Qt6TextToSpeech.
+Qt6TextToSpeech_DIR:PATH=Qt6TextToSpeech_DIR-NOTFOUND
+
 //The directory containing a CMake configuration file for Qt6WidgetsTools.
 Qt6WidgetsTools_DIR:PATH=C:/qt/6.11.0/mingw_64/lib/cmake/Qt6WidgetsTools
 
@@ -341,7 +344,7 @@ Qt6WidgetsTools_DIR:PATH=C:/qt/6.11.0/mingw_64/lib/cmake/Qt6WidgetsTools
 Qt6Widgets_DIR:PATH=C:/qt/6.11.0/mingw_64/lib/cmake/Qt6Widgets
 
 //The directory containing a CMake configuration file for Qt6.
-Qt6_DIR:PATH=C:/qt/6.11.0/mingw_64/lib/cmake/Qt6
+Qt6_DIR:PATH=Qt6_DIR-NOTFOUND
 
 //Path to a program.
 Vulkan_GLSLANG_VALIDATOR_EXECUTABLE:FILEPATH=Vulkan_GLSLANG_VALIDATOR_EXECUTABLE-NOTFOUND

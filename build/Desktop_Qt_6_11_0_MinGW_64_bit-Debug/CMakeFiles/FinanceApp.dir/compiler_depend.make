@@ -267,6 +267,10 @@ CMakeFiles/FinanceApp.dir/FinanceApp_autogen/mocs_compilation.cpp.obj: FinanceAp
   C:/qt/6.11.0/mingw_64/include/QtNetwork/qtnetwork-config.h \
   C:/qt/6.11.0/mingw_64/include/QtNetwork/qtnetworkexports.h \
   C:/qt/6.11.0/mingw_64/include/QtNetwork/qtnetworkglobal.h \
+  C:/qt/6.11.0/mingw_64/include/QtTextToSpeech/QTextToSpeech \
+  C:/qt/6.11.0/mingw_64/include/QtTextToSpeech/qtexttospeech.h \
+  C:/qt/6.11.0/mingw_64/include/QtTextToSpeech/qtexttospeech_global.h \
+  C:/qt/6.11.0/mingw_64/include/QtTextToSpeech/qvoice.h \
   C:/qt/6.11.0/mingw_64/include/QtWidgets/QComboBox \
   C:/qt/6.11.0/mingw_64/include/QtWidgets/QDateEdit \
   C:/qt/6.11.0/mingw_64/include/QtWidgets/QDialog \
@@ -1313,6 +1317,10 @@ CMakeFiles/FinanceApp.dir/main.cpp.obj: C:/apkproject/FinanceApp/main.cpp \
   C:/qt/6.11.0/mingw_64/include/QtNetwork/qtnetwork-config.h \
   C:/qt/6.11.0/mingw_64/include/QtNetwork/qtnetworkexports.h \
   C:/qt/6.11.0/mingw_64/include/QtNetwork/qtnetworkglobal.h \
+  C:/qt/6.11.0/mingw_64/include/QtTextToSpeech/QTextToSpeech \
+  C:/qt/6.11.0/mingw_64/include/QtTextToSpeech/qtexttospeech.h \
+  C:/qt/6.11.0/mingw_64/include/QtTextToSpeech/qtexttospeech_global.h \
+  C:/qt/6.11.0/mingw_64/include/QtTextToSpeech/qvoice.h \
   C:/qt/6.11.0/mingw_64/include/QtWidgets/QApplication \
   C:/qt/6.11.0/mingw_64/include/QtWidgets/QComboBox \
   C:/qt/6.11.0/mingw_64/include/QtWidgets/QDateEdit \
@@ -1868,6 +1876,10 @@ CMakeFiles/FinanceApp.dir/mainwindow.cpp.obj: C:/apkproject/FinanceApp/mainwindo
   C:/qt/6.11.0/mingw_64/include/QtNetwork/qtnetwork-config.h \
   C:/qt/6.11.0/mingw_64/include/QtNetwork/qtnetworkexports.h \
   C:/qt/6.11.0/mingw_64/include/QtNetwork/qtnetworkglobal.h \
+  C:/qt/6.11.0/mingw_64/include/QtTextToSpeech/QTextToSpeech \
+  C:/qt/6.11.0/mingw_64/include/QtTextToSpeech/qtexttospeech.h \
+  C:/qt/6.11.0/mingw_64/include/QtTextToSpeech/qtexttospeech_global.h \
+  C:/qt/6.11.0/mingw_64/include/QtTextToSpeech/qvoice.h \
   C:/qt/6.11.0/mingw_64/include/QtWidgets/QApplication \
   C:/qt/6.11.0/mingw_64/include/QtWidgets/QComboBox \
   C:/qt/6.11.0/mingw_64/include/QtWidgets/QDateEdit \
@@ -1883,10 +1895,12 @@ CMakeFiles/FinanceApp.dir/mainwindow.cpp.obj: C:/apkproject/FinanceApp/mainwindo
   C:/qt/6.11.0/mingw_64/include/QtWidgets/QMessageBox \
   C:/qt/6.11.0/mingw_64/include/QtWidgets/QPushButton \
   C:/qt/6.11.0/mingw_64/include/QtWidgets/QRadioButton \
+  C:/qt/6.11.0/mingw_64/include/QtWidgets/QScrollBar \
   C:/qt/6.11.0/mingw_64/include/QtWidgets/QStatusBar \
   C:/qt/6.11.0/mingw_64/include/QtWidgets/QTabWidget \
   C:/qt/6.11.0/mingw_64/include/QtWidgets/QTableWidget \
   C:/qt/6.11.0/mingw_64/include/QtWidgets/QTableWidgetItem \
+  C:/qt/6.11.0/mingw_64/include/QtWidgets/QTextEdit \
   C:/qt/6.11.0/mingw_64/include/QtWidgets/QVBoxLayout \
   C:/qt/6.11.0/mingw_64/include/QtWidgets/QWidget \
   C:/qt/6.11.0/mingw_64/include/QtWidgets/qabstractbutton.h \
@@ -1920,6 +1934,7 @@ CMakeFiles/FinanceApp.dir/mainwindow.cpp.obj: C:/apkproject/FinanceApp/mainwindo
   C:/qt/6.11.0/mingw_64/include/QtWidgets/qradiobutton.h \
   C:/qt/6.11.0/mingw_64/include/QtWidgets/qrubberband.h \
   C:/qt/6.11.0/mingw_64/include/QtWidgets/qscrollarea.h \
+  C:/qt/6.11.0/mingw_64/include/QtWidgets/qscrollbar.h \
   C:/qt/6.11.0/mingw_64/include/QtWidgets/qsizepolicy.h \
   C:/qt/6.11.0/mingw_64/include/QtWidgets/qslider.h \
   C:/qt/6.11.0/mingw_64/include/QtWidgets/qstatusbar.h \
@@ -1929,6 +1944,7 @@ CMakeFiles/FinanceApp.dir/mainwindow.cpp.obj: C:/apkproject/FinanceApp/mainwindo
   C:/qt/6.11.0/mingw_64/include/QtWidgets/qtableview.h \
   C:/qt/6.11.0/mingw_64/include/QtWidgets/qtablewidget.h \
   C:/qt/6.11.0/mingw_64/include/QtWidgets/qtabwidget.h \
+  C:/qt/6.11.0/mingw_64/include/QtWidgets/qtextedit.h \
   C:/qt/6.11.0/mingw_64/include/QtWidgets/qtwidgets-config.h \
   C:/qt/6.11.0/mingw_64/include/QtWidgets/qtwidgetsexports.h \
   C:/qt/6.11.0/mingw_64/include/QtWidgets/qtwidgetsglobal.h \
@@ -2200,6 +2216,8 @@ C:/apkproject/FinanceApp/chartdialog.h:
 
 C:/qt/6.11.0/mingw_64/include/QtCore/q20memory.h:
 
+C:/qt/6.11.0/mingw_64/include/QtWidgets/qtextedit.h:
+
 C:/qt/6.11.0/mingw_64/include/QtCharts/qlineseries.h:
 
 C:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_list.h:
@@ -2412,6 +2430,8 @@ C:/qt/6.11.0/mingw_64/include/QtCore/q26numeric.h:
 
 C:/qt/6.11.0/mingw_64/include/QtCore/qabstracteventdispatcher.h:
 
+C:/qt/6.11.0/mingw_64/include/QtTextToSpeech/qtexttospeech_global.h:
+
 C:/qt/6.11.0/mingw_64/include/QtCore/qabstractitemmodel.h:
 
 C:/qt/6.11.0/mingw_64/include/QtNetwork/qtnetwork-config.h:
@@ -2446,8 +2466,6 @@ C:/qt/6.11.0/mingw_64/include/QtCore/qtextstream.h:
 
 C:/qt/6.11.0/mingw_64/include/QtCore/qbytearrayalgorithms.h:
 
-C:/qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/limits.h:
-
 C:/qt/6.11.0/mingw_64/include/QtCore/qbytearrayview.h:
 
 C:/qt/6.11.0/mingw_64/include/QtCore/qcalendar.h:
@@ -2479,6 +2497,8 @@ C:/qt/6.11.0/mingw_64/include/QtCore/qconfig.h:
 C:/qt/6.11.0/mingw_64/include/QtGui/qtgui-config.h:
 
 C:/qt/6.11.0/mingw_64/include/QtCore/qconstructormacros.h:
+
+C:/qt/6.11.0/mingw_64/include/QtTextToSpeech/qtexttospeech.h:
 
 C:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_iterator.h:
 
@@ -2786,8 +2806,6 @@ C:/qt/6.11.0/mingw_64/include/QtCore/qtnoop.h:
 
 C:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/gthr.h:
 
-C:/qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/locale.h:
-
 C:/qt/6.11.0/mingw_64/include/QtCore/qtpreprocessorsupport.h:
 
 C:/qt/6.11.0/mingw_64/include/QtCore/qttranslation.h:
@@ -2811,6 +2829,8 @@ C:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/atom
 C:/qt/6.11.0/mingw_64/include/QtCore/qvariant.h:
 
 C:/qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/ctype.h:
+
+C:/qt/6.11.0/mingw_64/include/QtWidgets/QTextEdit:
 
 C:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/pstl/execution_defs.h:
 
@@ -2985,6 +3005,16 @@ C:/qt/6.11.0/mingw_64/include/QtNetwork/qsslsocket.h:
 C:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/new:
 
 C:/qt/6.11.0/mingw_64/include/QtNetwork/qtcpsocket.h:
+
+C:/qt/6.11.0/mingw_64/include/QtTextToSpeech/QTextToSpeech:
+
+C:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/uses_allocator_args.h:
+
+C:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/tr1/beta_function.tcc:
+
+C:/qt/6.11.0/mingw_64/include/QtTextToSpeech/qvoice.h:
+
+C:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cerrno:
 
 C:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cassert:
 
@@ -3192,12 +3222,6 @@ C:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stre
 
 C:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/uniform_int_dist.h:
 
-C:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/uses_allocator_args.h:
-
-C:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/tr1/beta_function.tcc:
-
-C:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cerrno:
-
 C:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/utility.h:
 
 C:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/vector.tcc:
@@ -3213,6 +3237,8 @@ C:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cstddef:
 C:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cstdlib:
 
 C:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/locale:
+
+C:/qt/6.11.0/mingw_64/include/QtWidgets/QScrollBar:
 
 C:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cwchar:
 
@@ -3300,9 +3326,13 @@ C:/qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/corecrt_startup.h:
 
 C:/qt/6.11.0/mingw_64/include/QtCore/QDate:
 
+C:/qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/math.h:
+
 C:/qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/errno.h:
 
-C:/qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/math.h:
+C:/qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/limits.h:
+
+C:/qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/locale.h:
 
 C:/qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/malloc.h:
 
@@ -3393,6 +3423,8 @@ C:/qt/6.11.0/mingw_64/include/QtWidgets/QStatusBar:
 C:/qt/6.11.0/mingw_64/include/QtWidgets/qdialogbuttonbox.h:
 
 C:/qt/6.11.0/mingw_64/include/QtWidgets/qheaderview.h:
+
+C:/qt/6.11.0/mingw_64/include/QtWidgets/qscrollbar.h:
 
 C:/qt/6.11.0/mingw_64/include/QtWidgets/qstatusbar.h:
 

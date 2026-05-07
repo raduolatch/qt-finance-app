@@ -20,6 +20,7 @@
 #include <QtWidgets/QPushButton>
 #include <QtWidgets/QStatusBar>
 #include <QtWidgets/QTableWidget>
+#include <QtWidgets/QTextEdit>
 #include <QtWidgets/QWidget>
 
 QT_BEGIN_NAMESPACE
@@ -28,44 +29,50 @@ class Ui_MainWindow
 {
 public:
     QWidget *centralwidget;
-    QComboBox *comboType;
-    QLineEdit *inputAmount;
-    QLineEdit *inputCategory;
-    QPushButton *btnAdd;
-    QLabel *labelBalance;
-    QTableWidget *tableWidget;
-    QPushButton *btnDelete;
-    QPushButton *btnChart;
     QDateEdit *inputDate;
+    QComboBox *comboType;
+    QLineEdit *inputCategory;
+    QLineEdit *inputAmount;
+    QPushButton *btnAdd;
+    QPushButton *btnDelete;
+    QTableWidget *tableWidget;
+    QPushButton *btnChart;
     QPushButton *btnAPI;
+    QPushButton *btnAI;
+    QLabel *labelBalance;
     QLabel *labelKurs;
+    QLineEdit *inputChat;
+    QPushButton *btnChat;
+    QTextEdit *chatOutput;
     QStatusBar *statusbar;
 
     void setupUi(QMainWindow *MainWindow)
     {
         if (MainWindow->objectName().isEmpty())
             MainWindow->setObjectName("MainWindow");
-        MainWindow->resize(800, 600);
+        MainWindow->resize(820, 620);
         centralwidget = new QWidget(MainWindow);
         centralwidget->setObjectName("centralwidget");
+        inputDate = new QDateEdit(centralwidget);
+        inputDate->setObjectName("inputDate");
+        inputDate->setGeometry(QRect(20, 30, 110, 35));
         comboType = new QComboBox(centralwidget);
         comboType->addItem(QString());
         comboType->addItem(QString());
         comboType->setObjectName("comboType");
-        comboType->setGeometry(QRect(130, 70, 151, 41));
-        comboType->setMaxVisibleItems(10);
-        inputAmount = new QLineEdit(centralwidget);
-        inputAmount->setObjectName("inputAmount");
-        inputAmount->setGeometry(QRect(430, 80, 131, 31));
+        comboType->setGeometry(QRect(140, 30, 140, 35));
         inputCategory = new QLineEdit(centralwidget);
         inputCategory->setObjectName("inputCategory");
-        inputCategory->setGeometry(QRect(290, 80, 131, 31));
+        inputCategory->setGeometry(QRect(290, 30, 160, 35));
+        inputAmount = new QLineEdit(centralwidget);
+        inputAmount->setObjectName("inputAmount");
+        inputAmount->setGeometry(QRect(460, 30, 140, 35));
         btnAdd = new QPushButton(centralwidget);
         btnAdd->setObjectName("btnAdd");
-        btnAdd->setGeometry(QRect(570, 80, 121, 31));
-        labelBalance = new QLabel(centralwidget);
-        labelBalance->setObjectName("labelBalance");
-        labelBalance->setGeometry(QRect(80, 460, 181, 31));
+        btnAdd->setGeometry(QRect(610, 30, 90, 35));
+        btnDelete = new QPushButton(centralwidget);
+        btnDelete->setObjectName("btnDelete");
+        btnDelete->setGeometry(QRect(710, 30, 90, 35));
         tableWidget = new QTableWidget(centralwidget);
         if (tableWidget->columnCount() < 4)
             tableWidget->setColumnCount(4);
@@ -78,24 +85,37 @@ public:
         QTableWidgetItem *__qtablewidgetitem3 = new QTableWidgetItem();
         tableWidget->setHorizontalHeaderItem(3, __qtablewidgetitem3);
         tableWidget->setObjectName("tableWidget");
-        tableWidget->setGeometry(QRect(85, 120, 581, 281));
-        tableWidget->setStyleSheet(QString::fromUtf8(""));
+        tableWidget->setGeometry(QRect(20, 90, 780, 300));
         tableWidget->setColumnCount(4);
-        btnDelete = new QPushButton(centralwidget);
-        btnDelete->setObjectName("btnDelete");
-        btnDelete->setGeometry(QRect(700, 80, 91, 31));
         btnChart = new QPushButton(centralwidget);
         btnChart->setObjectName("btnChart");
-        btnChart->setGeometry(QRect(130, 410, 211, 51));
-        inputDate = new QDateEdit(centralwidget);
-        inputDate->setObjectName("inputDate");
-        inputDate->setGeometry(QRect(0, 70, 121, 41));
+        btnChart->setGeometry(QRect(20, 410, 180, 45));
         btnAPI = new QPushButton(centralwidget);
         btnAPI->setObjectName("btnAPI");
-        btnAPI->setGeometry(QRect(430, 410, 191, 51));
+        btnAPI->setGeometry(QRect(220, 410, 180, 45));
+        btnAI = new QPushButton(centralwidget);
+        btnAI->setObjectName("btnAI");
+        btnAI->setGeometry(QRect(420, 410, 180, 45));
+        labelBalance = new QLabel(centralwidget);
+        labelBalance->setObjectName("labelBalance");
+        labelBalance->setGeometry(QRect(20, 480, 350, 30));
+        labelBalance->setStyleSheet(QString::fromUtf8("\n"
+"font-size: 14pt;\n"
+"font-weight: bold;\n"
+"     "));
         labelKurs = new QLabel(centralwidget);
         labelKurs->setObjectName("labelKurs");
-        labelKurs->setGeometry(QRect(80, 490, 171, 31));
+        labelKurs->setGeometry(QRect(20, 520, 250, 25));
+        inputChat = new QLineEdit(centralwidget);
+        inputChat->setObjectName("inputChat");
+        inputChat->setGeometry(QRect(420, 480, 260, 35));
+        btnChat = new QPushButton(centralwidget);
+        btnChat->setObjectName("btnChat");
+        btnChat->setGeometry(QRect(690, 480, 100, 35));
+        chatOutput = new QTextEdit(centralwidget);
+        chatOutput->setObjectName("chatOutput");
+        chatOutput->setGeometry(QRect(420, 525, 370, 60));
+        chatOutput->setReadOnly(true);
         MainWindow->setCentralWidget(centralwidget);
         statusbar = new QStatusBar(MainWindow);
         statusbar->setObjectName("statusbar");
@@ -108,13 +128,14 @@ public:
 
     void retranslateUi(QMainWindow *MainWindow)
     {
-        MainWindow->setWindowTitle(QCoreApplication::translate("MainWindow", "MainWindow", nullptr));
+        MainWindow->setWindowTitle(QCoreApplication::translate("MainWindow", "Finance App", nullptr));
         comboType->setItemText(0, QCoreApplication::translate("MainWindow", "Income", nullptr));
         comboType->setItemText(1, QCoreApplication::translate("MainWindow", "Expense", nullptr));
 
-        inputCategory->setText(QString());
+        inputCategory->setPlaceholderText(QCoreApplication::translate("MainWindow", "Category", nullptr));
+        inputAmount->setPlaceholderText(QCoreApplication::translate("MainWindow", "Amount", nullptr));
         btnAdd->setText(QCoreApplication::translate("MainWindow", "Add", nullptr));
-        labelBalance->setText(QCoreApplication::translate("MainWindow", "Total Saldo: Rp 0", nullptr));
+        btnDelete->setText(QCoreApplication::translate("MainWindow", "Delete", nullptr));
         QTableWidgetItem *___qtablewidgetitem = tableWidget->horizontalHeaderItem(0);
         ___qtablewidgetitem->setText(QCoreApplication::translate("MainWindow", "Date", nullptr));
         QTableWidgetItem *___qtablewidgetitem1 = tableWidget->horizontalHeaderItem(1);
@@ -123,10 +144,13 @@ public:
         ___qtablewidgetitem2->setText(QCoreApplication::translate("MainWindow", "Category", nullptr));
         QTableWidgetItem *___qtablewidgetitem3 = tableWidget->horizontalHeaderItem(3);
         ___qtablewidgetitem3->setText(QCoreApplication::translate("MainWindow", "Amount", nullptr));
-        btnDelete->setText(QCoreApplication::translate("MainWindow", "Delete", nullptr));
         btnChart->setText(QCoreApplication::translate("MainWindow", "Show Chart", nullptr));
         btnAPI->setText(QCoreApplication::translate("MainWindow", "Cek Kurs USD", nullptr));
+        btnAI->setText(QCoreApplication::translate("MainWindow", "AI Summary", nullptr));
+        labelBalance->setText(QCoreApplication::translate("MainWindow", "Total Saldo: Rp 0", nullptr));
         labelKurs->setText(QCoreApplication::translate("MainWindow", "Kurs: -", nullptr));
+        inputChat->setPlaceholderText(QCoreApplication::translate("MainWindow", "Tanya AI Finance...", nullptr));
+        btnChat->setText(QCoreApplication::translate("MainWindow", "Kirim", nullptr));
     } // retranslateUi
 
 };

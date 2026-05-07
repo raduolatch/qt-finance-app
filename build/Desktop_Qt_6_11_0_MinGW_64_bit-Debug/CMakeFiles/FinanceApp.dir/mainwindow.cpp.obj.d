@@ -459,6 +459,10 @@ CMakeFiles/FinanceApp.dir/mainwindow.cpp.obj: \
  C:/qt/6.11.0/mingw_64/include/QtCore/QIODevice \
  C:/qt/6.11.0/mingw_64/include/QtNetwork/QNetworkRequest \
  C:/qt/6.11.0/mingw_64/include/QtNetwork/QNetworkAccessManager \
+ C:/qt/6.11.0/mingw_64/include/QtTextToSpeech/QTextToSpeech \
+ C:/qt/6.11.0/mingw_64/include/QtTextToSpeech/qtexttospeech.h \
+ C:/qt/6.11.0/mingw_64/include/QtTextToSpeech/qtexttospeech_global.h \
+ C:/qt/6.11.0/mingw_64/include/QtTextToSpeech/qvoice.h \
  C:\apkproject\FinanceApp\chartdialog.h \
  C:/qt/6.11.0/mingw_64/include/QtWidgets/QDialog \
  C:/qt/6.11.0/mingw_64/include/QtWidgets/qdialog.h \
@@ -588,6 +592,8 @@ CMakeFiles/FinanceApp.dir/mainwindow.cpp.obj: \
  C:/qt/6.11.0/mingw_64/include/QtWidgets/QTableWidget \
  C:/qt/6.11.0/mingw_64/include/QtWidgets/qtablewidget.h \
  C:/qt/6.11.0/mingw_64/include/QtWidgets/qtableview.h \
+ C:/qt/6.11.0/mingw_64/include/QtWidgets/QTextEdit \
+ C:/qt/6.11.0/mingw_64/include/QtWidgets/qtextedit.h \
  C:/qt/6.11.0/mingw_64/include/QtWidgets/QWidget \
  C:/qt/6.11.0/mingw_64/include/QtWidgets/QTableWidgetItem \
  C:/qt/6.11.0/mingw_64/include/QtWidgets/QMessageBox \
@@ -607,4 +613,6 @@ CMakeFiles/FinanceApp.dir/mainwindow.cpp.obj: \
  C:/qt/6.11.0/mingw_64/include/QtCore/qcborvalue.h \
  C:/qt/6.11.0/mingw_64/include/QtCore/qcborcommon.h \
  C:/qt/6.11.0/mingw_64/include/QtCore/quuid.h \
- C:/qt/6.11.0/mingw_64/include/QtGui/QRegularExpressionValidator
+ C:/qt/6.11.0/mingw_64/include/QtGui/QRegularExpressionValidator \
+ C:/qt/6.11.0/mingw_64/include/QtWidgets/QScrollBar \
+ C:/qt/6.11.0/mingw_64/include/QtWidgets/qscrollbar.h

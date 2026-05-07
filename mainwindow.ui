@@ -1,192 +1,310 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
+
  <class>MainWindow</class>
+
  <widget class="QMainWindow" name="MainWindow">
+
   <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>800</width>
-    <height>600</height>
+    <width>820</width>
+    <height>620</height>
    </rect>
   </property>
+
   <property name="windowTitle">
-   <string>MainWindow</string>
+   <string>Finance App</string>
   </property>
+
+  <!-- CENTRAL WIDGET -->
   <widget class="QWidget" name="centralwidget">
+
+   <!-- DATE -->
+   <widget class="QDateEdit" name="inputDate">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>30</y>
+      <width>110</width>
+      <height>35</height>
+     </rect>
+    </property>
+   </widget>
+
+   <!-- TYPE -->
    <widget class="QComboBox" name="comboType">
     <property name="geometry">
      <rect>
-      <x>130</x>
-      <y>70</y>
-      <width>151</width>
-      <height>41</height>
+      <x>140</x>
+      <y>30</y>
+      <width>140</width>
+      <height>35</height>
      </rect>
     </property>
-    <property name="maxVisibleItems">
-     <number>10</number>
-    </property>
+
     <item>
      <property name="text">
       <string>Income</string>
      </property>
     </item>
+
     <item>
      <property name="text">
       <string>Expense</string>
      </property>
     </item>
    </widget>
-   <widget class="QLineEdit" name="inputAmount">
-    <property name="geometry">
-     <rect>
-      <x>430</x>
-      <y>80</y>
-      <width>131</width>
-      <height>31</height>
-     </rect>
-    </property>
-   </widget>
+
+   <!-- CATEGORY -->
    <widget class="QLineEdit" name="inputCategory">
     <property name="geometry">
      <rect>
       <x>290</x>
-      <y>80</y>
-      <width>131</width>
-      <height>31</height>
+      <y>30</y>
+      <width>160</width>
+      <height>35</height>
      </rect>
     </property>
-    <property name="text">
-     <string/>
+
+    <property name="placeholderText">
+     <string>Category</string>
     </property>
    </widget>
+
+   <!-- AMOUNT -->
+   <widget class="QLineEdit" name="inputAmount">
+    <property name="geometry">
+     <rect>
+      <x>460</x>
+      <y>30</y>
+      <width>140</width>
+      <height>35</height>
+     </rect>
+    </property>
+
+    <property name="placeholderText">
+     <string>Amount</string>
+    </property>
+   </widget>
+
+   <!-- ADD BUTTON -->
    <widget class="QPushButton" name="btnAdd">
     <property name="geometry">
      <rect>
-      <x>570</x>
-      <y>80</y>
-      <width>121</width>
-      <height>31</height>
+      <x>610</x>
+      <y>30</y>
+      <width>90</width>
+      <height>35</height>
      </rect>
     </property>
+
     <property name="text">
      <string>Add</string>
     </property>
    </widget>
-   <widget class="QLabel" name="labelBalance">
+
+   <!-- DELETE BUTTON -->
+   <widget class="QPushButton" name="btnDelete">
     <property name="geometry">
      <rect>
-      <x>80</x>
-      <y>460</y>
-      <width>181</width>
-      <height>31</height>
+      <x>710</x>
+      <y>30</y>
+      <width>90</width>
+      <height>35</height>
      </rect>
     </property>
+
     <property name="text">
-     <string>Total Saldo: Rp 0</string>
+     <string>Delete</string>
     </property>
    </widget>
+
+   <!-- TABLE -->
    <widget class="QTableWidget" name="tableWidget">
     <property name="geometry">
      <rect>
-      <x>85</x>
-      <y>120</y>
-      <width>581</width>
-      <height>281</height>
+      <x>20</x>
+      <y>90</y>
+      <width>780</width>
+      <height>300</height>
      </rect>
     </property>
-    <property name="styleSheet">
-     <string notr="true"/>
-    </property>
+
     <property name="columnCount">
      <number>4</number>
     </property>
+
     <column>
      <property name="text">
       <string>Date</string>
      </property>
     </column>
+
     <column>
      <property name="text">
       <string>Type</string>
      </property>
     </column>
+
     <column>
      <property name="text">
       <string>Category</string>
      </property>
     </column>
+
     <column>
      <property name="text">
       <string>Amount</string>
      </property>
     </column>
+
    </widget>
-   <widget class="QPushButton" name="btnDelete">
-    <property name="geometry">
-     <rect>
-      <x>700</x>
-      <y>80</y>
-      <width>91</width>
-      <height>31</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Delete</string>
-    </property>
-   </widget>
+
+   <!-- SHOW CHART -->
    <widget class="QPushButton" name="btnChart">
     <property name="geometry">
      <rect>
-      <x>130</x>
+      <x>20</x>
       <y>410</y>
-      <width>211</width>
-      <height>51</height>
+      <width>180</width>
+      <height>45</height>
      </rect>
     </property>
+
     <property name="text">
      <string>Show Chart</string>
     </property>
    </widget>
-   <widget class="QDateEdit" name="inputDate">
-    <property name="geometry">
-     <rect>
-      <x>0</x>
-      <y>70</y>
-      <width>121</width>
-      <height>41</height>
-     </rect>
-    </property>
-   </widget>
+
+   <!-- API BUTTON -->
    <widget class="QPushButton" name="btnAPI">
     <property name="geometry">
      <rect>
-      <x>430</x>
+      <x>220</x>
       <y>410</y>
-      <width>191</width>
-      <height>51</height>
+      <width>180</width>
+      <height>45</height>
      </rect>
     </property>
+
     <property name="text">
      <string>Cek Kurs USD</string>
     </property>
    </widget>
+
+   <!-- AI SUMMARY BUTTON -->
+   <widget class="QPushButton" name="btnAI">
+    <property name="geometry">
+     <rect>
+      <x>420</x>
+      <y>410</y>
+      <width>180</width>
+      <height>45</height>
+     </rect>
+    </property>
+
+    <property name="text">
+     <string>AI Summary</string>
+    </property>
+   </widget>
+
+   <!-- BALANCE -->
+   <widget class="QLabel" name="labelBalance">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>480</y>
+      <width>350</width>
+      <height>30</height>
+     </rect>
+    </property>
+
+    <property name="text">
+     <string>Total Saldo: Rp 0</string>
+    </property>
+
+    <property name="styleSheet">
+     <string notr="true">
+font-size: 14pt;
+font-weight: bold;
+     </string>
+    </property>
+   </widget>
+
+   <!-- KURS -->
    <widget class="QLabel" name="labelKurs">
     <property name="geometry">
      <rect>
-      <x>80</x>
-      <y>490</y>
-      <width>171</width>
-      <height>31</height>
+      <x>20</x>
+      <y>520</y>
+      <width>250</width>
+      <height>25</height>
      </rect>
     </property>
+
     <property name="text">
      <string>Kurs: -</string>
     </property>
    </widget>
+
+   <!-- CHAT INPUT -->
+   <widget class="QLineEdit" name="inputChat">
+    <property name="geometry">
+     <rect>
+      <x>420</x>
+      <y>480</y>
+      <width>260</width>
+      <height>35</height>
+     </rect>
+    </property>
+
+    <property name="placeholderText">
+     <string>Tanya AI Finance...</string>
+    </property>
+   </widget>
+
+   <!-- CHAT BUTTON -->
+   <widget class="QPushButton" name="btnChat">
+    <property name="geometry">
+     <rect>
+      <x>690</x>
+      <y>480</y>
+      <width>100</width>
+      <height>35</height>
+     </rect>
+    </property>
+
+    <property name="text">
+     <string>Kirim</string>
+    </property>
+   </widget>
+
+   <!-- CHAT OUTPUT -->
+   <widget class="QTextEdit" name="chatOutput">
+    <property name="geometry">
+     <rect>
+      <x>420</x>
+      <y>525</y>
+      <width>370</width>
+      <height>60</height>
+     </rect>
+    </property>
+
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+   </widget>
+
   </widget>
+
+  <!-- STATUS BAR -->
   <widget class="QStatusBar" name="statusbar"/>
+
  </widget>
+
  <resources/>
  <connections/>
+
 </ui>

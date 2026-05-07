@@ -268,6 +268,10 @@ CMakeFiles/FinanceApp.dir/FinanceApp_autogen/mocs_compilation.cpp.obj
  C:/qt/6.11.0/mingw_64/include/QtNetwork/qtnetwork-config.h
  C:/qt/6.11.0/mingw_64/include/QtNetwork/qtnetworkexports.h
  C:/qt/6.11.0/mingw_64/include/QtNetwork/qtnetworkglobal.h
+ C:/qt/6.11.0/mingw_64/include/QtTextToSpeech/QTextToSpeech
+ C:/qt/6.11.0/mingw_64/include/QtTextToSpeech/qtexttospeech.h
+ C:/qt/6.11.0/mingw_64/include/QtTextToSpeech/qtexttospeech_global.h
+ C:/qt/6.11.0/mingw_64/include/QtTextToSpeech/qvoice.h
  C:/qt/6.11.0/mingw_64/include/QtWidgets/QComboBox
  C:/qt/6.11.0/mingw_64/include/QtWidgets/QDateEdit
  C:/qt/6.11.0/mingw_64/include/QtWidgets/QDialog
@@ -1317,6 +1321,10 @@ CMakeFiles/FinanceApp.dir/main.cpp.obj
  C:/qt/6.11.0/mingw_64/include/QtNetwork/qtnetwork-config.h
  C:/qt/6.11.0/mingw_64/include/QtNetwork/qtnetworkexports.h
  C:/qt/6.11.0/mingw_64/include/QtNetwork/qtnetworkglobal.h
+ C:/qt/6.11.0/mingw_64/include/QtTextToSpeech/QTextToSpeech
+ C:/qt/6.11.0/mingw_64/include/QtTextToSpeech/qtexttospeech.h
+ C:/qt/6.11.0/mingw_64/include/QtTextToSpeech/qtexttospeech_global.h
+ C:/qt/6.11.0/mingw_64/include/QtTextToSpeech/qvoice.h
  C:/qt/6.11.0/mingw_64/include/QtWidgets/QApplication
  C:/qt/6.11.0/mingw_64/include/QtWidgets/QComboBox
  C:/qt/6.11.0/mingw_64/include/QtWidgets/QDateEdit
@@ -1873,6 +1881,10 @@ CMakeFiles/FinanceApp.dir/mainwindow.cpp.obj
  C:/qt/6.11.0/mingw_64/include/QtNetwork/qtnetwork-config.h
  C:/qt/6.11.0/mingw_64/include/QtNetwork/qtnetworkexports.h
  C:/qt/6.11.0/mingw_64/include/QtNetwork/qtnetworkglobal.h
+ C:/qt/6.11.0/mingw_64/include/QtTextToSpeech/QTextToSpeech
+ C:/qt/6.11.0/mingw_64/include/QtTextToSpeech/qtexttospeech.h
+ C:/qt/6.11.0/mingw_64/include/QtTextToSpeech/qtexttospeech_global.h
+ C:/qt/6.11.0/mingw_64/include/QtTextToSpeech/qvoice.h
  C:/qt/6.11.0/mingw_64/include/QtWidgets/QApplication
  C:/qt/6.11.0/mingw_64/include/QtWidgets/QComboBox
  C:/qt/6.11.0/mingw_64/include/QtWidgets/QDateEdit
@@ -1888,10 +1900,12 @@ CMakeFiles/FinanceApp.dir/mainwindow.cpp.obj
  C:/qt/6.11.0/mingw_64/include/QtWidgets/QMessageBox
  C:/qt/6.11.0/mingw_64/include/QtWidgets/QPushButton
  C:/qt/6.11.0/mingw_64/include/QtWidgets/QRadioButton
+ C:/qt/6.11.0/mingw_64/include/QtWidgets/QScrollBar
  C:/qt/6.11.0/mingw_64/include/QtWidgets/QStatusBar
  C:/qt/6.11.0/mingw_64/include/QtWidgets/QTabWidget
  C:/qt/6.11.0/mingw_64/include/QtWidgets/QTableWidget
  C:/qt/6.11.0/mingw_64/include/QtWidgets/QTableWidgetItem
+ C:/qt/6.11.0/mingw_64/include/QtWidgets/QTextEdit
  C:/qt/6.11.0/mingw_64/include/QtWidgets/QVBoxLayout
  C:/qt/6.11.0/mingw_64/include/QtWidgets/QWidget
  C:/qt/6.11.0/mingw_64/include/QtWidgets/qabstractbutton.h
@@ -1925,6 +1939,7 @@ CMakeFiles/FinanceApp.dir/mainwindow.cpp.obj
  C:/qt/6.11.0/mingw_64/include/QtWidgets/qradiobutton.h
  C:/qt/6.11.0/mingw_64/include/QtWidgets/qrubberband.h
  C:/qt/6.11.0/mingw_64/include/QtWidgets/qscrollarea.h
+ C:/qt/6.11.0/mingw_64/include/QtWidgets/qscrollbar.h
  C:/qt/6.11.0/mingw_64/include/QtWidgets/qsizepolicy.h
  C:/qt/6.11.0/mingw_64/include/QtWidgets/qslider.h
  C:/qt/6.11.0/mingw_64/include/QtWidgets/qstatusbar.h
@@ -1934,6 +1949,7 @@ CMakeFiles/FinanceApp.dir/mainwindow.cpp.obj
  C:/qt/6.11.0/mingw_64/include/QtWidgets/qtableview.h
  C:/qt/6.11.0/mingw_64/include/QtWidgets/qtablewidget.h
  C:/qt/6.11.0/mingw_64/include/QtWidgets/qtabwidget.h
+ C:/qt/6.11.0/mingw_64/include/QtWidgets/qtextedit.h
  C:/qt/6.11.0/mingw_64/include/QtWidgets/qtwidgets-config.h
  C:/qt/6.11.0/mingw_64/include/QtWidgets/qtwidgetsexports.h
  C:/qt/6.11.0/mingw_64/include/QtWidgets/qtwidgetsglobal.h

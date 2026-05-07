@@ -258,6 +258,10 @@ C:/apkproject/FinanceApp/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/FinanceApp_a
   C:/qt/6.11.0/mingw_64/include/QtNetwork/qtnetwork-config.h \
   C:/qt/6.11.0/mingw_64/include/QtNetwork/qtnetworkexports.h \
   C:/qt/6.11.0/mingw_64/include/QtNetwork/qtnetworkglobal.h \
+  C:/qt/6.11.0/mingw_64/include/QtTextToSpeech/QTextToSpeech \
+  C:/qt/6.11.0/mingw_64/include/QtTextToSpeech/qtexttospeech.h \
+  C:/qt/6.11.0/mingw_64/include/QtTextToSpeech/qtexttospeech_global.h \
+  C:/qt/6.11.0/mingw_64/include/QtTextToSpeech/qvoice.h \
   C:/qt/6.11.0/mingw_64/include/QtWidgets/QComboBox \
   C:/qt/6.11.0/mingw_64/include/QtWidgets/QDateEdit \
   C:/qt/6.11.0/mingw_64/include/QtWidgets/QDialog \
