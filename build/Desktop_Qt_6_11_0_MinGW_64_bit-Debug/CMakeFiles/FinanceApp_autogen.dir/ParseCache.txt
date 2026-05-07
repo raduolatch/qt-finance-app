@@ -526,6 +526,7 @@ C:/apkproject/FinanceApp/mainwindow.h
  mdp:C:/qt/6.11.0/mingw_64/include/QtCore/QMargins
  mdp:C:/qt/6.11.0/mingw_64/include/QtCore/QMetaType
  mdp:C:/qt/6.11.0/mingw_64/include/QtCore/QObject
+ mdp:C:/qt/6.11.0/mingw_64/include/QtCore/QProcess
  mdp:C:/qt/6.11.0/mingw_64/include/QtCore/QRect
  mdp:C:/qt/6.11.0/mingw_64/include/QtCore/QSharedDataPointer
  mdp:C:/qt/6.11.0/mingw_64/include/QtCore/QSize
@@ -624,6 +625,7 @@ C:/apkproject/FinanceApp/mainwindow.h
  mdp:C:/qt/6.11.0/mingw_64/include/QtCore/qoverload.h
  mdp:C:/qt/6.11.0/mingw_64/include/QtCore/qpair.h
  mdp:C:/qt/6.11.0/mingw_64/include/QtCore/qpoint.h
+ mdp:C:/qt/6.11.0/mingw_64/include/QtCore/qprocess.h
  mdp:C:/qt/6.11.0/mingw_64/include/QtCore/qprocessordetection.h
  mdp:C:/qt/6.11.0/mingw_64/include/QtCore/qrect.h
  mdp:C:/qt/6.11.0/mingw_64/include/QtCore/qrefcount.h

@@ -4,6 +4,7 @@
 #include <QNetworkAccessManager>
 #include <QNetworkReply>
 #include <QTextToSpeech>
+#include <QProcess>
 #include "chartdialog.h"
 
 QT_BEGIN_NAMESPACE
@@ -39,6 +40,9 @@ private slots:
     // AI CHATBOT
     void processAIChat();
 
+    // VOICE RECOGNITION
+    void processVoice();
+
 private:
 
     Ui::MainWindow *ui;
@@ -46,7 +50,7 @@ private:
     // NETWORK
     QNetworkAccessManager *networkManager;
 
-    // VOICE AI
+    // TEXT TO SPEECH
     QTextToSpeech *speaker;
 
     // BALANCE
@@ -63,7 +67,7 @@ private:
     // CHATBOT
     QString getAIResponse(QString question);
 
-    // VOICE
+    // VOICE OUTPUT
     void speak(QString text);
 
     // DATA

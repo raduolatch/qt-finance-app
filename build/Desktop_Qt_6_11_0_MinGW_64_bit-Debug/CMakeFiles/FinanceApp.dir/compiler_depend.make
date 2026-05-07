@@ -36,6 +36,7 @@ CMakeFiles/FinanceApp.dir/FinanceApp_autogen/mocs_compilation.cpp.obj: FinanceAp
   C:/qt/6.11.0/mingw_64/include/QtCore/QMargins \
   C:/qt/6.11.0/mingw_64/include/QtCore/QMetaType \
   C:/qt/6.11.0/mingw_64/include/QtCore/QObject \
+  C:/qt/6.11.0/mingw_64/include/QtCore/QProcess \
   C:/qt/6.11.0/mingw_64/include/QtCore/QRect \
   C:/qt/6.11.0/mingw_64/include/QtCore/QSharedDataPointer \
   C:/qt/6.11.0/mingw_64/include/QtCore/QSize \
@@ -135,6 +136,7 @@ CMakeFiles/FinanceApp.dir/FinanceApp_autogen/mocs_compilation.cpp.obj: FinanceAp
   C:/qt/6.11.0/mingw_64/include/QtCore/qoverload.h \
   C:/qt/6.11.0/mingw_64/include/QtCore/qpair.h \
   C:/qt/6.11.0/mingw_64/include/QtCore/qpoint.h \
+  C:/qt/6.11.0/mingw_64/include/QtCore/qprocess.h \
   C:/qt/6.11.0/mingw_64/include/QtCore/qprocessordetection.h \
   C:/qt/6.11.0/mingw_64/include/QtCore/qrect.h \
   C:/qt/6.11.0/mingw_64/include/QtCore/qrefcount.h \
@@ -1090,6 +1092,7 @@ CMakeFiles/FinanceApp.dir/main.cpp.obj: C:/apkproject/FinanceApp/main.cpp \
   C:/qt/6.11.0/mingw_64/include/QtCore/QMargins \
   C:/qt/6.11.0/mingw_64/include/QtCore/QMetaType \
   C:/qt/6.11.0/mingw_64/include/QtCore/QObject \
+  C:/qt/6.11.0/mingw_64/include/QtCore/QProcess \
   C:/qt/6.11.0/mingw_64/include/QtCore/QRect \
   C:/qt/6.11.0/mingw_64/include/QtCore/QSharedDataPointer \
   C:/qt/6.11.0/mingw_64/include/QtCore/QSize \
@@ -1189,6 +1192,7 @@ CMakeFiles/FinanceApp.dir/main.cpp.obj: C:/apkproject/FinanceApp/main.cpp \
   C:/qt/6.11.0/mingw_64/include/QtCore/qoverload.h \
   C:/qt/6.11.0/mingw_64/include/QtCore/qpair.h \
   C:/qt/6.11.0/mingw_64/include/QtCore/qpoint.h \
+  C:/qt/6.11.0/mingw_64/include/QtCore/qprocess.h \
   C:/qt/6.11.0/mingw_64/include/QtCore/qprocessordetection.h \
   C:/qt/6.11.0/mingw_64/include/QtCore/qrect.h \
   C:/qt/6.11.0/mingw_64/include/QtCore/qrefcount.h \
@@ -1637,6 +1641,7 @@ CMakeFiles/FinanceApp.dir/mainwindow.cpp.obj: C:/apkproject/FinanceApp/mainwindo
   C:/qt/6.11.0/mingw_64/include/QtCore/QMargins \
   C:/qt/6.11.0/mingw_64/include/QtCore/QMetaType \
   C:/qt/6.11.0/mingw_64/include/QtCore/QObject \
+  C:/qt/6.11.0/mingw_64/include/QtCore/QProcess \
   C:/qt/6.11.0/mingw_64/include/QtCore/QRect \
   C:/qt/6.11.0/mingw_64/include/QtCore/QSharedDataPointer \
   C:/qt/6.11.0/mingw_64/include/QtCore/QSize \
@@ -1745,6 +1750,7 @@ CMakeFiles/FinanceApp.dir/mainwindow.cpp.obj: C:/apkproject/FinanceApp/mainwindo
   C:/qt/6.11.0/mingw_64/include/QtCore/qoverload.h \
   C:/qt/6.11.0/mingw_64/include/QtCore/qpair.h \
   C:/qt/6.11.0/mingw_64/include/QtCore/qpoint.h \
+  C:/qt/6.11.0/mingw_64/include/QtCore/qprocess.h \
   C:/qt/6.11.0/mingw_64/include/QtCore/qprocessordetection.h \
   C:/qt/6.11.0/mingw_64/include/QtCore/qrect.h \
   C:/qt/6.11.0/mingw_64/include/QtCore/qrefcount.h \
@@ -2376,6 +2382,8 @@ C:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/cxxa
 
 C:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/uses_allocator.h:
 
+C:/qt/6.11.0/mingw_64/include/QtCore/QProcess:
+
 C:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/type_traits:
 
 C:/qt/6.11.0/mingw_64/include/QtCore/QRect:
@@ -2680,6 +2688,8 @@ C:/qt/6.11.0/mingw_64/include/QtCore/qoverload.h:
 
 C:/qt/6.11.0/mingw_64/include/QtCore/qpair.h:
 
+C:/qt/6.11.0/mingw_64/include/QtCore/qprocess.h:
+
 C:/qt/6.11.0/mingw_64/include/QtCore/qprocessordetection.h:
 
 C:/qt/6.11.0/mingw_64/include/QtCore/qrect.h:
@@ -2826,13 +2836,13 @@ C:/qt/6.11.0/mingw_64/include/QtCore/qutf8stringview.h:
 
 C:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/atomic_lockfree_defines.h:
 
-C:/qt/6.11.0/mingw_64/include/QtCore/qvariant.h:
-
-C:/qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/ctype.h:
-
 C:/qt/6.11.0/mingw_64/include/QtWidgets/QTextEdit:
 
 C:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/pstl/execution_defs.h:
+
+C:/qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/ctype.h:
+
+C:/qt/6.11.0/mingw_64/include/QtCore/qvariant.h:
 
 C:/qt/6.11.0/mingw_64/include/QtCore/qvarlengtharray.h:
 

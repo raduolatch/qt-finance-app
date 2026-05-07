@@ -25,6 +25,7 @@ qt_add_executable(FinanceApp
 
     chartdialog.cpp
     chartdialog.h
+    speech.py
 )
 
 qt_add_translations(

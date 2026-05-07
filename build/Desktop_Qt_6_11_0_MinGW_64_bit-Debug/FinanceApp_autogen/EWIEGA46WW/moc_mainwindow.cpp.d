@@ -33,6 +33,7 @@ C:/apkproject/FinanceApp/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/FinanceApp_a
   C:/qt/6.11.0/mingw_64/include/QtCore/QMargins \
   C:/qt/6.11.0/mingw_64/include/QtCore/QMetaType \
   C:/qt/6.11.0/mingw_64/include/QtCore/QObject \
+  C:/qt/6.11.0/mingw_64/include/QtCore/QProcess \
   C:/qt/6.11.0/mingw_64/include/QtCore/QRect \
   C:/qt/6.11.0/mingw_64/include/QtCore/QSharedDataPointer \
   C:/qt/6.11.0/mingw_64/include/QtCore/QSize \
@@ -131,6 +132,7 @@ C:/apkproject/FinanceApp/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/FinanceApp_a
   C:/qt/6.11.0/mingw_64/include/QtCore/qoverload.h \
   C:/qt/6.11.0/mingw_64/include/QtCore/qpair.h \
   C:/qt/6.11.0/mingw_64/include/QtCore/qpoint.h \
+  C:/qt/6.11.0/mingw_64/include/QtCore/qprocess.h \
   C:/qt/6.11.0/mingw_64/include/QtCore/qprocessordetection.h \
   C:/qt/6.11.0/mingw_64/include/QtCore/qrect.h \
   C:/qt/6.11.0/mingw_64/include/QtCore/qrefcount.h \

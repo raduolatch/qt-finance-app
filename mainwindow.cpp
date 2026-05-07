@@ -14,7 +14,6 @@
 #include <QRegularExpressionValidator>
 #include <QScrollBar>
 #include <QTextToSpeech>
-
 #include "chartdialog.h"
 
 double currentRate = 0;
@@ -83,6 +82,11 @@ MainWindow::MainWindow(QWidget *parent)
         "color:white;"
         "font-weight:bold;"
         );
+
+    connect(ui->btnVoice,
+            &QPushButton::clicked,
+            this,
+            &MainWindow::processVoice);
 
     // TABLE
     ui->tableWidget->setAlternatingRowColors(true);
@@ -724,6 +728,37 @@ void MainWindow::processAIChat()
             );
 
     ui->inputChat->clear();
+}
+
+void MainWindow::processVoice()
+{
+    QProcess process;
+
+    process.start(
+        "python",
+        QStringList() << "speech.py"
+        );
+
+    process.waitForFinished();
+
+    QString result =
+        process.readAllStandardOutput()
+            .trimmed();
+
+    if (result.isEmpty())
+    {
+        QMessageBox::warning(
+            this,
+            "Voice",
+            "Suara tidak dikenali!"
+            );
+
+        return;
+    }
+
+    ui->inputChat->setText(result);
+
+    processAIChat();
 }
 
 // AI RESPONSE

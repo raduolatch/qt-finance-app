@@ -55,6 +55,7 @@
       <string>Expense</string>
      </property>
     </item>
+
    </widget>
 
    <!-- CATEGORY -->
@@ -123,6 +124,7 @@
 
    <!-- TABLE -->
    <widget class="QTableWidget" name="tableWidget">
+
     <property name="geometry">
      <rect>
       <x>20</x>
@@ -162,8 +164,9 @@
 
    </widget>
 
-   <!-- SHOW CHART -->
+   <!-- CHART BUTTON -->
    <widget class="QPushButton" name="btnChart">
+
     <property name="geometry">
      <rect>
       <x>20</x>
@@ -176,10 +179,12 @@
     <property name="text">
      <string>Show Chart</string>
     </property>
+
    </widget>
 
    <!-- API BUTTON -->
    <widget class="QPushButton" name="btnAPI">
+
     <property name="geometry">
      <rect>
       <x>220</x>
@@ -192,10 +197,12 @@
     <property name="text">
      <string>Cek Kurs USD</string>
     </property>
+
    </widget>
 
-   <!-- AI SUMMARY BUTTON -->
+   <!-- AI SUMMARY -->
    <widget class="QPushButton" name="btnAI">
+
     <property name="geometry">
      <rect>
       <x>420</x>
@@ -208,10 +215,12 @@
     <property name="text">
      <string>AI Summary</string>
     </property>
+
    </widget>
 
    <!-- BALANCE -->
    <widget class="QLabel" name="labelBalance">
+
     <property name="geometry">
      <rect>
       <x>20</x>
@@ -231,10 +240,12 @@ font-size: 14pt;
 font-weight: bold;
      </string>
     </property>
+
    </widget>
 
    <!-- KURS -->
    <widget class="QLabel" name="labelKurs">
+
     <property name="geometry">
      <rect>
       <x>20</x>
@@ -247,10 +258,12 @@ font-weight: bold;
     <property name="text">
      <string>Kurs: -</string>
     </property>
+
    </widget>
 
    <!-- CHAT INPUT -->
    <widget class="QLineEdit" name="inputChat">
+
     <property name="geometry">
      <rect>
       <x>420</x>
@@ -263,10 +276,12 @@ font-weight: bold;
     <property name="placeholderText">
      <string>Tanya AI Finance...</string>
     </property>
+
    </widget>
 
    <!-- CHAT BUTTON -->
    <widget class="QPushButton" name="btnChat">
+
     <property name="geometry">
      <rect>
       <x>690</x>
@@ -279,15 +294,35 @@ font-weight: bold;
     <property name="text">
      <string>Kirim</string>
     </property>
+
+   </widget>
+
+   <!-- VOICE BUTTON -->
+   <widget class="QPushButton" name="btnVoice">
+
+    <property name="geometry">
+     <rect>
+      <x>690</x>
+      <y>525</y>
+      <width>100</width>
+      <height>35</height>
+     </rect>
+    </property>
+
+    <property name="text">
+     <string>🎤 Voice</string>
+    </property>
+
    </widget>
 
    <!-- CHAT OUTPUT -->
    <widget class="QTextEdit" name="chatOutput">
+
     <property name="geometry">
      <rect>
       <x>420</x>
       <y>525</y>
-      <width>370</width>
+      <width>260</width>
       <height>60</height>
      </rect>
     </property>
@@ -295,6 +330,7 @@ font-weight: bold;
     <property name="readOnly">
      <bool>true</bool>
     </property>
+
    </widget>
 
   </widget>

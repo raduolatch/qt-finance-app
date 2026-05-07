@@ -43,6 +43,7 @@ public:
     QLabel *labelKurs;
     QLineEdit *inputChat;
     QPushButton *btnChat;
+    QPushButton *btnVoice;
     QTextEdit *chatOutput;
     QStatusBar *statusbar;
 
@@ -112,9 +113,12 @@ public:
         btnChat = new QPushButton(centralwidget);
         btnChat->setObjectName("btnChat");
         btnChat->setGeometry(QRect(690, 480, 100, 35));
+        btnVoice = new QPushButton(centralwidget);
+        btnVoice->setObjectName("btnVoice");
+        btnVoice->setGeometry(QRect(690, 525, 100, 35));
         chatOutput = new QTextEdit(centralwidget);
         chatOutput->setObjectName("chatOutput");
-        chatOutput->setGeometry(QRect(420, 525, 370, 60));
+        chatOutput->setGeometry(QRect(420, 525, 260, 60));
         chatOutput->setReadOnly(true);
         MainWindow->setCentralWidget(centralwidget);
         statusbar = new QStatusBar(MainWindow);
@@ -151,6 +155,7 @@ public:
         labelKurs->setText(QCoreApplication::translate("MainWindow", "Kurs: -", nullptr));
         inputChat->setPlaceholderText(QCoreApplication::translate("MainWindow", "Tanya AI Finance...", nullptr));
         btnChat->setText(QCoreApplication::translate("MainWindow", "Kirim", nullptr));
+        btnVoice->setText(QCoreApplication::translate("MainWindow", "\360\237\216\244 Voice", nullptr));
     } // retranslateUi
 
 };

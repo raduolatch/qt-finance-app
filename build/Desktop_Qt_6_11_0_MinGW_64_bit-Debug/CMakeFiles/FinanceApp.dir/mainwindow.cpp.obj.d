@@ -463,6 +463,8 @@ CMakeFiles/FinanceApp.dir/mainwindow.cpp.obj: \
  C:/qt/6.11.0/mingw_64/include/QtTextToSpeech/qtexttospeech.h \
  C:/qt/6.11.0/mingw_64/include/QtTextToSpeech/qtexttospeech_global.h \
  C:/qt/6.11.0/mingw_64/include/QtTextToSpeech/qvoice.h \
+ C:/qt/6.11.0/mingw_64/include/QtCore/QProcess \
+ C:/qt/6.11.0/mingw_64/include/QtCore/qprocess.h \
  C:\apkproject\FinanceApp\chartdialog.h \
  C:/qt/6.11.0/mingw_64/include/QtWidgets/QDialog \
  C:/qt/6.11.0/mingw_64/include/QtWidgets/qdialog.h \
