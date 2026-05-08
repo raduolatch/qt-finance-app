@@ -505,6 +505,8 @@ CMakeFiles/FinanceApp.dir/FinanceApp_autogen/mocs_compilation.cpp.obj: \
  C:/qt/6.11.0/mingw_64/include/QtCore/qtmochelpers.h \
  C:/qt/6.11.0/mingw_64/include/QtCore/qtmocconstants.h \
  C:/qt/6.11.0/mingw_64/include/QtCore/q20algorithm.h \
+ C:\apkproject\FinanceApp\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\FinanceApp_autogen\EWIEGA46WW/moc_logindialog.cpp \
+ C:/apkproject/FinanceApp/logindialog.h \
  C:\apkproject\FinanceApp\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\FinanceApp_autogen\EWIEGA46WW/moc_mainwindow.cpp \
  C:/apkproject/FinanceApp/mainwindow.h \
  C:/qt/6.11.0/mingw_64/include/QtWidgets/QMainWindow \
@@ -547,4 +549,6 @@ CMakeFiles/FinanceApp.dir/FinanceApp_autogen/mocs_compilation.cpp.obj: \
  C:/qt/6.11.0/mingw_64/include/QtCore/QProcess \
  C:/qt/6.11.0/mingw_64/include/QtCore/qprocess.h \
  C:/apkproject/FinanceApp/chartdialog.h \
- C:/qt/6.11.0/mingw_64/include/QtNetwork/QSslError
+ C:/qt/6.11.0/mingw_64/include/QtNetwork/QSslError \
+ C:\apkproject\FinanceApp\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\FinanceApp_autogen\EWIEGA46WW/moc_registerdialog.cpp \
+ C:/apkproject/FinanceApp/registerdialog.h

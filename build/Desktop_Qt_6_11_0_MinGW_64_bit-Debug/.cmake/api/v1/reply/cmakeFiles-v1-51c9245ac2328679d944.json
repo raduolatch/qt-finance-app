@@ -1999,6 +1999,11 @@
 			"path" : "C:/qt/Tools/CMake_64/share/cmake-3.30/Modules/GNUInstallDirs.cmake"
 		},
 		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/qt/Tools/CMake_64/share/cmake-3.30/Modules/GNUInstallDirs.cmake"
+		},
+		{
 			"isExternal" : true,
 			"path" : "C:/qt/6.11.0/mingw_64/lib/cmake/Qt6/Qt6ConfigVersion.cmake"
 		},

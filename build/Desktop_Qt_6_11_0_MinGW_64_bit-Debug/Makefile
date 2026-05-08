@@ -323,6 +323,30 @@ chartdialog.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\FinanceApp.dir\build.make CMakeFiles/FinanceApp.dir/chartdialog.cpp.s
 .PHONY : chartdialog.cpp.s
 
+logindialog.obj: logindialog.cpp.obj
+.PHONY : logindialog.obj
+
+# target to build an object file
+logindialog.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\FinanceApp.dir\build.make CMakeFiles/FinanceApp.dir/logindialog.cpp.obj
+.PHONY : logindialog.cpp.obj
+
+logindialog.i: logindialog.cpp.i
+.PHONY : logindialog.i
+
+# target to preprocess a source file
+logindialog.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\FinanceApp.dir\build.make CMakeFiles/FinanceApp.dir/logindialog.cpp.i
+.PHONY : logindialog.cpp.i
+
+logindialog.s: logindialog.cpp.s
+.PHONY : logindialog.s
+
+# target to generate assembly for a file
+logindialog.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\FinanceApp.dir\build.make CMakeFiles/FinanceApp.dir/logindialog.cpp.s
+.PHONY : logindialog.cpp.s
+
 main.obj: main.cpp.obj
 .PHONY : main.obj
 
@@ -371,6 +395,30 @@ mainwindow.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\FinanceApp.dir\build.make CMakeFiles/FinanceApp.dir/mainwindow.cpp.s
 .PHONY : mainwindow.cpp.s
 
+registerdialog.obj: registerdialog.cpp.obj
+.PHONY : registerdialog.obj
+
+# target to build an object file
+registerdialog.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\FinanceApp.dir\build.make CMakeFiles/FinanceApp.dir/registerdialog.cpp.obj
+.PHONY : registerdialog.cpp.obj
+
+registerdialog.i: registerdialog.cpp.i
+.PHONY : registerdialog.i
+
+# target to preprocess a source file
+registerdialog.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\FinanceApp.dir\build.make CMakeFiles/FinanceApp.dir/registerdialog.cpp.i
+.PHONY : registerdialog.cpp.i
+
+registerdialog.s: registerdialog.cpp.s
+.PHONY : registerdialog.s
+
+# target to generate assembly for a file
+registerdialog.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\FinanceApp.dir\build.make CMakeFiles/FinanceApp.dir/registerdialog.cpp.s
+.PHONY : registerdialog.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -399,12 +447,18 @@ help:
 	@echo ... chartdialog.obj
 	@echo ... chartdialog.i
 	@echo ... chartdialog.s
+	@echo ... logindialog.obj
+	@echo ... logindialog.i
+	@echo ... logindialog.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
 	@echo ... mainwindow.obj
 	@echo ... mainwindow.i
 	@echo ... mainwindow.s
+	@echo ... registerdialog.obj
+	@echo ... registerdialog.i
+	@echo ... registerdialog.s
 .PHONY : help
 
 

@@ -9,9 +9,13 @@ FinanceApp_autogen/timestamp: \
 	C:/apkproject/FinanceApp/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/FinanceApp_autogen/moc_predefs.h \
 	C:/apkproject/FinanceApp/chartdialog.cpp \
 	C:/apkproject/FinanceApp/chartdialog.h \
+	C:/apkproject/FinanceApp/logindialog.cpp \
+	C:/apkproject/FinanceApp/logindialog.h \
 	C:/apkproject/FinanceApp/main.cpp \
 	C:/apkproject/FinanceApp/mainwindow.cpp \
 	C:/apkproject/FinanceApp/mainwindow.h \
+	C:/apkproject/FinanceApp/registerdialog.cpp \
+	C:/apkproject/FinanceApp/registerdialog.h \
 	C:/qt/6.11.0/mingw_64/include/QtCharts/QAbstractAxis \
 	C:/qt/6.11.0/mingw_64/include/QtCharts/QAbstractBarSeries \
 	C:/qt/6.11.0/mingw_64/include/QtCharts/QAbstractSeries \
@@ -856,5 +860,7 @@ FinanceApp_autogen/timestamp: \
 	C:/qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/time.h \
 	C:/qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/vadefs.h \
 	C:/qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/wchar.h \
+	C:/apkproject/FinanceApp/logindialog.ui \
 	C:/apkproject/FinanceApp/mainwindow.ui \
+	C:/apkproject/FinanceApp/registerdialog.ui \
 	C:/qt/Tools/CMake_64/bin/cmake.exe

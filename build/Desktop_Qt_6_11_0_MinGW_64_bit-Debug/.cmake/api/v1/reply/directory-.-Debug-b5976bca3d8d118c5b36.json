@@ -17,13 +17,7 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 45,
-				"parent" : 0
-			},
-			{
-				"command" : 0,
-				"file" : 0,
-				"line" : 57,
+				"line" : 52,
 				"parent" : 0
 			}
 		]
@@ -41,12 +35,6 @@
 			"targetId" : "FinanceApp::@6890427a1f51a3e7e1df",
 			"targetIndex" : 0,
 			"type" : "target"
-		},
-		{
-			"backtrace" : 2,
-			"component" : "Unspecified",
-			"scriptFile" : "build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/.qt/deploy_FinanceApp_d6cf785e48.cmake",
-			"type" : "script"
 		}
 	],
 	"paths" : 

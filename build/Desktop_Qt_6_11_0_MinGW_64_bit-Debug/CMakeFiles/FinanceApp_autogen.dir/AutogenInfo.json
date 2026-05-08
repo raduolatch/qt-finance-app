@@ -479,6 +479,7 @@
 		"C:/qt/Tools/CMake_64/share/cmake-3.30/Modules/CMakeFindDependencyMacro.cmake",
 		"C:/qt/6.11.0/mingw_64/lib/cmake/Qt6/Qt6Dependencies.cmake",
 		"C:/qt/Tools/CMake_64/share/cmake-3.30/Modules/GNUInstallDirs.cmake",
+		"C:/qt/Tools/CMake_64/share/cmake-3.30/Modules/GNUInstallDirs.cmake",
 		"C:/qt/6.11.0/mingw_64/lib/cmake/Qt6/Qt6ConfigVersion.cmake",
 		"C:/qt/6.11.0/mingw_64/lib/cmake/Qt6/Qt6ConfigVersionImpl.cmake",
 		"C:/qt/6.11.0/mingw_64/lib/cmake/Qt6/Qt6Config.cmake",
@@ -540,9 +541,21 @@
 			null
 		],
 		[
+			"C:/apkproject/FinanceApp/logindialog.h",
+			"MU",
+			"EWIEGA46WW/moc_logindialog.cpp",
+			null
+		],
+		[
 			"C:/apkproject/FinanceApp/mainwindow.h",
 			"MU",
 			"EWIEGA46WW/moc_mainwindow.cpp",
+			null
+		],
+		[
+			"C:/apkproject/FinanceApp/registerdialog.h",
+			"MU",
+			"EWIEGA46WW/moc_registerdialog.cpp",
 			null
 		]
 	],
@@ -556,7 +569,6 @@
 		"QT_CORE_LIB",
 		"QT_GUI_LIB",
 		"QT_MULTIMEDIA_LIB",
-		"QT_NEEDS_QMAIN",
 		"QT_NETWORK_LIB",
 		"QT_OPENGLWIDGETS_LIB",
 		"QT_OPENGL_LIB",
@@ -633,8 +645,10 @@
 	"SOURCES" : 
 	[
 		[ "C:/apkproject/FinanceApp/chartdialog.cpp", "MU", null ],
+		[ "C:/apkproject/FinanceApp/logindialog.cpp", "MU", null ],
 		[ "C:/apkproject/FinanceApp/main.cpp", "MU", null ],
-		[ "C:/apkproject/FinanceApp/mainwindow.cpp", "MU", null ]
+		[ "C:/apkproject/FinanceApp/mainwindow.cpp", "MU", null ],
+		[ "C:/apkproject/FinanceApp/registerdialog.cpp", "MU", null ]
 	],
 	"UIC_OPTIONS" : [],
 	"UIC_SEARCH_PATHS" : [],

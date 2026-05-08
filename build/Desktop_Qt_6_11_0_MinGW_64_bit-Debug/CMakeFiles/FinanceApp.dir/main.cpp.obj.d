@@ -538,6 +538,7 @@ CMakeFiles/FinanceApp.dir/main.cpp.obj: C:\apkproject\FinanceApp\main.cpp \
  C:/qt/6.11.0/mingw_64/include/QtWidgets/qgroupbox.h \
  C:/qt/6.11.0/mingw_64/include/QtWidgets/QRadioButton \
  C:/qt/6.11.0/mingw_64/include/QtWidgets/qradiobutton.h \
+ C:\apkproject\FinanceApp\logindialog.h \
  C:/qt/6.11.0/mingw_64/include/QtWidgets/QApplication \
  C:/qt/6.11.0/mingw_64/include/QtWidgets/qapplication.h \
  C:/qt/6.11.0/mingw_64/include/QtCore/QLocale \

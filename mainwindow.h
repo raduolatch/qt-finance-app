@@ -64,10 +64,10 @@ private:
     QString generateAISummary();
     QString autoCorrectCategory(QString text);
 
-    // CHATBOT
+    // CHATBOT RESPONSE
     QString getAIResponse(QString question);
 
-    // VOICE OUTPUT
+    // TEXT TO SPEECH
     void speak(QString text);
 
     // DATA

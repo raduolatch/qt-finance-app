@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/FinanceApp_autogen"
+  "FinanceApp_autogen/include/ui_logindialog.h"
   "FinanceApp_autogen/include/ui_mainwindow.h"
+  "FinanceApp_autogen/include/ui_registerdialog.h"
   "FinanceApp_autogen/mocs_compilation.cpp"
   "FinanceApp_autogen/timestamp"
 )

@@ -617,4 +617,6 @@ CMakeFiles/FinanceApp.dir/mainwindow.cpp.obj: \
  C:/qt/6.11.0/mingw_64/include/QtCore/quuid.h \
  C:/qt/6.11.0/mingw_64/include/QtGui/QRegularExpressionValidator \
  C:/qt/6.11.0/mingw_64/include/QtWidgets/QScrollBar \
- C:/qt/6.11.0/mingw_64/include/QtWidgets/qscrollbar.h
+ C:/qt/6.11.0/mingw_64/include/QtWidgets/qscrollbar.h \
+ C:/qt/6.11.0/mingw_64/include/QtCore/QDebug \
+ C:/qt/6.11.0/mingw_64/include/QtCore/QCoreApplication

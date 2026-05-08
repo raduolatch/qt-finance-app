@@ -15,6 +15,9 @@
 #include <QScrollBar>
 #include <QTextToSpeech>
 #include "chartdialog.h"
+#include <QProcess>
+#include <QDebug>
+#include <QCoreApplication>
 
 double currentRate = 0;
 
@@ -135,6 +138,10 @@ MainWindow::MainWindow(QWidget *parent)
             &QLineEdit::returnPressed,
             this,
             &MainWindow::processAIChat);
+    connect(ui->btnVoice,
+            &QPushButton::clicked,
+            this,
+            &MainWindow::processVoice);
 
     // NETWORK
     networkManager =
@@ -732,20 +739,47 @@ void MainWindow::processAIChat()
 
 void MainWindow::processVoice()
 {
+    QMessageBox::information(
+        this,
+        "Voice Assistant",
+        "Setelah tekan OK, tunggu 1 detik lalu bicara"
+        );
+
     QProcess process;
 
+    // lokasi folder project
+    process.setWorkingDirectory(
+        "C:/apkproject/FinanceApp"
+        );
+
+    // jalankan python
     process.start(
         "python",
         QStringList() << "speech.py"
         );
 
-    process.waitForFinished();
+    // tunggu python selesai
+    process.waitForFinished(-1);
 
-    QString result =
-        process.readAllStandardOutput()
-            .trimmed();
+    QString output =
+        process.readAllStandardOutput();
 
-    if (result.isEmpty())
+    QString error =
+        process.readAllStandardError();
+
+    qDebug() << "OUTPUT =" << output;
+    qDebug() << "ERROR =" << error;
+
+    output = output.trimmed();
+
+    // hapus text bawaan python
+    output.remove("Silakan bicara...");
+    output = output.trimmed();
+
+    // kalau gagal
+    if (output.isEmpty()
+        || output.contains("tidak dikenali")
+        || output.contains("Tidak ada suara"))
     {
         QMessageBox::warning(
             this,
@@ -756,8 +790,10 @@ void MainWindow::processVoice()
         return;
     }
 
-    ui->inputChat->setText(result);
+    // masukkan hasil suara ke chat
+    ui->inputChat->setText(output);
 
+    // kirim ke AI
     processAIChat();
 }
 

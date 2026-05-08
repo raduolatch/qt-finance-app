@@ -347,7 +347,6 @@ set(CMAKE_MAKEFILE_PRODUCTS
   ".qt/rcc/FinanceApp_translations.qrc"
   "CMakeFiles/FinanceApp_autogen.dir/AutogenInfo.json"
   ".qt/QtDeploySupport.cmake"
-  ".qt/deploy_FinanceApp_d6cf785e48.cmake"
   ".qt/QtDeployTargets.cmake"
   ".lupdate/FinanceApp_lupdate_project.cmake"
   "CMakeFiles/CMakeDirectoryInformation.cmake"
