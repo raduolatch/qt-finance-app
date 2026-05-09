@@ -2,6 +2,7 @@
 #include "ui_mainwindow.h"
 #include "chartdialog.h"
 #include "database.h"
+
 #include <QValidator>
 #include <QTableWidgetItem>
 #include <QMessageBox>
@@ -26,7 +27,9 @@
 // Kurs global
 double currentRate = 0;
 
+// =========================
 // CONSTRUCTOR
+// =========================
 MainWindow::MainWindow(const QString &username, QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow)
@@ -92,13 +95,17 @@ MainWindow::MainWindow(const QString &username, QWidget *parent)
     loadData();
 }
 
+// =========================
 // DESTRUCTOR
+// =========================
 MainWindow::~MainWindow()
 {
     delete ui;
 }
 
+// =========================
 // UPDATE BALANCE
+// =========================
 void MainWindow::updateBalance()
 {
     double total = 0;
@@ -128,8 +135,9 @@ void MainWindow::updateBalance()
             "font-size:14pt;font-weight:bold;color:#c62828;");
 }
 
-
+// =========================
 // ADD TRANSACTION
+// =========================
 void MainWindow::addTransaction()
 {
     QString date     = ui->inputDate->date().toString("yyyy-MM-dd");
@@ -208,8 +216,9 @@ void MainWindow::addTransaction()
     statusBar()->showMessage("Transaksi berhasil ditambahkan!", 3000);
 }
 
-
+// =========================
 // DELETE TRANSACTION
+// =========================
 void MainWindow::DeleteTransaction()
 {
     int row = ui->tableWidget->currentRow();
@@ -248,7 +257,9 @@ void MainWindow::DeleteTransaction()
     statusBar()->showMessage("Transaksi berhasil dihapus!", 3000);
 }
 
+// =========================
 // SHOW CHART
+// =========================
 void MainWindow::showChart()
 {
     if (ui->tableWidget->rowCount() == 0)
@@ -275,8 +286,9 @@ void MainWindow::showChart()
     dialog.exec();
 }
 
-
+// =========================
 // GET EXCHANGE RATE
+// =========================
 void MainWindow::getExchangeRate()
 {
     ui->labelKurs->setText("Kurs: Memuat...");
@@ -316,8 +328,9 @@ void MainWindow::onApiResult(QNetworkReply *reply)
     reply->deleteLater();
 }
 
-
+// =========================
 // AI SUMMARY
+// =========================
 void MainWindow::showAISummary()
 {
     if (ui->tableWidget->rowCount() == 0)
@@ -387,7 +400,9 @@ void MainWindow::showAISummary()
     }
 }
 
+// =========================
 // AI CHAT
+// =========================
 void MainWindow::processAIChat()
 {
     QString input = ui->inputChat->text().trimmed();
@@ -421,7 +436,119 @@ void MainWindow::processAIChat()
     QString lower  = input.toLower();
     QString response;
 
-    if (lower.contains("saldo") || lower.contains("balance"))
+    // =========================
+    // ✅ VOICE COMMAND: Tambah Transaksi
+    // Contoh: "tambah pengeluaran makan 20000"
+    //         "tambah pemasukan gaji 5000000"
+    // =========================
+    QRegularExpression reTambah(
+        R"(tambah\s+(pengeluaran|pemasukan|income|expense)\s+(.+?)\s+(\d[\d.,]*))",
+        QRegularExpression::CaseInsensitiveOption);
+    QRegularExpressionMatch mTambah = reTambah.match(lower);
+
+    if (mTambah.hasMatch())
+    {
+        QString typeRaw  = mTambah.captured(1).toLower();
+        QString category = mTambah.captured(2).trimmed();
+        QString amtStr   = mTambah.captured(3);
+
+        // Tentukan type
+        QString type = (typeRaw == "pengeluaran" || typeRaw == "expense")
+                           ? "Expense" : "Income";
+
+        // Bersihkan angka
+        amtStr.remove('.');
+        amtStr.replace(',', '.');
+        bool ok;
+        double amount = amtStr.toDouble(&ok);
+
+        if (!ok || amount <= 0)
+        {
+            response = "❌ Jumlah tidak valid. Contoh: tambah pengeluaran makan 20000";
+        }
+        else
+        {
+            // Auto-correct kategori
+            category = autoCorrectCategory(category);
+
+            // Simpan ke database
+            QString date = QDate::currentDate().toString("yyyy-MM-dd");
+            QSqlQuery query;
+            query.prepare(
+                "INSERT INTO transactions (username, date, type, category, amount) "
+                "VALUES (:username, :date, :type, :category, :amount)");
+            query.bindValue(":username", currentUser);
+            query.bindValue(":date",     date);
+            query.bindValue(":type",     type);
+            query.bindValue(":category", category);
+            query.bindValue(":amount",   amount);
+
+            if (query.exec())
+            {
+                int dbId = query.lastInsertId().toInt();
+
+                // Tambah ke tabel UI
+                QString formatted = "Rp " + locale.toString((qlonglong)amount);
+                int row = ui->tableWidget->rowCount();
+                ui->tableWidget->insertRow(row);
+                ui->tableWidget->setItem(row, 0, new QTableWidgetItem(date));
+                ui->tableWidget->setItem(row, 1, new QTableWidgetItem(type));
+                ui->tableWidget->setItem(row, 2, new QTableWidgetItem(category));
+
+                QTableWidgetItem *amtItem = new QTableWidgetItem(formatted);
+                amtItem->setData(Qt::UserRole,     amount);
+                amtItem->setData(Qt::UserRole + 1, dbId);
+                amtItem->setTextAlignment(Qt::AlignRight | Qt::AlignVCenter);
+                ui->tableWidget->setItem(row, 3, amtItem);
+
+                updateBalance();
+
+                QString typeLabel = (type == "Expense") ? "Pengeluaran" : "Pemasukan";
+                response = "✅ " + typeLabel + " " + category +
+                           " sebesar Rp " + locale.toString((qlonglong)amount) +
+                           " berhasil ditambahkan!";
+            }
+            else
+            {
+                response = "❌ Gagal menyimpan transaksi: " + query.lastError().text();
+            }
+        }
+    }
+
+    // =========================
+    // ✅ VOICE COMMAND: Hapus transaksi terakhir
+    // Contoh: "hapus transaksi terakhir"
+    // =========================
+    else if (lower.contains("hapus") && lower.contains("terakhir"))
+    {
+        int lastRow = ui->tableWidget->rowCount() - 1;
+        if (lastRow < 0)
+        {
+            response = "❌ Tidak ada transaksi yang bisa dihapus.";
+        }
+        else
+        {
+            int id = ui->tableWidget->item(lastRow, 3)->data(Qt::UserRole + 1).toInt();
+            QSqlQuery query;
+            query.prepare("DELETE FROM transactions WHERE id = :id");
+            query.bindValue(":id", id);
+            if (query.exec())
+            {
+                ui->tableWidget->removeRow(lastRow);
+                updateBalance();
+                response = "✅ Transaksi terakhir berhasil dihapus.";
+            }
+            else
+            {
+                response = "❌ Gagal menghapus transaksi.";
+            }
+        }
+    }
+
+    // =========================
+    // QUERY INFO
+    // =========================
+    else if (lower.contains("saldo") || lower.contains("balance"))
         response = "💰 Saldo Anda: Rp " + locale.toString((qlonglong)saldo);
 
     else if (lower.contains("pemasukan") || lower.contains("income"))
@@ -460,20 +587,35 @@ void MainWindow::processAIChat()
     else if (lower.contains("halo") || lower.contains("hai") || lower.contains("hello"))
         response = "👋 Halo " + currentUser + "! Ada yang bisa saya bantu?";
 
+    else if (lower.contains("bantuan") || lower.contains("help") || lower.contains("bisa apa"))
+        response = "🎤 Voice command yang tersedia:\n"
+                   "• \"tambah pengeluaran [kategori] [jumlah]\"\n"
+                   "• \"tambah pemasukan [kategori] [jumlah]\"\n"
+                   "• \"hapus transaksi terakhir\"\n"
+                   "• \"berapa saldo saya\"\n"
+                   "• \"total pemasukan\"\n"
+                   "• \"total pengeluaran\"\n"
+                   "• \"pengeluaran terbesar\"\n"
+                   "• \"saran keuangan\"";
+
     else
-        response = "🤖 Saya bisa menjawab: saldo, pemasukan, pengeluaran, "
-                   "kurs, pengeluaran terbesar, atau saran keuangan.";
+        response = "🤖 Tidak dimengerti. Ucapkan \"bantuan\" untuk lihat daftar perintah.";
 
     ui->chatOutput->append("🧑 " + input);
     ui->chatOutput->append("🤖 " + response);
     ui->chatOutput->append("---");
 
-    // bacakan respon chatbot
+    // TTS: bacakan respon chatbot
+    // Untuk voice command tambah transaksi, buat teks TTS yang lebih bersih (tanpa emoji)
+    QString ttsText = response;
+    ttsText.remove(QRegularExpression("[^\\w\\s,.!?%]")); // hapus emoji untuk TTS
     if (speaker->state() != QTextToSpeech::Speaking)
-        speaker->say(response);
+        speaker->say(ttsText);
 }
 
+// =========================
 // VOICE (Speech Recognition via Python)
+// =========================
 void MainWindow::processVoice()
 {
     if (speaker->state() == QTextToSpeech::Speaking)
@@ -492,7 +634,7 @@ void MainWindow::processVoice()
         QCoreApplication::applicationDirPath() + "/speech.py",
         QDir::currentPath() + "/speech.py",
         QString::fromUtf8(qgetenv("PWD")) + "/speech.py",
-        // cari di folder source project langsung
+        // ✅ TAMBAHAN: cari di folder source project langsung
         QString("C:/apkproject/FinanceApp/speech.py"),
     };
     for (const QString &path : candidates)
@@ -510,7 +652,7 @@ void MainWindow::processVoice()
 
     qDebug() << "Menjalankan speech.py dari:" << scriptPath;
 
-    //Langsung pakai "python" karena Windows tidak kenal "python3"
+    // ✅ FIX: Langsung pakai "python" karena Windows tidak kenal "python3"
     QString pythonCmd = "python";
 
     QProcess *process = new QProcess(this);
@@ -574,12 +716,14 @@ void MainWindow::processVoice()
     process->start(pythonCmd, QStringList() << scriptPath);
 }
 
-
+// =========================
 // SAVE DATA
+// =========================
 void MainWindow::saveData() {}
 
-
+// =========================
 // LOAD DATA
+// =========================
 void MainWindow::loadData()
 {
     ui->tableWidget->setRowCount(0);
@@ -625,8 +769,9 @@ void MainWindow::loadData()
     updateBalance();
 }
 
-
+// =========================
 // AUTO CORRECT CATEGORY
+// =========================
 QString MainWindow::autoCorrectCategory(QString text)
 {
     QMap<QString, QString> corrections =
