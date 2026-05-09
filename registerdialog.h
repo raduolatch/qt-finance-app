@@ -15,11 +15,15 @@ public:
     explicit RegisterDialog(QWidget *parent = nullptr);
     ~RegisterDialog();
 
+signals:
+    void registrationSuccess();
+
 private slots:
     void registerUser();
 
 private:
     Ui::RegisterDialog *ui;
+    bool validateInput();
 };
 
 #endif // REGISTERDIALOG_H

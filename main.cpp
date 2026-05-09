@@ -1,42 +1,22 @@
 #include "mainwindow.h"
 #include "logindialog.h"
-
+#include "database.h"
 #include <QApplication>
-#include <QLocale>
-#include <QTranslator>
 
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
 
-    // TRANSLATOR
-    QTranslator translator;
+    // Inisialisasi database sebelum apapun
+    Database::connect();
 
-    const QStringList uiLanguages =
-        QLocale::system().uiLanguages();
-
-    for (const QString &locale : uiLanguages)
-    {
-        const QString baseName =
-            "FinanceApp_"
-            + QLocale(locale).name();
-
-        if (translator.load(":/i18n/" + baseName))
-        {
-            a.installTranslator(&translator);
-            break;
-        }
-    }
-
-    // LOGIN
+    // Tampilkan login dialog
     LoginDialog login;
-
     if (login.exec() == QDialog::Accepted)
     {
-        MainWindow window;
-
+        QString username = login.getUsername();
+        MainWindow window(username);
         window.show();
-
         return a.exec();
     }
 

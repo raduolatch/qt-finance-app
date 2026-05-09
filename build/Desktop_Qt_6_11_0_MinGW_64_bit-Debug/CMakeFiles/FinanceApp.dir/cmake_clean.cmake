@@ -9,6 +9,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/FinanceApp.dir/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/.qt/rcc/qrc_FinanceApp_translations.cpp.obj.d"
   "CMakeFiles/FinanceApp.dir/chartdialog.cpp.obj"
   "CMakeFiles/FinanceApp.dir/chartdialog.cpp.obj.d"
+  "CMakeFiles/FinanceApp.dir/database.cpp.obj"
+  "CMakeFiles/FinanceApp.dir/database.cpp.obj.d"
   "CMakeFiles/FinanceApp.dir/logindialog.cpp.obj"
   "CMakeFiles/FinanceApp.dir/logindialog.cpp.obj.d"
   "CMakeFiles/FinanceApp.dir/main.cpp.obj"

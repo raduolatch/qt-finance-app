@@ -1,9 +1,10 @@
 CMakeFiles/FinanceApp.dir/mainwindow.cpp.obj: \
  C:\apkproject\FinanceApp\mainwindow.cpp \
- C:/qt/6.11.0/mingw_64/include/QtCore/QFile \
- C:/qt/6.11.0/mingw_64/include/QtCore/qfile.h \
- C:/qt/6.11.0/mingw_64/include/QtCore/qfiledevice.h \
- C:/qt/6.11.0/mingw_64/include/QtCore/qiodevice.h \
+ C:\apkproject\FinanceApp\mainwindow.h \
+ C:/qt/6.11.0/mingw_64/include/QtWidgets/QMainWindow \
+ C:/qt/6.11.0/mingw_64/include/QtWidgets/qmainwindow.h \
+ C:/qt/6.11.0/mingw_64/include/QtWidgets/qtwidgetsglobal.h \
+ C:/qt/6.11.0/mingw_64/include/QtGui/qtguiglobal.h \
  C:/qt/6.11.0/mingw_64/include/QtCore/qglobal.h \
  C:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/type_traits \
  C:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/c++config.h \
@@ -151,8 +152,12 @@ CMakeFiles/FinanceApp.dir/mainwindow.cpp.obj: \
  C:/qt/6.11.0/mingw_64/include/QtCore/qtresource.h \
  C:/qt/6.11.0/mingw_64/include/QtCore/qttranslation.h \
  C:/qt/6.11.0/mingw_64/include/QtCore/qversiontagging.h \
- C:/qt/6.11.0/mingw_64/include/QtCore/qiodevicebase.h \
- C:/qt/6.11.0/mingw_64/include/QtCore/qobject.h \
+ C:/qt/6.11.0/mingw_64/include/QtGui/qtgui-config.h \
+ C:/qt/6.11.0/mingw_64/include/QtGui/qtguiexports.h \
+ C:/qt/6.11.0/mingw_64/include/QtWidgets/qtwidgets-config.h \
+ C:/qt/6.11.0/mingw_64/include/QtWidgets/qtwidgetsexports.h \
+ C:/qt/6.11.0/mingw_64/include/QtWidgets/qwidget.h \
+ C:/qt/6.11.0/mingw_64/include/QtGui/qwindowdefs.h \
  C:/qt/6.11.0/mingw_64/include/QtCore/qobjectdefs.h \
  C:/qt/6.11.0/mingw_64/include/QtCore/qnamespace.h \
  C:/qt/6.11.0/mingw_64/include/QtCore/qcompare.h \
@@ -226,6 +231,8 @@ CMakeFiles/FinanceApp.dir/mainwindow.cpp.obj: \
  C:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/shared_ptr_atomic.h \
  C:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward/auto_ptr.h \
  C:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/pstl/glue_memory_defs.h \
+ C:/qt/6.11.0/mingw_64/include/QtGui/qwindowdefs_win.h \
+ C:/qt/6.11.0/mingw_64/include/QtCore/qobject.h \
  C:/qt/6.11.0/mingw_64/include/QtCore/qstring.h \
  C:/qt/6.11.0/mingw_64/include/QtCore/qchar.h \
  C:/qt/6.11.0/mingw_64/include/QtCore/qstringview.h \
@@ -303,6 +310,7 @@ CMakeFiles/FinanceApp.dir/mainwindow.cpp.obj: \
  C:/qt/6.11.0/mingw_64/include/QtCore/qscopedpointer.h \
  C:/qt/6.11.0/mingw_64/include/QtCore/qmetatype.h \
  C:/qt/6.11.0/mingw_64/include/QtCore/qdatastream.h \
+ C:/qt/6.11.0/mingw_64/include/QtCore/qiodevicebase.h \
  C:/qt/6.11.0/mingw_64/include/QtCore/qfloat16.h \
  C:/qt/6.11.0/mingw_64/include/QtCore/qmath.h \
  C:/qt/6.11.0/mingw_64/include/QtCore/qtformat_impl.h \
@@ -324,53 +332,6 @@ CMakeFiles/FinanceApp.dir/mainwindow.cpp.obj: \
  C:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/chrono.h \
  C:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ratio \
  C:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ctime \
- C:/qt/6.11.0/mingw_64/include/QtCore/qspan.h \
- C:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cassert \
- C:/qt/6.11.0/mingw_64/include/QtCore/q20iterator.h \
- C:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/filesystem \
- C:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/fs_fwd.h \
- C:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/fs_path.h \
- C:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/locale \
- C:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_facets.h \
- C:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cwctype \
- C:/qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/wctype.h \
- C:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/ctype_base.h \
- C:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/ctype_inline.h \
- C:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_facets.tcc \
- C:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_facets_nonio.h \
- C:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/time_members.h \
- C:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/messages_members.h \
- C:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/codecvt.h \
- C:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_facets_nonio.tcc \
- C:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_conv.h \
- C:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/iomanip \
- C:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/quoted_string.h \
- C:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/sstream \
- C:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/istream \
- C:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ios \
- C:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/basic_ios.h \
- C:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/basic_ios.tcc \
- C:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ostream \
- C:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/ostream.tcc \
- C:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/istream.tcc \
- C:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/sstream.tcc \
- C:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/codecvt \
- C:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/fs_dir.h \
- C:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/fs_ops.h \
- C:/qt/6.11.0/mingw_64/include/QtCore/QTextStream \
- C:/qt/6.11.0/mingw_64/include/QtCore/qtextstream.h \
- C:\apkproject\FinanceApp\mainwindow.h \
- C:/qt/6.11.0/mingw_64/include/QtWidgets/QMainWindow \
- C:/qt/6.11.0/mingw_64/include/QtWidgets/qmainwindow.h \
- C:/qt/6.11.0/mingw_64/include/QtWidgets/qtwidgetsglobal.h \
- C:/qt/6.11.0/mingw_64/include/QtGui/qtguiglobal.h \
- C:/qt/6.11.0/mingw_64/include/QtGui/qtgui-config.h \
- C:/qt/6.11.0/mingw_64/include/QtGui/qtguiexports.h \
- C:/qt/6.11.0/mingw_64/include/QtWidgets/qtwidgets-config.h \
- C:/qt/6.11.0/mingw_64/include/QtWidgets/qtwidgetsexports.h \
- C:/qt/6.11.0/mingw_64/include/QtWidgets/qwidget.h \
- C:/qt/6.11.0/mingw_64/include/QtGui/qwindowdefs.h \
- C:/qt/6.11.0/mingw_64/include/QtGui/qwindowdefs_win.h \
  C:/qt/6.11.0/mingw_64/include/QtCore/qmargins.h \
  C:/qt/6.11.0/mingw_64/include/QtCore/qcheckedint_impl.h \
  C:/qt/6.11.0/mingw_64/include/QtCore/q23utility.h \
@@ -392,9 +353,13 @@ CMakeFiles/FinanceApp.dir/mainwindow.cpp.obj: \
  C:/qt/6.11.0/mingw_64/include/QtGui/qtransform.h \
  C:/qt/6.11.0/mingw_64/include/QtGui/qpolygon.h \
  C:/qt/6.11.0/mingw_64/include/QtGui/qregion.h \
+ C:/qt/6.11.0/mingw_64/include/QtCore/qspan.h \
+ C:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cassert \
+ C:/qt/6.11.0/mingw_64/include/QtCore/q20iterator.h \
  C:/qt/6.11.0/mingw_64/include/QtCore/qline.h \
  C:/qt/6.11.0/mingw_64/include/QtCore/qvariant.h \
  C:/qt/6.11.0/mingw_64/include/QtCore/qdebug.h \
+ C:/qt/6.11.0/mingw_64/include/QtCore/qtextstream.h \
  C:/qt/6.11.0/mingw_64/include/QtCore/qcontiguouscache.h \
  C:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/climits \
  C:/qt/6.11.0/mingw_64/include/QtCore/qsharedpointer.h \
@@ -445,6 +410,7 @@ CMakeFiles/FinanceApp.dir/mainwindow.cpp.obj: \
  C:/qt/6.11.0/mingw_64/include/QtNetwork/qsslsocket.h \
  C:/qt/6.11.0/mingw_64/include/QtNetwork/qtcpsocket.h \
  C:/qt/6.11.0/mingw_64/include/QtNetwork/qabstractsocket.h \
+ C:/qt/6.11.0/mingw_64/include/QtCore/qiodevice.h \
  C:/qt/6.11.0/mingw_64/include/QtNetwork/qhostaddress.h \
  C:/qt/6.11.0/mingw_64/include/QtNetwork/qsslerror.h \
  C:/qt/6.11.0/mingw_64/include/QtNetwork/qsslcertificate.h \
@@ -463,13 +429,71 @@ CMakeFiles/FinanceApp.dir/mainwindow.cpp.obj: \
  C:/qt/6.11.0/mingw_64/include/QtTextToSpeech/qtexttospeech.h \
  C:/qt/6.11.0/mingw_64/include/QtTextToSpeech/qtexttospeech_global.h \
  C:/qt/6.11.0/mingw_64/include/QtTextToSpeech/qvoice.h \
- C:/qt/6.11.0/mingw_64/include/QtCore/QProcess \
- C:/qt/6.11.0/mingw_64/include/QtCore/qprocess.h \
+ C:/qt/6.11.0/mingw_64/include/QtCore/QList \
+ C:/qt/6.11.0/mingw_64/include/QtCore/QDate \
+ C:\apkproject\FinanceApp\transaction.h \
+ C:/qt/6.11.0/mingw_64/include/QtCore/QString \
+ C:/apkproject/FinanceApp/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/FinanceApp_autogen/include/ui_mainwindow.h \
+ C:/qt/6.11.0/mingw_64/include/QtWidgets/QApplication \
+ C:/qt/6.11.0/mingw_64/include/QtWidgets/qapplication.h \
+ C:/qt/6.11.0/mingw_64/include/QtCore/qcoreapplication.h \
+ C:/qt/6.11.0/mingw_64/include/QtCore/qcoreevent.h \
+ C:/qt/6.11.0/mingw_64/include/QtCore/qbasictimer.h \
+ C:/qt/6.11.0/mingw_64/include/QtCore/qabstracteventdispatcher.h \
+ C:/qt/6.11.0/mingw_64/include/QtCore/qeventloop.h \
+ C:/qt/6.11.0/mingw_64/include/QtCore/qdeadlinetimer.h \
+ C:/qt/6.11.0/mingw_64/include/QtCore/qnativeinterface.h \
+ C:/qt/6.11.0/mingw_64/include/QtCore/qcoreapplication_platform.h \
+ C:/qt/6.11.0/mingw_64/include/QtGui/qguiapplication.h \
+ C:/qt/6.11.0/mingw_64/include/QtGui/qinputmethod.h \
+ C:/qt/6.11.0/mingw_64/include/QtGui/qguiapplication_platform.h \
+ C:/qt/6.11.0/mingw_64/include/QtWidgets/QComboBox \
+ C:/qt/6.11.0/mingw_64/include/QtWidgets/qcombobox.h \
+ C:/qt/6.11.0/mingw_64/include/QtWidgets/qabstractitemdelegate.h \
+ C:/qt/6.11.0/mingw_64/include/QtWidgets/qstyleoption.h \
+ C:/qt/6.11.0/mingw_64/include/QtWidgets/qabstractspinbox.h \
+ C:/qt/6.11.0/mingw_64/include/QtGui/qvalidator.h \
+ C:/qt/6.11.0/mingw_64/include/QtCore/qregularexpression.h \
+ C:/qt/6.11.0/mingw_64/include/QtWidgets/qslider.h \
+ C:/qt/6.11.0/mingw_64/include/QtWidgets/qabstractslider.h \
+ C:/qt/6.11.0/mingw_64/include/QtWidgets/qstyle.h \
+ C:/qt/6.11.0/mingw_64/include/QtWidgets/qtabbar.h \
+ C:/qt/6.11.0/mingw_64/include/QtWidgets/qrubberband.h \
+ C:/qt/6.11.0/mingw_64/include/QtWidgets/qframe.h \
+ C:/qt/6.11.0/mingw_64/include/QtCore/qabstractitemmodel.h \
+ C:/qt/6.11.0/mingw_64/include/QtWidgets/QDateEdit \
+ C:/qt/6.11.0/mingw_64/include/QtWidgets/qdatetimeedit.h \
+ C:/qt/6.11.0/mingw_64/include/QtCore/qtimezone.h \
+ C:/qt/6.11.0/mingw_64/include/QtWidgets/QHeaderView \
+ C:/qt/6.11.0/mingw_64/include/QtWidgets/qheaderview.h \
+ C:/qt/6.11.0/mingw_64/include/QtWidgets/qabstractitemview.h \
+ C:/qt/6.11.0/mingw_64/include/QtWidgets/qabstractscrollarea.h \
+ C:/qt/6.11.0/mingw_64/include/QtCore/qitemselectionmodel.h \
+ C:/qt/6.11.0/mingw_64/include/QtWidgets/QLabel \
+ C:/qt/6.11.0/mingw_64/include/QtWidgets/qlabel.h \
+ C:/qt/6.11.0/mingw_64/include/QtGui/qpicture.h \
+ C:/qt/6.11.0/mingw_64/include/QtGui/qtextdocument.h \
+ C:/qt/6.11.0/mingw_64/include/QtWidgets/QLineEdit \
+ C:/qt/6.11.0/mingw_64/include/QtWidgets/qlineedit.h \
+ C:/qt/6.11.0/mingw_64/include/QtGui/qtextcursor.h \
+ C:/qt/6.11.0/mingw_64/include/QtGui/qtextformat.h \
+ C:/qt/6.11.0/mingw_64/include/QtGui/qpen.h \
+ C:/qt/6.11.0/mingw_64/include/QtGui/qtextoption.h \
+ C:/qt/6.11.0/mingw_64/include/QtWidgets/QMainWindow \
+ C:/qt/6.11.0/mingw_64/include/QtWidgets/QPushButton \
+ C:/qt/6.11.0/mingw_64/include/QtWidgets/qpushbutton.h \
+ C:/qt/6.11.0/mingw_64/include/QtWidgets/qabstractbutton.h \
+ C:/qt/6.11.0/mingw_64/include/QtWidgets/QStatusBar \
+ C:/qt/6.11.0/mingw_64/include/QtWidgets/qstatusbar.h \
+ C:/qt/6.11.0/mingw_64/include/QtWidgets/QTableWidget \
+ C:/qt/6.11.0/mingw_64/include/QtWidgets/qtablewidget.h \
+ C:/qt/6.11.0/mingw_64/include/QtWidgets/qtableview.h \
+ C:/qt/6.11.0/mingw_64/include/QtWidgets/QTextEdit \
+ C:/qt/6.11.0/mingw_64/include/QtWidgets/qtextedit.h \
+ C:/qt/6.11.0/mingw_64/include/QtWidgets/QWidget \
  C:\apkproject\FinanceApp\chartdialog.h \
  C:/qt/6.11.0/mingw_64/include/QtWidgets/QDialog \
  C:/qt/6.11.0/mingw_64/include/QtWidgets/qdialog.h \
- C:/qt/6.11.0/mingw_64/include/QtCore/QList \
- C:/qt/6.11.0/mingw_64/include/QtCore/QStringList \
  C:/qt/6.11.0/mingw_64/include/QtCharts/QChartView \
  C:/qt/6.11.0/mingw_64/include/QtCharts/qchartview.h \
  C:/qt/6.11.0/mingw_64/include/QtCharts/QAbstractAxis \
@@ -479,7 +503,6 @@ CMakeFiles/FinanceApp.dir/mainwindow.cpp.obj: \
  C:/qt/6.11.0/mingw_64/include/QtCharts/qtcharts-config.h \
  C:/qt/6.11.0/mingw_64/include/QtCharts/qtchartsexports.h \
  C:/qt/6.11.0/mingw_64/include/QtGui/QPen \
- C:/qt/6.11.0/mingw_64/include/QtGui/qpen.h \
  C:/qt/6.11.0/mingw_64/include/QtGui/QFont \
  C:/qt/6.11.0/mingw_64/include/QtCharts/QAbstractSeries \
  C:/qt/6.11.0/mingw_64/include/QtCharts/qabstractseries.h \
@@ -491,11 +514,6 @@ CMakeFiles/FinanceApp.dir/mainwindow.cpp.obj: \
  C:/qt/6.11.0/mingw_64/include/QtWidgets/qgraphicswidget.h \
  C:/qt/6.11.0/mingw_64/include/QtWidgets/qgraphicslayoutitem.h \
  C:/qt/6.11.0/mingw_64/include/QtGui/qevent.h \
- C:/qt/6.11.0/mingw_64/include/QtCore/qcoreevent.h \
- C:/qt/6.11.0/mingw_64/include/QtCore/qbasictimer.h \
- C:/qt/6.11.0/mingw_64/include/QtCore/qabstracteventdispatcher.h \
- C:/qt/6.11.0/mingw_64/include/QtCore/qeventloop.h \
- C:/qt/6.11.0/mingw_64/include/QtCore/qdeadlinetimer.h \
  C:/qt/6.11.0/mingw_64/include/QtGui/qeventpoint.h \
  C:/qt/6.11.0/mingw_64/include/QtGui/qvector2d.h \
  C:/qt/6.11.0/mingw_64/include/QtGui/qvectornd.h \
@@ -506,13 +524,7 @@ CMakeFiles/FinanceApp.dir/mainwindow.cpp.obj: \
  C:/qt/6.11.0/mingw_64/include/QtCore/QSize \
  C:/qt/6.11.0/mingw_64/include/QtCore/QSizeF \
  C:/qt/6.11.0/mingw_64/include/QtGui/QTransform \
- C:/qt/6.11.0/mingw_64/include/QtCore/qnativeinterface.h \
  C:/qt/6.11.0/mingw_64/include/QtGui/qscreen_platform.h \
- C:/qt/6.11.0/mingw_64/include/QtGui/qguiapplication.h \
- C:/qt/6.11.0/mingw_64/include/QtCore/qcoreapplication.h \
- C:/qt/6.11.0/mingw_64/include/QtCore/qcoreapplication_platform.h \
- C:/qt/6.11.0/mingw_64/include/QtGui/qinputmethod.h \
- C:/qt/6.11.0/mingw_64/include/QtGui/qguiapplication_platform.h \
  C:/qt/6.11.0/mingw_64/include/QtWidgets/qgraphicsitem.h \
  C:/qt/6.11.0/mingw_64/include/QtGui/qpainterpath.h \
  C:/qt/6.11.0/mingw_64/include/QtGui/QBrush \
@@ -520,10 +532,7 @@ CMakeFiles/FinanceApp.dir/mainwindow.cpp.obj: \
  C:/qt/6.11.0/mingw_64/include/QtWidgets/QGraphicsView \
  C:/qt/6.11.0/mingw_64/include/QtWidgets/qgraphicsview.h \
  C:/qt/6.11.0/mingw_64/include/QtGui/qpainter.h \
- C:/qt/6.11.0/mingw_64/include/QtGui/qtextoption.h \
  C:/qt/6.11.0/mingw_64/include/QtWidgets/qscrollarea.h \
- C:/qt/6.11.0/mingw_64/include/QtWidgets/qabstractscrollarea.h \
- C:/qt/6.11.0/mingw_64/include/QtWidgets/qframe.h \
  C:/qt/6.11.0/mingw_64/include/QtWidgets/qgraphicsscene.h \
  C:/qt/6.11.0/mingw_64/include/QtCharts/QBarSeries \
  C:/qt/6.11.0/mingw_64/include/QtCharts/qbarseries.h \
@@ -540,25 +549,9 @@ CMakeFiles/FinanceApp.dir/mainwindow.cpp.obj: \
  C:/qt/6.11.0/mingw_64/include/QtCharts/QPieSlice \
  C:/qt/6.11.0/mingw_64/include/QtCharts/qpieslice.h \
  C:/qt/6.11.0/mingw_64/include/QtWidgets/QDateEdit \
- C:/qt/6.11.0/mingw_64/include/QtWidgets/qdatetimeedit.h \
- C:/qt/6.11.0/mingw_64/include/QtCore/qtimezone.h \
- C:/qt/6.11.0/mingw_64/include/QtWidgets/qabstractspinbox.h \
- C:/qt/6.11.0/mingw_64/include/QtGui/qvalidator.h \
- C:/qt/6.11.0/mingw_64/include/QtCore/qregularexpression.h \
  C:/qt/6.11.0/mingw_64/include/QtWidgets/QComboBox \
- C:/qt/6.11.0/mingw_64/include/QtWidgets/qcombobox.h \
- C:/qt/6.11.0/mingw_64/include/QtWidgets/qabstractitemdelegate.h \
- C:/qt/6.11.0/mingw_64/include/QtWidgets/qstyleoption.h \
- C:/qt/6.11.0/mingw_64/include/QtWidgets/qslider.h \
- C:/qt/6.11.0/mingw_64/include/QtWidgets/qabstractslider.h \
- C:/qt/6.11.0/mingw_64/include/QtWidgets/qstyle.h \
- C:/qt/6.11.0/mingw_64/include/QtWidgets/qtabbar.h \
- C:/qt/6.11.0/mingw_64/include/QtWidgets/qrubberband.h \
- C:/qt/6.11.0/mingw_64/include/QtCore/qabstractitemmodel.h \
  C:/qt/6.11.0/mingw_64/include/QtWidgets/QTabWidget \
  C:/qt/6.11.0/mingw_64/include/QtWidgets/QPushButton \
- C:/qt/6.11.0/mingw_64/include/QtWidgets/qpushbutton.h \
- C:/qt/6.11.0/mingw_64/include/QtWidgets/qabstractbutton.h \
  C:/qt/6.11.0/mingw_64/include/QtWidgets/QVBoxLayout \
  C:/qt/6.11.0/mingw_64/include/QtWidgets/qboxlayout.h \
  C:/qt/6.11.0/mingw_64/include/QtWidgets/qlayout.h \
@@ -566,43 +559,22 @@ CMakeFiles/FinanceApp.dir/mainwindow.cpp.obj: \
  C:/qt/6.11.0/mingw_64/include/QtWidgets/qgridlayout.h \
  C:/qt/6.11.0/mingw_64/include/QtWidgets/QHBoxLayout \
  C:/qt/6.11.0/mingw_64/include/QtWidgets/QLabel \
- C:/qt/6.11.0/mingw_64/include/QtWidgets/qlabel.h \
- C:/qt/6.11.0/mingw_64/include/QtGui/qpicture.h \
- C:/qt/6.11.0/mingw_64/include/QtGui/qtextdocument.h \
  C:/qt/6.11.0/mingw_64/include/QtWidgets/QGroupBox \
  C:/qt/6.11.0/mingw_64/include/QtWidgets/qgroupbox.h \
  C:/qt/6.11.0/mingw_64/include/QtWidgets/QRadioButton \
  C:/qt/6.11.0/mingw_64/include/QtWidgets/qradiobutton.h \
- C:/apkproject/FinanceApp/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/FinanceApp_autogen/include/ui_mainwindow.h \
- C:/qt/6.11.0/mingw_64/include/QtWidgets/QApplication \
- C:/qt/6.11.0/mingw_64/include/QtWidgets/qapplication.h \
- C:/qt/6.11.0/mingw_64/include/QtWidgets/QComboBox \
- C:/qt/6.11.0/mingw_64/include/QtWidgets/QDateEdit \
- C:/qt/6.11.0/mingw_64/include/QtWidgets/QHeaderView \
- C:/qt/6.11.0/mingw_64/include/QtWidgets/qheaderview.h \
- C:/qt/6.11.0/mingw_64/include/QtWidgets/qabstractitemview.h \
- C:/qt/6.11.0/mingw_64/include/QtCore/qitemselectionmodel.h \
- C:/qt/6.11.0/mingw_64/include/QtWidgets/QLabel \
- C:/qt/6.11.0/mingw_64/include/QtWidgets/QLineEdit \
- C:/qt/6.11.0/mingw_64/include/QtWidgets/qlineedit.h \
- C:/qt/6.11.0/mingw_64/include/QtGui/qtextcursor.h \
- C:/qt/6.11.0/mingw_64/include/QtGui/qtextformat.h \
- C:/qt/6.11.0/mingw_64/include/QtWidgets/QMainWindow \
- C:/qt/6.11.0/mingw_64/include/QtWidgets/QPushButton \
- C:/qt/6.11.0/mingw_64/include/QtWidgets/QStatusBar \
- C:/qt/6.11.0/mingw_64/include/QtWidgets/qstatusbar.h \
- C:/qt/6.11.0/mingw_64/include/QtWidgets/QTableWidget \
- C:/qt/6.11.0/mingw_64/include/QtWidgets/qtablewidget.h \
- C:/qt/6.11.0/mingw_64/include/QtWidgets/qtableview.h \
- C:/qt/6.11.0/mingw_64/include/QtWidgets/QTextEdit \
- C:/qt/6.11.0/mingw_64/include/QtWidgets/qtextedit.h \
- C:/qt/6.11.0/mingw_64/include/QtWidgets/QWidget \
+ C:\apkproject\FinanceApp\database.h \
+ C:/qt/6.11.0/mingw_64/include/QtSql/QSqlDatabase \
+ C:/qt/6.11.0/mingw_64/include/QtSql/qsqldatabase.h \
+ C:/qt/6.11.0/mingw_64/include/QtSql/qtsqlglobal.h \
+ C:/qt/6.11.0/mingw_64/include/QtSql/qtsql-config.h \
+ C:/qt/6.11.0/mingw_64/include/QtSql/qtsqlexports.h \
+ C:/qt/6.11.0/mingw_64/include/QtGui/QValidator \
  C:/qt/6.11.0/mingw_64/include/QtWidgets/QTableWidgetItem \
  C:/qt/6.11.0/mingw_64/include/QtWidgets/QMessageBox \
  C:/qt/6.11.0/mingw_64/include/QtWidgets/qmessagebox.h \
  C:/qt/6.11.0/mingw_64/include/QtWidgets/qdialogbuttonbox.h \
  C:/qt/6.11.0/mingw_64/include/QtCore/QMap \
- C:/qt/6.11.0/mingw_64/include/QtCore/QDate \
  C:/qt/6.11.0/mingw_64/include/QtCore/QLocale \
  C:/qt/6.11.0/mingw_64/include/QtNetwork/QNetworkRequest \
  C:/qt/6.11.0/mingw_64/include/QtCore/QUrl \
@@ -615,8 +587,50 @@ CMakeFiles/FinanceApp.dir/mainwindow.cpp.obj: \
  C:/qt/6.11.0/mingw_64/include/QtCore/qcborvalue.h \
  C:/qt/6.11.0/mingw_64/include/QtCore/qcborcommon.h \
  C:/qt/6.11.0/mingw_64/include/QtCore/quuid.h \
+ C:/qt/6.11.0/mingw_64/include/QtCore/QRegularExpression \
  C:/qt/6.11.0/mingw_64/include/QtGui/QRegularExpressionValidator \
- C:/qt/6.11.0/mingw_64/include/QtWidgets/QScrollBar \
- C:/qt/6.11.0/mingw_64/include/QtWidgets/qscrollbar.h \
+ C:/qt/6.11.0/mingw_64/include/QtWidgets/QAbstractItemView \
+ C:/qt/6.11.0/mingw_64/include/QtCore/QProcess \
+ C:/qt/6.11.0/mingw_64/include/QtCore/qprocess.h \
  C:/qt/6.11.0/mingw_64/include/QtCore/QDebug \
- C:/qt/6.11.0/mingw_64/include/QtCore/QCoreApplication
+ C:/qt/6.11.0/mingw_64/include/QtSql/QSqlQuery \
+ C:/qt/6.11.0/mingw_64/include/QtSql/qsqlquery.h \
+ C:/qt/6.11.0/mingw_64/include/QtSql/QSqlError \
+ C:/qt/6.11.0/mingw_64/include/QtSql/qsqlerror.h \
+ C:/qt/6.11.0/mingw_64/include/QtCore/QDir \
+ C:/qt/6.11.0/mingw_64/include/QtCore/qdir.h \
+ C:/qt/6.11.0/mingw_64/include/QtCore/qdirlisting.h \
+ C:/qt/6.11.0/mingw_64/include/QtCore/qfiledevice.h \
+ C:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/filesystem \
+ C:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/fs_fwd.h \
+ C:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/fs_path.h \
+ C:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/locale \
+ C:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_facets.h \
+ C:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cwctype \
+ C:/qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/wctype.h \
+ C:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/ctype_base.h \
+ C:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/ctype_inline.h \
+ C:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_facets.tcc \
+ C:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_facets_nonio.h \
+ C:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/time_members.h \
+ C:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/messages_members.h \
+ C:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/codecvt.h \
+ C:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_facets_nonio.tcc \
+ C:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_conv.h \
+ C:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/iomanip \
+ C:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/quoted_string.h \
+ C:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/sstream \
+ C:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/istream \
+ C:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ios \
+ C:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/basic_ios.h \
+ C:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/basic_ios.tcc \
+ C:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ostream \
+ C:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/ostream.tcc \
+ C:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/istream.tcc \
+ C:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/sstream.tcc \
+ C:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/codecvt \
+ C:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/fs_dir.h \
+ C:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/fs_ops.h \
+ C:/qt/6.11.0/mingw_64/include/QtCore/qfile.h \
+ C:/qt/6.11.0/mingw_64/include/QtCore/qfileinfo.h \
+ C:/qt/6.11.0/mingw_64/include/QtCore/QFile

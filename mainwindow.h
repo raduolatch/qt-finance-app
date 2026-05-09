@@ -4,8 +4,9 @@
 #include <QNetworkAccessManager>
 #include <QNetworkReply>
 #include <QTextToSpeech>
-#include <QProcess>
-#include "chartdialog.h"
+#include <QList>
+#include <QDate>
+#include "transaction.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
@@ -18,60 +19,30 @@ class MainWindow : public QMainWindow
     Q_OBJECT
 
 public:
-    explicit MainWindow(QWidget *parent = nullptr);
+    explicit MainWindow(const QString &username, QWidget *parent = nullptr);
     ~MainWindow();
 
 private slots:
-
-    // TRANSACTION
     void addTransaction();
     void DeleteTransaction();
-
-    // CHART
     void showChart();
-
-    // API
     void getExchangeRate();
     void onApiResult(QNetworkReply *reply);
-
-    // AI SUMMARY
     void showAISummary();
-
-    // AI CHATBOT
     void processAIChat();
-
-    // VOICE RECOGNITION
     void processVoice();
 
 private:
+    Ui::MainWindow          *ui;
+    QString                  currentUser;
+    QNetworkAccessManager   *networkManager;
+    QTextToSpeech           *speaker;
+    QList<Transaction>       transactions;
 
-    Ui::MainWindow *ui;
-
-    // NETWORK
-    QNetworkAccessManager *networkManager;
-
-    // TEXT TO SPEECH
-    QTextToSpeech *speaker;
-
-    // BALANCE
-    void updateBalance();
-
-    // FILE
-    void saveData();
-    void loadData();
-
-    // AI FEATURE
-    QString generateAISummary();
+    void    updateBalance();
+    void    saveData();
+    void    loadData();
     QString autoCorrectCategory(QString text);
-
-    // CHATBOT RESPONSE
-    QString getAIResponse(QString question);
-
-    // TEXT TO SPEECH
-    void speak(QString text);
-
-    // DATA
-    QList<Transaction> getAllTransactions();
 };
 
 #endif // MAINWINDOW_H

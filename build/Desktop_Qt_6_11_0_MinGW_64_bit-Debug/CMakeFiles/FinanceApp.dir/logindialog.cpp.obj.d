@@ -419,40 +419,19 @@ CMakeFiles/FinanceApp.dir/logindialog.cpp.obj: \
  C:/qt/6.11.0/mingw_64/include/QtWidgets/qpushbutton.h \
  C:/qt/6.11.0/mingw_64/include/QtWidgets/qabstractbutton.h \
  C:\apkproject\FinanceApp\registerdialog.h \
- C:/qt/6.11.0/mingw_64/include/QtCore/QFile \
- C:/qt/6.11.0/mingw_64/include/QtCore/qfile.h \
- C:/qt/6.11.0/mingw_64/include/QtCore/qfiledevice.h \
- C:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/filesystem \
- C:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/fs_fwd.h \
- C:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/fs_path.h \
- C:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/locale \
- C:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_facets.h \
- C:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cwctype \
- C:/qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/wctype.h \
- C:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/ctype_base.h \
- C:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/ctype_inline.h \
- C:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_facets.tcc \
- C:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_facets_nonio.h \
- C:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/time_members.h \
- C:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/messages_members.h \
- C:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/codecvt.h \
- C:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_facets_nonio.tcc \
- C:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_conv.h \
- C:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/iomanip \
- C:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/quoted_string.h \
- C:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/sstream \
- C:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/istream \
- C:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ios \
- C:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/basic_ios.h \
- C:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/basic_ios.tcc \
- C:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ostream \
- C:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/ostream.tcc \
- C:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/istream.tcc \
- C:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/sstream.tcc \
- C:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/codecvt \
- C:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/fs_dir.h \
- C:/qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/fs_ops.h \
- C:/qt/6.11.0/mingw_64/include/QtCore/QTextStream \
+ C:\apkproject\FinanceApp\database.h \
+ C:/qt/6.11.0/mingw_64/include/QtSql/QSqlDatabase \
+ C:/qt/6.11.0/mingw_64/include/QtSql/qsqldatabase.h \
+ C:/qt/6.11.0/mingw_64/include/QtSql/qtsqlglobal.h \
+ C:/qt/6.11.0/mingw_64/include/QtSql/qtsql-config.h \
+ C:/qt/6.11.0/mingw_64/include/QtSql/qtsqlexports.h \
+ C:/qt/6.11.0/mingw_64/include/QtCore/qmetaobject.h \
+ C:/qt/6.11.0/mingw_64/include/QtCore/QList \
+ C:\apkproject\FinanceApp\transaction.h \
+ C:/qt/6.11.0/mingw_64/include/QtCore/QDate \
+ C:/qt/6.11.0/mingw_64/include/QtCore/qdatetime.h \
+ C:/qt/6.11.0/mingw_64/include/QtCore/qcalendar.h \
+ C:/qt/6.11.0/mingw_64/include/QtCore/QString \
  C:/qt/6.11.0/mingw_64/include/QtWidgets/QMessageBox \
  C:/qt/6.11.0/mingw_64/include/QtWidgets/qmessagebox.h \
  C:/qt/6.11.0/mingw_64/include/QtWidgets/qdialogbuttonbox.h

@@ -2,7 +2,7 @@
 #define CHARTDIALOG_H
 #include <QDialog>
 #include <QList>
-#include <QStringList>
+#include <QDate>
 #include <QtCharts/QChartView>
 #include <QtCharts/QBarSeries>
 #include <QtCharts/QLineSeries>
@@ -16,20 +16,15 @@
 #include <QLabel>
 #include <QGroupBox>
 #include <QRadioButton>
-
-struct Transaction {
-    QDate date;
-    QString type;     // "Income" / "Expense"
-    QString category;
-    double amount;
-};
+#include "transaction.h"
 
 class ChartDialog : public QDialog
 {
     Q_OBJECT
 
 public:
-    explicit ChartDialog(const QList<Transaction> &transactions, QWidget *parent = nullptr);
+    explicit ChartDialog(const QList<Transaction> &transactions,
+                         QWidget *parent = nullptr);
     ~ChartDialog();
 
 private slots:
@@ -38,35 +33,30 @@ private slots:
 
 private:
     void setupUI();
-    void setupFilterPanel();
-    void setupCharts();
-
-    // Chart builders
     QChartView* buildBarChart(const QList<Transaction> &data);
     QChartView* buildLineChart(const QList<Transaction> &data);
     QChartView* buildPieChart(const QList<Transaction> &data);
-
-    // Filter
     QList<Transaction> applyFilter();
 
-    // Data
     QList<Transaction> allTransactions;
+    QTabWidget   *tabWidget;
+    QComboBox    *comboMonth;
+    QComboBox    *comboYear;
+    QDateEdit    *dateFrom;
+    QDateEdit    *dateTo;
+    QRadioButton *radioMonth;
+    QRadioButton *radioYear;
+    QRadioButton *radioRange;
+    QPushButton  *btnApply;
+    QChartView   *barChartView;
+    QChartView   *lineChartView;
+    QChartView   *pieChartView;
 
-    // UI Elements
-    QTabWidget      *tabWidget;
-    QComboBox       *comboMonth;
-    QComboBox       *comboYear;
-    QDateEdit       *dateFrom;
-    QDateEdit       *dateTo;
-    QRadioButton    *radioMonth;
-    QRadioButton    *radioYear;
-    QRadioButton    *radioRange;
-    QPushButton     *btnApply;
-
-    // Chart views (refreshable)
-    QChartView      *barChartView;
-    QChartView      *lineChartView;
-    QChartView      *pieChartView;
+    // Label untuk visibility control
+    QLabel *labelMonth;
+    QLabel *labelYear;
+    QLabel *labelFrom;
+    QLabel *labelTo;
 };
 
 #endif // CHARTDIALOG_H

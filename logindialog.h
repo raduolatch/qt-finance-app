@@ -1,6 +1,5 @@
 #ifndef LOGINDIALOG_H
 #define LOGINDIALOG_H
-
 #include <QDialog>
 
 namespace Ui {
@@ -14,6 +13,10 @@ class LoginDialog : public QDialog
 public:
     explicit LoginDialog(QWidget *parent = nullptr);
     ~LoginDialog();
+    QString getUsername() const;
+
+signals:
+    void loginSuccess(const QString &username);
 
 private slots:
     void login();
@@ -21,6 +24,7 @@ private slots:
 
 private:
     Ui::LoginDialog *ui;
+    QString currentUsername;
 };
 
 #endif // LOGINDIALOG_H

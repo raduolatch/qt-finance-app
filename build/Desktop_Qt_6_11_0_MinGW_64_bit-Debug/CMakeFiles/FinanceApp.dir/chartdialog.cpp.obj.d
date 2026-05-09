@@ -386,7 +386,10 @@ CMakeFiles/FinanceApp.dir/chartdialog.cpp.obj: \
  C:/qt/6.11.0/mingw_64/include/QtGui/qcursor.h \
  C:/qt/6.11.0/mingw_64/include/QtGui/qbitmap.h \
  C:/qt/6.11.0/mingw_64/include/QtCore/QList \
- C:/qt/6.11.0/mingw_64/include/QtCore/QStringList \
+ C:/qt/6.11.0/mingw_64/include/QtCore/QDate \
+ C:/qt/6.11.0/mingw_64/include/QtCore/qdatetime.h \
+ C:/qt/6.11.0/mingw_64/include/QtCore/qcalendar.h \
+ C:/qt/6.11.0/mingw_64/include/QtCore/qlocale.h \
  C:/qt/6.11.0/mingw_64/include/QtCharts/QChartView \
  C:/qt/6.11.0/mingw_64/include/QtCharts/qchartview.h \
  C:/qt/6.11.0/mingw_64/include/QtCharts/QAbstractAxis \
@@ -434,7 +437,6 @@ CMakeFiles/FinanceApp.dir/chartdialog.cpp.obj: \
  C:/qt/6.11.0/mingw_64/include/QtCore/qcoreapplication.h \
  C:/qt/6.11.0/mingw_64/include/QtCore/qcoreapplication_platform.h \
  C:/qt/6.11.0/mingw_64/include/QtGui/qinputmethod.h \
- C:/qt/6.11.0/mingw_64/include/QtCore/qlocale.h \
  C:/qt/6.11.0/mingw_64/include/QtGui/qguiapplication_platform.h \
  C:/qt/6.11.0/mingw_64/include/QtWidgets/qgraphicsitem.h \
  C:/qt/6.11.0/mingw_64/include/QtGui/qpainterpath.h \
@@ -465,8 +467,6 @@ CMakeFiles/FinanceApp.dir/chartdialog.cpp.obj: \
  C:/qt/6.11.0/mingw_64/include/QtWidgets/QDateEdit \
  C:/qt/6.11.0/mingw_64/include/QtWidgets/qdatetimeedit.h \
  C:/qt/6.11.0/mingw_64/include/QtCore/qtimezone.h \
- C:/qt/6.11.0/mingw_64/include/QtCore/qdatetime.h \
- C:/qt/6.11.0/mingw_64/include/QtCore/qcalendar.h \
  C:/qt/6.11.0/mingw_64/include/QtWidgets/qabstractspinbox.h \
  C:/qt/6.11.0/mingw_64/include/QtGui/qvalidator.h \
  C:/qt/6.11.0/mingw_64/include/QtCore/qregularexpression.h \
@@ -499,13 +499,15 @@ CMakeFiles/FinanceApp.dir/chartdialog.cpp.obj: \
  C:/qt/6.11.0/mingw_64/include/QtWidgets/qgroupbox.h \
  C:/qt/6.11.0/mingw_64/include/QtWidgets/QRadioButton \
  C:/qt/6.11.0/mingw_64/include/QtWidgets/qradiobutton.h \
+ C:\apkproject\FinanceApp\transaction.h \
+ C:/qt/6.11.0/mingw_64/include/QtCore/QString \
  C:/qt/6.11.0/mingw_64/include/QtCharts/QBarSet \
  C:/qt/6.11.0/mingw_64/include/QtCharts/qbarset.h \
  C:/qt/6.11.0/mingw_64/include/QtCharts/QBarCategoryAxis \
  C:/qt/6.11.0/mingw_64/include/QtCharts/qbarcategoryaxis.h \
  C:/qt/6.11.0/mingw_64/include/QtCharts/QValueAxis \
  C:/qt/6.11.0/mingw_64/include/QtCharts/qvalueaxis.h \
- C:/qt/6.11.0/mingw_64/include/QtCore/QMap \
  C:/qt/6.11.0/mingw_64/include/QtCharts/QDateTimeAxis \
  C:/qt/6.11.0/mingw_64/include/QtCharts/qdatetimeaxis.h \
+ C:/qt/6.11.0/mingw_64/include/QtCore/QMap \
  C:/qt/6.11.0/mingw_64/include/QtCore/QSet

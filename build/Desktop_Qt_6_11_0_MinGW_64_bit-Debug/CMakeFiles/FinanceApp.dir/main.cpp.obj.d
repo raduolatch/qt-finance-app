@@ -428,119 +428,29 @@ CMakeFiles/FinanceApp.dir/main.cpp.obj: C:\apkproject\FinanceApp\main.cpp \
  C:/qt/6.11.0/mingw_64/include/QtTextToSpeech/qtexttospeech.h \
  C:/qt/6.11.0/mingw_64/include/QtTextToSpeech/qtexttospeech_global.h \
  C:/qt/6.11.0/mingw_64/include/QtTextToSpeech/qvoice.h \
- C:/qt/6.11.0/mingw_64/include/QtCore/QProcess \
- C:/qt/6.11.0/mingw_64/include/QtCore/qprocess.h \
- C:\apkproject\FinanceApp\chartdialog.h \
+ C:/qt/6.11.0/mingw_64/include/QtCore/QList \
+ C:/qt/6.11.0/mingw_64/include/QtCore/QDate \
+ C:\apkproject\FinanceApp\transaction.h \
+ C:/qt/6.11.0/mingw_64/include/QtCore/QString \
+ C:\apkproject\FinanceApp\logindialog.h \
  C:/qt/6.11.0/mingw_64/include/QtWidgets/QDialog \
  C:/qt/6.11.0/mingw_64/include/QtWidgets/qdialog.h \
- C:/qt/6.11.0/mingw_64/include/QtCore/QList \
- C:/qt/6.11.0/mingw_64/include/QtCore/QStringList \
- C:/qt/6.11.0/mingw_64/include/QtCharts/QChartView \
- C:/qt/6.11.0/mingw_64/include/QtCharts/qchartview.h \
- C:/qt/6.11.0/mingw_64/include/QtCharts/QAbstractAxis \
- C:/qt/6.11.0/mingw_64/include/QtCharts/qabstractaxis.h \
- C:/qt/6.11.0/mingw_64/include/QtCharts/QChartGlobal \
- C:/qt/6.11.0/mingw_64/include/QtCharts/qchartglobal.h \
- C:/qt/6.11.0/mingw_64/include/QtCharts/qtcharts-config.h \
- C:/qt/6.11.0/mingw_64/include/QtCharts/qtchartsexports.h \
- C:/qt/6.11.0/mingw_64/include/QtGui/QPen \
- C:/qt/6.11.0/mingw_64/include/QtGui/qpen.h \
- C:/qt/6.11.0/mingw_64/include/QtGui/QFont \
- C:/qt/6.11.0/mingw_64/include/QtCharts/QAbstractSeries \
- C:/qt/6.11.0/mingw_64/include/QtCharts/qabstractseries.h \
- C:/qt/6.11.0/mingw_64/include/QtCharts/QChart \
- C:/qt/6.11.0/mingw_64/include/QtCharts/qchart.h \
- C:/qt/6.11.0/mingw_64/include/QtCharts/QLegend \
- C:/qt/6.11.0/mingw_64/include/QtCharts/qlegend.h \
- C:/qt/6.11.0/mingw_64/include/QtWidgets/QGraphicsWidget \
- C:/qt/6.11.0/mingw_64/include/QtWidgets/qgraphicswidget.h \
- C:/qt/6.11.0/mingw_64/include/QtWidgets/qgraphicslayoutitem.h \
- C:/qt/6.11.0/mingw_64/include/QtGui/qevent.h \
+ C:\apkproject\FinanceApp\database.h \
+ C:/qt/6.11.0/mingw_64/include/QtSql/QSqlDatabase \
+ C:/qt/6.11.0/mingw_64/include/QtSql/qsqldatabase.h \
+ C:/qt/6.11.0/mingw_64/include/QtSql/qtsqlglobal.h \
+ C:/qt/6.11.0/mingw_64/include/QtSql/qtsql-config.h \
+ C:/qt/6.11.0/mingw_64/include/QtSql/qtsqlexports.h \
+ C:/qt/6.11.0/mingw_64/include/QtWidgets/QApplication \
+ C:/qt/6.11.0/mingw_64/include/QtWidgets/qapplication.h \
+ C:/qt/6.11.0/mingw_64/include/QtCore/qcoreapplication.h \
  C:/qt/6.11.0/mingw_64/include/QtCore/qcoreevent.h \
  C:/qt/6.11.0/mingw_64/include/QtCore/qbasictimer.h \
  C:/qt/6.11.0/mingw_64/include/QtCore/qabstracteventdispatcher.h \
  C:/qt/6.11.0/mingw_64/include/QtCore/qeventloop.h \
  C:/qt/6.11.0/mingw_64/include/QtCore/qdeadlinetimer.h \
- C:/qt/6.11.0/mingw_64/include/QtGui/qeventpoint.h \
- C:/qt/6.11.0/mingw_64/include/QtGui/qvector2d.h \
- C:/qt/6.11.0/mingw_64/include/QtGui/qvectornd.h \
- C:/qt/6.11.0/mingw_64/include/QtGui/qpointingdevice.h \
- C:/qt/6.11.0/mingw_64/include/QtGui/qinputdevice.h \
- C:/qt/6.11.0/mingw_64/include/QtGui/qscreen.h \
- C:/qt/6.11.0/mingw_64/include/QtCore/QRect \
- C:/qt/6.11.0/mingw_64/include/QtCore/QSize \
- C:/qt/6.11.0/mingw_64/include/QtCore/QSizeF \
- C:/qt/6.11.0/mingw_64/include/QtGui/QTransform \
  C:/qt/6.11.0/mingw_64/include/QtCore/qnativeinterface.h \
- C:/qt/6.11.0/mingw_64/include/QtGui/qscreen_platform.h \
- C:/qt/6.11.0/mingw_64/include/QtGui/qguiapplication.h \
- C:/qt/6.11.0/mingw_64/include/QtCore/qcoreapplication.h \
  C:/qt/6.11.0/mingw_64/include/QtCore/qcoreapplication_platform.h \
+ C:/qt/6.11.0/mingw_64/include/QtGui/qguiapplication.h \
  C:/qt/6.11.0/mingw_64/include/QtGui/qinputmethod.h \
- C:/qt/6.11.0/mingw_64/include/QtGui/qguiapplication_platform.h \
- C:/qt/6.11.0/mingw_64/include/QtWidgets/qgraphicsitem.h \
- C:/qt/6.11.0/mingw_64/include/QtGui/qpainterpath.h \
- C:/qt/6.11.0/mingw_64/include/QtGui/QBrush \
- C:/qt/6.11.0/mingw_64/include/QtCore/QMargins \
- C:/qt/6.11.0/mingw_64/include/QtWidgets/QGraphicsView \
- C:/qt/6.11.0/mingw_64/include/QtWidgets/qgraphicsview.h \
- C:/qt/6.11.0/mingw_64/include/QtGui/qpainter.h \
- C:/qt/6.11.0/mingw_64/include/QtGui/qtextoption.h \
- C:/qt/6.11.0/mingw_64/include/QtWidgets/qscrollarea.h \
- C:/qt/6.11.0/mingw_64/include/QtWidgets/qabstractscrollarea.h \
- C:/qt/6.11.0/mingw_64/include/QtWidgets/qframe.h \
- C:/qt/6.11.0/mingw_64/include/QtWidgets/qgraphicsscene.h \
- C:/qt/6.11.0/mingw_64/include/QtCharts/QBarSeries \
- C:/qt/6.11.0/mingw_64/include/QtCharts/qbarseries.h \
- C:/qt/6.11.0/mingw_64/include/QtCharts/QAbstractBarSeries \
- C:/qt/6.11.0/mingw_64/include/QtCharts/qabstractbarseries.h \
- C:/qt/6.11.0/mingw_64/include/QtCore/QStringList \
- C:/qt/6.11.0/mingw_64/include/QtCharts/QLineSeries \
- C:/qt/6.11.0/mingw_64/include/QtCharts/qlineseries.h \
- C:/qt/6.11.0/mingw_64/include/QtCharts/QXYSeries \
- C:/qt/6.11.0/mingw_64/include/QtCharts/qxyseries.h \
- C:/qt/6.11.0/mingw_64/include/QtGui/QImage \
- C:/qt/6.11.0/mingw_64/include/QtCharts/QPieSeries \
- C:/qt/6.11.0/mingw_64/include/QtCharts/qpieseries.h \
- C:/qt/6.11.0/mingw_64/include/QtCharts/QPieSlice \
- C:/qt/6.11.0/mingw_64/include/QtCharts/qpieslice.h \
- C:/qt/6.11.0/mingw_64/include/QtWidgets/QDateEdit \
- C:/qt/6.11.0/mingw_64/include/QtWidgets/qdatetimeedit.h \
- C:/qt/6.11.0/mingw_64/include/QtCore/qtimezone.h \
- C:/qt/6.11.0/mingw_64/include/QtWidgets/qabstractspinbox.h \
- C:/qt/6.11.0/mingw_64/include/QtGui/qvalidator.h \
- C:/qt/6.11.0/mingw_64/include/QtCore/qregularexpression.h \
- C:/qt/6.11.0/mingw_64/include/QtWidgets/QComboBox \
- C:/qt/6.11.0/mingw_64/include/QtWidgets/qcombobox.h \
- C:/qt/6.11.0/mingw_64/include/QtWidgets/qabstractitemdelegate.h \
- C:/qt/6.11.0/mingw_64/include/QtWidgets/qstyleoption.h \
- C:/qt/6.11.0/mingw_64/include/QtWidgets/qslider.h \
- C:/qt/6.11.0/mingw_64/include/QtWidgets/qabstractslider.h \
- C:/qt/6.11.0/mingw_64/include/QtWidgets/qstyle.h \
- C:/qt/6.11.0/mingw_64/include/QtWidgets/qtabbar.h \
- C:/qt/6.11.0/mingw_64/include/QtWidgets/qrubberband.h \
- C:/qt/6.11.0/mingw_64/include/QtCore/qabstractitemmodel.h \
- C:/qt/6.11.0/mingw_64/include/QtWidgets/QTabWidget \
- C:/qt/6.11.0/mingw_64/include/QtWidgets/QPushButton \
- C:/qt/6.11.0/mingw_64/include/QtWidgets/qpushbutton.h \
- C:/qt/6.11.0/mingw_64/include/QtWidgets/qabstractbutton.h \
- C:/qt/6.11.0/mingw_64/include/QtWidgets/QVBoxLayout \
- C:/qt/6.11.0/mingw_64/include/QtWidgets/qboxlayout.h \
- C:/qt/6.11.0/mingw_64/include/QtWidgets/qlayout.h \
- C:/qt/6.11.0/mingw_64/include/QtWidgets/qlayoutitem.h \
- C:/qt/6.11.0/mingw_64/include/QtWidgets/qgridlayout.h \
- C:/qt/6.11.0/mingw_64/include/QtWidgets/QHBoxLayout \
- C:/qt/6.11.0/mingw_64/include/QtWidgets/QLabel \
- C:/qt/6.11.0/mingw_64/include/QtWidgets/qlabel.h \
- C:/qt/6.11.0/mingw_64/include/QtGui/qpicture.h \
- C:/qt/6.11.0/mingw_64/include/QtGui/qtextdocument.h \
- C:/qt/6.11.0/mingw_64/include/QtWidgets/QGroupBox \
- C:/qt/6.11.0/mingw_64/include/QtWidgets/qgroupbox.h \
- C:/qt/6.11.0/mingw_64/include/QtWidgets/QRadioButton \
- C:/qt/6.11.0/mingw_64/include/QtWidgets/qradiobutton.h \
- C:\apkproject\FinanceApp\logindialog.h \
- C:/qt/6.11.0/mingw_64/include/QtWidgets/QApplication \
- C:/qt/6.11.0/mingw_64/include/QtWidgets/qapplication.h \
- C:/qt/6.11.0/mingw_64/include/QtCore/QLocale \
- C:/qt/6.11.0/mingw_64/include/QtCore/QTranslator \
- C:/qt/6.11.0/mingw_64/include/QtCore/qtranslator.h
+ C:/qt/6.11.0/mingw_64/include/QtGui/qguiapplication_platform.h

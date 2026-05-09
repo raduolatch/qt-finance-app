@@ -1,5 +1,6 @@
 C:/apkproject/FinanceApp/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/FinanceApp_autogen/EWIEGA46WW/moc_chartdialog.cpp: C:/apkproject/FinanceApp/chartdialog.h \
   C:/apkproject/FinanceApp/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/FinanceApp_autogen/moc_predefs.h \
+  C:/apkproject/FinanceApp/transaction.h \
   C:/qt/6.11.0/mingw_64/include/QtCharts/QAbstractAxis \
   C:/qt/6.11.0/mingw_64/include/QtCharts/QAbstractBarSeries \
   C:/qt/6.11.0/mingw_64/include/QtCharts/QAbstractSeries \
@@ -26,12 +27,14 @@ C:/apkproject/FinanceApp/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/FinanceApp_a
   C:/qt/6.11.0/mingw_64/include/QtCharts/qtcharts-config.h \
   C:/qt/6.11.0/mingw_64/include/QtCharts/qtchartsexports.h \
   C:/qt/6.11.0/mingw_64/include/QtCharts/qxyseries.h \
+  C:/qt/6.11.0/mingw_64/include/QtCore/QDate \
   C:/qt/6.11.0/mingw_64/include/QtCore/QList \
   C:/qt/6.11.0/mingw_64/include/QtCore/QMargins \
   C:/qt/6.11.0/mingw_64/include/QtCore/QObject \
   C:/qt/6.11.0/mingw_64/include/QtCore/QRect \
   C:/qt/6.11.0/mingw_64/include/QtCore/QSize \
   C:/qt/6.11.0/mingw_64/include/QtCore/QSizeF \
+  C:/qt/6.11.0/mingw_64/include/QtCore/QString \
   C:/qt/6.11.0/mingw_64/include/QtCore/QStringList \
   C:/qt/6.11.0/mingw_64/include/QtCore/QVariant \
   C:/qt/6.11.0/mingw_64/include/QtCore/q17memory.h \

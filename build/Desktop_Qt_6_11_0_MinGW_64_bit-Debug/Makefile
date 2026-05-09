@@ -323,6 +323,30 @@ chartdialog.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\FinanceApp.dir\build.make CMakeFiles/FinanceApp.dir/chartdialog.cpp.s
 .PHONY : chartdialog.cpp.s
 
+database.obj: database.cpp.obj
+.PHONY : database.obj
+
+# target to build an object file
+database.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\FinanceApp.dir\build.make CMakeFiles/FinanceApp.dir/database.cpp.obj
+.PHONY : database.cpp.obj
+
+database.i: database.cpp.i
+.PHONY : database.i
+
+# target to preprocess a source file
+database.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\FinanceApp.dir\build.make CMakeFiles/FinanceApp.dir/database.cpp.i
+.PHONY : database.cpp.i
+
+database.s: database.cpp.s
+.PHONY : database.s
+
+# target to generate assembly for a file
+database.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\FinanceApp.dir\build.make CMakeFiles/FinanceApp.dir/database.cpp.s
+.PHONY : database.cpp.s
+
 logindialog.obj: logindialog.cpp.obj
 .PHONY : logindialog.obj
 
@@ -447,6 +471,9 @@ help:
 	@echo ... chartdialog.obj
 	@echo ... chartdialog.i
 	@echo ... chartdialog.s
+	@echo ... database.obj
+	@echo ... database.i
+	@echo ... database.s
 	@echo ... logindialog.obj
 	@echo ... logindialog.i
 	@echo ... logindialog.s

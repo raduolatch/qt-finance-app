@@ -1,10 +1,7 @@
 #include "logindialog.h"
 #include "ui_logindialog.h"
-
 #include "registerdialog.h"
-
-#include <QFile>
-#include <QTextStream>
+#include "database.h"
 #include <QMessageBox>
 
 LoginDialog::LoginDialog(QWidget *parent)
@@ -13,15 +10,16 @@ LoginDialog::LoginDialog(QWidget *parent)
 {
     ui->setupUi(this);
 
-    connect(ui->btnLogin,
-            &QPushButton::clicked,
-            this,
-            &LoginDialog::login);
+    connect(ui->btnLogin,    &QPushButton::clicked,
+            this,            &LoginDialog::login);
+    connect(ui->btnRegister, &QPushButton::clicked,
+            this,            &LoginDialog::openRegister);
 
-    connect(ui->btnRegister,
-            &QPushButton::clicked,
-            this,
-            &LoginDialog::openRegister);
+    // Tekan Enter di password langsung login
+    connect(ui->inputPassword, &QLineEdit::returnPressed,
+            this,              &LoginDialog::login);
+
+    currentUsername.clear();
 }
 
 LoginDialog::~LoginDialog()
@@ -29,63 +27,44 @@ LoginDialog::~LoginDialog()
     delete ui;
 }
 
+// LOGIN
 void LoginDialog::login()
 {
-    QString username =
-        ui->inputUsername->text().trimmed();
+    QString username = ui->inputUsername->text().trimmed();
+    QString password = ui->inputPassword->text().trimmed();
 
-    QString password =
-        ui->inputPassword->text().trimmed();
-
-    QFile file("users.txt");
-
-    if (!file.open(QIODevice::ReadOnly))
+    if (username.isEmpty() || password.isEmpty())
     {
-        QMessageBox::warning(
-            this,
-            "Error",
-            "users.txt tidak ditemukan!"
-            );
-
+        QMessageBox::warning(this, "Error",
+                             "Username dan password wajib diisi!");
         return;
     }
 
-    QTextStream in(&file);
-
-    while (!in.atEnd())
+    if (Database::loginUser(username, password))
     {
-        QString line =
-            in.readLine();
-
-        QStringList data =
-            line.split(",");
-
-        if (data.size() >= 2)
-        {
-            if (data[0] == username
-                && data[1] == password)
-            {
-                file.close();
-
-                accept();
-
-                return;
-            }
-        }
+        currentUsername = username;
+        emit loginSuccess(username);
+        accept();
     }
-
-    file.close();
-
-    QMessageBox::warning(
-        this,
-        "Login Gagal",
-        "Username atau password salah!"
-        );
+    else
+    {
+        currentUsername.clear();
+        ui->inputPassword->clear();
+        ui->inputPassword->setFocus();
+        QMessageBox::warning(this, "Login Gagal",
+                             "Username atau password salah!");
+    }
 }
 
+// OPEN REGISTER
 void LoginDialog::openRegister()
 {
-    RegisterDialog dialog;
-
+    RegisterDialog dialog(this);
     dialog.exec();
+}
+
+// GET USERNAME
+QString LoginDialog::getUsername() const
+{
+    return currentUsername;
 }

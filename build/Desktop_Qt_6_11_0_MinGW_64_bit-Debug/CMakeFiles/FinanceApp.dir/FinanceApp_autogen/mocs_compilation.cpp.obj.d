@@ -387,7 +387,10 @@ CMakeFiles/FinanceApp.dir/FinanceApp_autogen/mocs_compilation.cpp.obj: \
  C:/qt/6.11.0/mingw_64/include/QtGui/qcursor.h \
  C:/qt/6.11.0/mingw_64/include/QtGui/qbitmap.h \
  C:/qt/6.11.0/mingw_64/include/QtCore/QList \
- C:/qt/6.11.0/mingw_64/include/QtCore/QStringList \
+ C:/qt/6.11.0/mingw_64/include/QtCore/QDate \
+ C:/qt/6.11.0/mingw_64/include/QtCore/qdatetime.h \
+ C:/qt/6.11.0/mingw_64/include/QtCore/qcalendar.h \
+ C:/qt/6.11.0/mingw_64/include/QtCore/qlocale.h \
  C:/qt/6.11.0/mingw_64/include/QtCharts/QChartView \
  C:/qt/6.11.0/mingw_64/include/QtCharts/qchartview.h \
  C:/qt/6.11.0/mingw_64/include/QtCharts/QAbstractAxis \
@@ -435,7 +438,6 @@ CMakeFiles/FinanceApp.dir/FinanceApp_autogen/mocs_compilation.cpp.obj: \
  C:/qt/6.11.0/mingw_64/include/QtCore/qcoreapplication.h \
  C:/qt/6.11.0/mingw_64/include/QtCore/qcoreapplication_platform.h \
  C:/qt/6.11.0/mingw_64/include/QtGui/qinputmethod.h \
- C:/qt/6.11.0/mingw_64/include/QtCore/qlocale.h \
  C:/qt/6.11.0/mingw_64/include/QtGui/qguiapplication_platform.h \
  C:/qt/6.11.0/mingw_64/include/QtWidgets/qgraphicsitem.h \
  C:/qt/6.11.0/mingw_64/include/QtGui/qpainterpath.h \
@@ -466,8 +468,6 @@ CMakeFiles/FinanceApp.dir/FinanceApp_autogen/mocs_compilation.cpp.obj: \
  C:/qt/6.11.0/mingw_64/include/QtWidgets/QDateEdit \
  C:/qt/6.11.0/mingw_64/include/QtWidgets/qdatetimeedit.h \
  C:/qt/6.11.0/mingw_64/include/QtCore/qtimezone.h \
- C:/qt/6.11.0/mingw_64/include/QtCore/qdatetime.h \
- C:/qt/6.11.0/mingw_64/include/QtCore/qcalendar.h \
  C:/qt/6.11.0/mingw_64/include/QtWidgets/qabstractspinbox.h \
  C:/qt/6.11.0/mingw_64/include/QtGui/qvalidator.h \
  C:/qt/6.11.0/mingw_64/include/QtCore/qregularexpression.h \
@@ -500,6 +500,8 @@ CMakeFiles/FinanceApp.dir/FinanceApp_autogen/mocs_compilation.cpp.obj: \
  C:/qt/6.11.0/mingw_64/include/QtWidgets/qgroupbox.h \
  C:/qt/6.11.0/mingw_64/include/QtWidgets/QRadioButton \
  C:/qt/6.11.0/mingw_64/include/QtWidgets/qradiobutton.h \
+ C:/apkproject/FinanceApp/transaction.h \
+ C:/qt/6.11.0/mingw_64/include/QtCore/QString \
  C:/qt/6.11.0/mingw_64/include/QtGui/qtextcursor.h \
  C:/qt/6.11.0/mingw_64/include/QtGui/qtextformat.h \
  C:/qt/6.11.0/mingw_64/include/QtCore/qtmochelpers.h \
@@ -546,9 +548,6 @@ CMakeFiles/FinanceApp.dir/FinanceApp_autogen/mocs_compilation.cpp.obj: \
  C:/qt/6.11.0/mingw_64/include/QtTextToSpeech/qtexttospeech.h \
  C:/qt/6.11.0/mingw_64/include/QtTextToSpeech/qtexttospeech_global.h \
  C:/qt/6.11.0/mingw_64/include/QtTextToSpeech/qvoice.h \
- C:/qt/6.11.0/mingw_64/include/QtCore/QProcess \
- C:/qt/6.11.0/mingw_64/include/QtCore/qprocess.h \
- C:/apkproject/FinanceApp/chartdialog.h \
  C:/qt/6.11.0/mingw_64/include/QtNetwork/QSslError \
  C:\apkproject\FinanceApp\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\FinanceApp_autogen\EWIEGA46WW/moc_registerdialog.cpp \
  C:/apkproject/FinanceApp/registerdialog.h
