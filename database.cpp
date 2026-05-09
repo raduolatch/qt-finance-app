@@ -13,14 +13,24 @@ static QString hashPassword(const QString &password)
                        QCryptographicHash::Sha256).toHex());
 }
 
-// CONNECT DATABASE
+// CONNECT DATABASE (MySQL via ODBC + Laragon)
 void Database::connect()
 {
     if (QSqlDatabase::contains("qt_sql_default_connection"))
         return;
 
-    QSqlDatabase db = QSqlDatabase::addDatabase("QSQLITE");
-    db.setDatabaseName("finance.db");
+    QSqlDatabase db = QSqlDatabase::addDatabase("QODBC");
+
+    // Connection string ODBC ke MySQL FreeSQLDatabase.com
+    db.setDatabaseName(
+        "DRIVER={MySQL ODBC 9.7 Unicode Driver};"
+        "SERVER=sql12.freesqldatabase.com;"
+        "PORT=3306;"
+        "DATABASE=sql12825994;"
+        "USER=sql12825994;"
+        "PASSWORD=njWQHwHVah;"
+        "OPTION=3;"
+        );
 
     if (!db.open())
     {
@@ -28,32 +38,7 @@ void Database::connect()
         return;
     }
 
-    qDebug() << "Database connected";
-
-    QSqlQuery query;
-
-    // TABLE USERS
-    if (!query.exec(
-            "CREATE TABLE IF NOT EXISTS users ("
-            "id INTEGER PRIMARY KEY AUTOINCREMENT,"
-            "username TEXT UNIQUE NOT NULL,"
-            "password TEXT NOT NULL)"))
-    {
-        qDebug() << "Gagal membuat table users:" << query.lastError().text();
-    }
-
-    // TABLE TRANSACTIONS
-    if (!query.exec(
-            "CREATE TABLE IF NOT EXISTS transactions ("
-            "id INTEGER PRIMARY KEY AUTOINCREMENT,"
-            "username TEXT NOT NULL,"
-            "date TEXT NOT NULL,"
-            "type TEXT NOT NULL,"
-            "category TEXT NOT NULL,"
-            "amount REAL NOT NULL)"))
-    {
-        qDebug() << "Gagal membuat table transactions:" << query.lastError().text();
-    }
+    qDebug() << "MySQL Database connected via ODBC!";
 }
 
 // REGISTER USER
@@ -110,7 +95,13 @@ bool Database::deleteTransaction(int id)
     QSqlQuery query;
     query.prepare("DELETE FROM transactions WHERE id = :id");
     query.bindValue(":id", id);
-    return query.exec();
+
+    if (!query.exec())
+    {
+        qDebug() << "Delete transaction gagal:" << query.lastError().text();
+        return false;
+    }
+    return true;
 }
 
 // GET TRANSACTIONS
