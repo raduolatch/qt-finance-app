@@ -7,21 +7,17 @@
 #include <QList>
 #include <QDate>
 #include "transaction.h"
-
 QT_BEGIN_NAMESPACE
 namespace Ui {
 class MainWindow;
 }
 QT_END_NAMESPACE
-
 class MainWindow : public QMainWindow
 {
     Q_OBJECT
-
 public:
     explicit MainWindow(const QString &username, QWidget *parent = nullptr);
     ~MainWindow();
-
 private slots:
     void addTransaction();
     void DeleteTransaction();
@@ -31,18 +27,16 @@ private slots:
     void showAISummary();
     void processAIChat();
     void processVoice();
-
+    void logout();
 private:
     Ui::MainWindow          *ui;
     QString                  currentUser;
     QNetworkAccessManager   *networkManager;
     QTextToSpeech           *speaker;
     QList<Transaction>       transactions;
-
     void    updateBalance();
     void    saveData();
     void    loadData();
     QString autoCorrectCategory(QString text);
 };
-
 #endif // MAINWINDOW_H

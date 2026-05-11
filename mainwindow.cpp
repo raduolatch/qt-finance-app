@@ -76,6 +76,8 @@ MainWindow::MainWindow(const QString &username, QWidget *parent)
         "background-color:#9C27B0;color:white;font-weight:bold;border-radius:6px;");
     ui->btnChat->setStyleSheet(
         "background-color:#009688;color:white;font-weight:bold;border-radius:6px;");
+    ui->btnLogout->setStyleSheet(
+        "background-color:#757575;color:white;font-weight:bold;border-radius:6px;");
 
     // CONNECT SIGNALS & SLOTS
     connect(ui->btnAdd,    &QPushButton::clicked, this, &MainWindow::addTransaction);
@@ -85,6 +87,7 @@ MainWindow::MainWindow(const QString &username, QWidget *parent)
     connect(ui->btnAI,     &QPushButton::clicked, this, &MainWindow::showAISummary);
     connect(ui->btnChat,   &QPushButton::clicked, this, &MainWindow::processAIChat);
     connect(ui->btnVoice,  &QPushButton::clicked, this, &MainWindow::processVoice);
+    connect(ui->btnLogout, &QPushButton::clicked, this, &MainWindow::logout);
 
     // Enter di inputChat langsung kirim
     connect(ui->inputChat, &QLineEdit::returnPressed,
@@ -99,6 +102,16 @@ MainWindow::~MainWindow()
     delete ui;
 }
 
+// LOGOUT
+void MainWindow::logout()
+{
+    auto reply = QMessageBox::question(
+        this, "Logout", "Yakin ingin logout?",
+        QMessageBox::Yes | QMessageBox::No);
+
+    if (reply == QMessageBox::Yes)
+        close(); // tutup window → main.cpp loop kembali ke login
+}
 
 // UPDATE BALANCE
 void MainWindow::updateBalance()
@@ -419,8 +432,7 @@ void MainWindow::processAIChat()
     QString lower  = input.toLower();
     QString response;
 
-
-    //  VOICE COMMAND: Tambah Transaksi
+    // VOICE COMMAND: Tambah Transaksi
     // Contoh: "tambah pengeluaran makan 20000"
     //         "tambah pemasukan gaji 5000000"
     QRegularExpression reTambah(
@@ -610,7 +622,7 @@ void MainWindow::processVoice()
         QCoreApplication::applicationDirPath() + "/speech.py",
         QDir::currentPath() + "/speech.py",
         QString::fromUtf8(qgetenv("PWD")) + "/speech.py",
-        // ✅ TAMBAHAN: cari di folder source project langsung
+        //cari di folder source project langsung
         QString("C:/apkproject/FinanceApp/speech.py"),
     };
     for (const QString &path : candidates)
@@ -628,7 +640,7 @@ void MainWindow::processVoice()
 
     qDebug() << "Menjalankan speech.py dari:" << scriptPath;
 
-    // ✅ FIX: Langsung pakai "python" karena Windows tidak kenal "python3"
+    //  Langsung pakai "python" karena Windows tidak kenal "python3"
     QString pythonCmd = "python";
 
     QProcess *process = new QProcess(this);
@@ -694,6 +706,7 @@ void MainWindow::processVoice()
 
 // SAVE DATA
 void MainWindow::saveData() {}
+
 
 // LOAD DATA
 void MainWindow::loadData()
