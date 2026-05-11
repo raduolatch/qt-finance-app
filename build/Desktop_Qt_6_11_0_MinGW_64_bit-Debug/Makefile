@@ -275,6 +275,30 @@ FinanceApp_autogen/mocs_compilation.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\FinanceApp.dir\build.make CMakeFiles/FinanceApp.dir/FinanceApp_autogen/mocs_compilation.cpp.s
 .PHONY : FinanceApp_autogen/mocs_compilation.cpp.s
 
+admindialog.obj: admindialog.cpp.obj
+.PHONY : admindialog.obj
+
+# target to build an object file
+admindialog.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\FinanceApp.dir\build.make CMakeFiles/FinanceApp.dir/admindialog.cpp.obj
+.PHONY : admindialog.cpp.obj
+
+admindialog.i: admindialog.cpp.i
+.PHONY : admindialog.i
+
+# target to preprocess a source file
+admindialog.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\FinanceApp.dir\build.make CMakeFiles/FinanceApp.dir/admindialog.cpp.i
+.PHONY : admindialog.cpp.i
+
+admindialog.s: admindialog.cpp.s
+.PHONY : admindialog.s
+
+# target to generate assembly for a file
+admindialog.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\FinanceApp.dir\build.make CMakeFiles/FinanceApp.dir/admindialog.cpp.s
+.PHONY : admindialog.cpp.s
+
 build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/.qt/rcc/qrc_FinanceApp_translations.obj: build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/.qt/rcc/qrc_FinanceApp_translations.cpp.obj
 .PHONY : build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/.qt/rcc/qrc_FinanceApp_translations.obj
 
@@ -465,6 +489,9 @@ help:
 	@echo ... FinanceApp_autogen/mocs_compilation.obj
 	@echo ... FinanceApp_autogen/mocs_compilation.i
 	@echo ... FinanceApp_autogen/mocs_compilation.s
+	@echo ... admindialog.obj
+	@echo ... admindialog.i
+	@echo ... admindialog.s
 	@echo ... build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/.qt/rcc/qrc_FinanceApp_translations.obj
 	@echo ... build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/.qt/rcc/qrc_FinanceApp_translations.i
 	@echo ... build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/.qt/rcc/qrc_FinanceApp_translations.s

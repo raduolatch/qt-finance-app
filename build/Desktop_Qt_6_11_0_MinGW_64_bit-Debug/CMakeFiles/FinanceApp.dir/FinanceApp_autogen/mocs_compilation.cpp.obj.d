@@ -1,7 +1,7 @@
 CMakeFiles/FinanceApp.dir/FinanceApp_autogen/mocs_compilation.cpp.obj: \
  C:\apkproject\FinanceApp\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\FinanceApp_autogen\mocs_compilation.cpp \
- C:\apkproject\FinanceApp\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\FinanceApp_autogen\EWIEGA46WW/moc_chartdialog.cpp \
- C:/apkproject/FinanceApp/chartdialog.h \
+ C:\apkproject\FinanceApp\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\FinanceApp_autogen\EWIEGA46WW/moc_admindialog.cpp \
+ C:/apkproject/FinanceApp/admindialog.h \
  C:/qt/6.11.0/mingw_64/include/QtWidgets/QDialog \
  C:/qt/6.11.0/mingw_64/include/QtWidgets/qdialog.h \
  C:/qt/6.11.0/mingw_64/include/QtWidgets/qtwidgetsglobal.h \
@@ -387,10 +387,17 @@ CMakeFiles/FinanceApp.dir/FinanceApp_autogen/mocs_compilation.cpp.obj: \
  C:/qt/6.11.0/mingw_64/include/QtGui/qcursor.h \
  C:/qt/6.11.0/mingw_64/include/QtGui/qbitmap.h \
  C:/qt/6.11.0/mingw_64/include/QtCore/QList \
+ C:/apkproject/FinanceApp/transaction.h \
  C:/qt/6.11.0/mingw_64/include/QtCore/QDate \
  C:/qt/6.11.0/mingw_64/include/QtCore/qdatetime.h \
  C:/qt/6.11.0/mingw_64/include/QtCore/qcalendar.h \
  C:/qt/6.11.0/mingw_64/include/QtCore/qlocale.h \
+ C:/qt/6.11.0/mingw_64/include/QtCore/QString \
+ C:/qt/6.11.0/mingw_64/include/QtCore/qtmochelpers.h \
+ C:/qt/6.11.0/mingw_64/include/QtCore/qtmocconstants.h \
+ C:/qt/6.11.0/mingw_64/include/QtCore/q20algorithm.h \
+ C:\apkproject\FinanceApp\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\FinanceApp_autogen\EWIEGA46WW/moc_chartdialog.cpp \
+ C:/apkproject/FinanceApp/chartdialog.h \
  C:/qt/6.11.0/mingw_64/include/QtCharts/QChartView \
  C:/qt/6.11.0/mingw_64/include/QtCharts/qchartview.h \
  C:/qt/6.11.0/mingw_64/include/QtCharts/QAbstractAxis \
@@ -500,13 +507,8 @@ CMakeFiles/FinanceApp.dir/FinanceApp_autogen/mocs_compilation.cpp.obj: \
  C:/qt/6.11.0/mingw_64/include/QtWidgets/qgroupbox.h \
  C:/qt/6.11.0/mingw_64/include/QtWidgets/QRadioButton \
  C:/qt/6.11.0/mingw_64/include/QtWidgets/qradiobutton.h \
- C:/apkproject/FinanceApp/transaction.h \
- C:/qt/6.11.0/mingw_64/include/QtCore/QString \
  C:/qt/6.11.0/mingw_64/include/QtGui/qtextcursor.h \
  C:/qt/6.11.0/mingw_64/include/QtGui/qtextformat.h \
- C:/qt/6.11.0/mingw_64/include/QtCore/qtmochelpers.h \
- C:/qt/6.11.0/mingw_64/include/QtCore/qtmocconstants.h \
- C:/qt/6.11.0/mingw_64/include/QtCore/q20algorithm.h \
  C:\apkproject\FinanceApp\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\FinanceApp_autogen\EWIEGA46WW/moc_logindialog.cpp \
  C:/apkproject/FinanceApp/logindialog.h \
  C:\apkproject\FinanceApp\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\FinanceApp_autogen\EWIEGA46WW/moc_mainwindow.cpp \

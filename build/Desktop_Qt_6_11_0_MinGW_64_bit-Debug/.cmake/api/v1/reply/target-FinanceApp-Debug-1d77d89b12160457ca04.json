@@ -93,13 +93,13 @@
 			{
 				"command" : 4,
 				"file" : 1,
-				"line" : 59,
+				"line" : 63,
 				"parent" : 0
 			},
 			{
 				"command" : 5,
 				"file" : 1,
-				"line" : 49,
+				"line" : 53,
 				"parent" : 0
 			},
 			{
@@ -630,7 +630,8 @@
 				8,
 				11,
 				15,
-				20
+				18,
+				23
 			]
 		}
 	],
@@ -797,10 +798,11 @@
 			"sourceIndexes" : 
 			[
 				0,
-				21,
-				22,
-				23,
-				24
+				24,
+				25,
+				26,
+				27,
+				28
 			]
 		},
 		{
@@ -813,7 +815,8 @@
 				8,
 				11,
 				15,
-				20
+				18,
+				23
 			]
 		},
 		{
@@ -825,7 +828,8 @@
 				9,
 				12,
 				14,
-				16
+				16,
+				17
 			]
 		},
 		{
@@ -834,7 +838,8 @@
 			[
 				4,
 				7,
-				10
+				10,
+				19
 			]
 		},
 		{
@@ -842,24 +847,24 @@
 			"sourceIndexes" : 
 			[
 				13,
-				17,
-				19
+				20,
+				22
 			]
 		},
 		{
 			"name" : "Resources",
 			"sourceIndexes" : 
 			[
-				18
+				21
 			]
 		},
 		{
 			"name" : "CMake Rules",
 			"sourceIndexes" : 
 			[
-				25,
-				26,
-				27
+				29,
+				30,
+				31
 			]
 		}
 	],
@@ -959,6 +964,22 @@
 			"sourceGroupIndex" : 2
 		},
 		{
+			"backtrace" : 4,
+			"path" : "admindialog.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "admindialog.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"path" : "admindialog.ui",
+			"sourceGroupIndex" : 3
+		},
+		{
 			"backtrace" : 62,
 			"path" : "FinanceApp_id_ID.ts",
 			"sourceGroupIndex" : 4
@@ -998,6 +1019,12 @@
 			"backtrace" : 0,
 			"isGenerated" : true,
 			"path" : "build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/FinanceApp_autogen/include/ui_registerdialog.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/FinanceApp_autogen/include/ui_admindialog.h",
 			"sourceGroupIndex" : 0
 		},
 		{

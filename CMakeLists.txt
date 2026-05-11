@@ -35,9 +35,13 @@ qt_add_executable(FinanceApp
     database.h
     database.cpp
     transaction.h
+    admindialog.h
+    admindialog.cpp
+    admindialog.ui
+
 )
 
-# ✅ FIX: Copy speech.py ke folder build otomatis setiap kali build
+# Copy speech.py ke folder build otomatis setiap kali build
 configure_file(speech.py ${CMAKE_CURRENT_BINARY_DIR}/speech.py COPYONLY)
 
 # TRANSLATION

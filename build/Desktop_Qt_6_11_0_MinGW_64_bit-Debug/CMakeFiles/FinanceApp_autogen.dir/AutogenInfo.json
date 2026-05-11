@@ -583,6 +583,12 @@
 	"HEADERS" : 
 	[
 		[
+			"C:/apkproject/FinanceApp/admindialog.h",
+			"MU",
+			"EWIEGA46WW/moc_admindialog.cpp",
+			null
+		],
+		[
 			"C:/apkproject/FinanceApp/chartdialog.h",
 			"MU",
 			"EWIEGA46WW/moc_chartdialog.cpp",
@@ -707,6 +713,7 @@
 	"SETTINGS_FILE" : "C:/apkproject/FinanceApp/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/CMakeFiles/FinanceApp_autogen.dir/AutogenUsed.txt",
 	"SOURCES" : 
 	[
+		[ "C:/apkproject/FinanceApp/admindialog.cpp", "MU", null ],
 		[ "C:/apkproject/FinanceApp/chartdialog.cpp", "MU", null ],
 		[ "C:/apkproject/FinanceApp/database.cpp", "MU", null ],
 		[ "C:/apkproject/FinanceApp/logindialog.cpp", "MU", null ],

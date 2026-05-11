@@ -9,6 +9,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "C:/apkproject/FinanceApp/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/FinanceApp_autogen/mocs_compilation.cpp" "CMakeFiles/FinanceApp.dir/FinanceApp_autogen/mocs_compilation.cpp.obj" "gcc" "CMakeFiles/FinanceApp.dir/FinanceApp_autogen/mocs_compilation.cpp.obj.d"
+  "C:/apkproject/FinanceApp/admindialog.cpp" "CMakeFiles/FinanceApp.dir/admindialog.cpp.obj" "gcc" "CMakeFiles/FinanceApp.dir/admindialog.cpp.obj.d"
   "C:/apkproject/FinanceApp/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/.qt/rcc/qrc_FinanceApp_translations.cpp" "CMakeFiles/FinanceApp.dir/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/.qt/rcc/qrc_FinanceApp_translations.cpp.obj" "gcc" "CMakeFiles/FinanceApp.dir/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/.qt/rcc/qrc_FinanceApp_translations.cpp.obj.d"
   "C:/apkproject/FinanceApp/chartdialog.cpp" "CMakeFiles/FinanceApp.dir/chartdialog.cpp.obj" "gcc" "CMakeFiles/FinanceApp.dir/chartdialog.cpp.obj.d"
   "C:/apkproject/FinanceApp/database.cpp" "CMakeFiles/FinanceApp.dir/database.cpp.obj" "gcc" "CMakeFiles/FinanceApp.dir/database.cpp.obj.d"

@@ -27,9 +27,7 @@
 // Kurs global
 double currentRate = 0;
 
-// =========================
 // CONSTRUCTOR
-// =========================
 MainWindow::MainWindow(const QString &username, QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow)
@@ -95,17 +93,14 @@ MainWindow::MainWindow(const QString &username, QWidget *parent)
     loadData();
 }
 
-// =========================
 // DESTRUCTOR
-// =========================
 MainWindow::~MainWindow()
 {
     delete ui;
 }
 
-// =========================
+
 // UPDATE BALANCE
-// =========================
 void MainWindow::updateBalance()
 {
     double total = 0;
@@ -135,9 +130,7 @@ void MainWindow::updateBalance()
             "font-size:14pt;font-weight:bold;color:#c62828;");
 }
 
-// =========================
 // ADD TRANSACTION
-// =========================
 void MainWindow::addTransaction()
 {
     QString date     = ui->inputDate->date().toString("yyyy-MM-dd");
@@ -216,9 +209,7 @@ void MainWindow::addTransaction()
     statusBar()->showMessage("Transaksi berhasil ditambahkan!", 3000);
 }
 
-// =========================
 // DELETE TRANSACTION
-// =========================
 void MainWindow::DeleteTransaction()
 {
     int row = ui->tableWidget->currentRow();
@@ -257,9 +248,7 @@ void MainWindow::DeleteTransaction()
     statusBar()->showMessage("Transaksi berhasil dihapus!", 3000);
 }
 
-// =========================
 // SHOW CHART
-// =========================
 void MainWindow::showChart()
 {
     if (ui->tableWidget->rowCount() == 0)
@@ -286,9 +275,7 @@ void MainWindow::showChart()
     dialog.exec();
 }
 
-// =========================
 // GET EXCHANGE RATE
-// =========================
 void MainWindow::getExchangeRate()
 {
     ui->labelKurs->setText("Kurs: Memuat...");
@@ -328,9 +315,7 @@ void MainWindow::onApiResult(QNetworkReply *reply)
     reply->deleteLater();
 }
 
-// =========================
 // AI SUMMARY
-// =========================
 void MainWindow::showAISummary()
 {
     if (ui->tableWidget->rowCount() == 0)
@@ -400,9 +385,7 @@ void MainWindow::showAISummary()
     }
 }
 
-// =========================
 // AI CHAT
-// =========================
 void MainWindow::processAIChat()
 {
     QString input = ui->inputChat->text().trimmed();
@@ -436,11 +419,10 @@ void MainWindow::processAIChat()
     QString lower  = input.toLower();
     QString response;
 
-    // =========================
-    // ✅ VOICE COMMAND: Tambah Transaksi
+
+    //  VOICE COMMAND: Tambah Transaksi
     // Contoh: "tambah pengeluaran makan 20000"
     //         "tambah pemasukan gaji 5000000"
-    // =========================
     QRegularExpression reTambah(
         R"(tambah\s+(pengeluaran|pemasukan|income|expense)\s+(.+?)\s+(\d[\d.,]*))",
         QRegularExpression::CaseInsensitiveOption);
@@ -515,10 +497,8 @@ void MainWindow::processAIChat()
         }
     }
 
-    // =========================
     // ✅ VOICE COMMAND: Hapus transaksi terakhir
     // Contoh: "hapus transaksi terakhir"
-    // =========================
     else if (lower.contains("hapus") && lower.contains("terakhir"))
     {
         int lastRow = ui->tableWidget->rowCount() - 1;
@@ -545,9 +525,7 @@ void MainWindow::processAIChat()
         }
     }
 
-    // =========================
     // QUERY INFO
-    // =========================
     else if (lower.contains("saldo") || lower.contains("balance"))
         response = "💰 Saldo Anda: Rp " + locale.toString((qlonglong)saldo);
 
@@ -613,9 +591,7 @@ void MainWindow::processAIChat()
         speaker->say(ttsText);
 }
 
-// =========================
 // VOICE (Speech Recognition via Python)
-// =========================
 void MainWindow::processVoice()
 {
     if (speaker->state() == QTextToSpeech::Speaking)
@@ -716,14 +692,10 @@ void MainWindow::processVoice()
     process->start(pythonCmd, QStringList() << scriptPath);
 }
 
-// =========================
 // SAVE DATA
-// =========================
 void MainWindow::saveData() {}
 
-// =========================
 // LOAD DATA
-// =========================
 void MainWindow::loadData()
 {
     ui->tableWidget->setRowCount(0);
@@ -769,9 +741,7 @@ void MainWindow::loadData()
     updateBalance();
 }
 
-// =========================
 // AUTO CORRECT CATEGORY
-// =========================
 QString MainWindow::autoCorrectCategory(QString text)
 {
     QMap<QString, QString> corrections =

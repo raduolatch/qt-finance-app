@@ -185,11 +185,26 @@ CMakeFiles/FinanceApp.dir/database.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/FinanceApp.dir/database.cpp.s"
 	C:\qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\apkproject\FinanceApp\database.cpp -o CMakeFiles\FinanceApp.dir\database.cpp.s
 
+CMakeFiles/FinanceApp.dir/admindialog.cpp.obj: CMakeFiles/FinanceApp.dir/flags.make
+CMakeFiles/FinanceApp.dir/admindialog.cpp.obj: CMakeFiles/FinanceApp.dir/includes_CXX.rsp
+CMakeFiles/FinanceApp.dir/admindialog.cpp.obj: C:/apkproject/FinanceApp/admindialog.cpp
+CMakeFiles/FinanceApp.dir/admindialog.cpp.obj: CMakeFiles/FinanceApp.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\apkproject\FinanceApp\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/FinanceApp.dir/admindialog.cpp.obj"
+	C:\qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/FinanceApp.dir/admindialog.cpp.obj -MF CMakeFiles\FinanceApp.dir\admindialog.cpp.obj.d -o CMakeFiles\FinanceApp.dir\admindialog.cpp.obj -c C:\apkproject\FinanceApp\admindialog.cpp
+
+CMakeFiles/FinanceApp.dir/admindialog.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/FinanceApp.dir/admindialog.cpp.i"
+	C:\qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\apkproject\FinanceApp\admindialog.cpp > CMakeFiles\FinanceApp.dir\admindialog.cpp.i
+
+CMakeFiles/FinanceApp.dir/admindialog.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/FinanceApp.dir/admindialog.cpp.s"
+	C:\qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\apkproject\FinanceApp\admindialog.cpp -o CMakeFiles\FinanceApp.dir\admindialog.cpp.s
+
 CMakeFiles/FinanceApp.dir/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/.qt/rcc/qrc_FinanceApp_translations.cpp.obj: CMakeFiles/FinanceApp.dir/flags.make
 CMakeFiles/FinanceApp.dir/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/.qt/rcc/qrc_FinanceApp_translations.cpp.obj: CMakeFiles/FinanceApp.dir/includes_CXX.rsp
 CMakeFiles/FinanceApp.dir/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/.qt/rcc/qrc_FinanceApp_translations.cpp.obj: .qt/rcc/qrc_FinanceApp_translations.cpp
 CMakeFiles/FinanceApp.dir/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/.qt/rcc/qrc_FinanceApp_translations.cpp.obj: CMakeFiles/FinanceApp.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\apkproject\FinanceApp\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/FinanceApp.dir/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/.qt/rcc/qrc_FinanceApp_translations.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\apkproject\FinanceApp\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/FinanceApp.dir/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/.qt/rcc/qrc_FinanceApp_translations.cpp.obj"
 	C:\qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/FinanceApp.dir/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/.qt/rcc/qrc_FinanceApp_translations.cpp.obj -MF CMakeFiles\FinanceApp.dir\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\.qt\rcc\qrc_FinanceApp_translations.cpp.obj.d -o CMakeFiles\FinanceApp.dir\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\.qt\rcc\qrc_FinanceApp_translations.cpp.obj -c C:\apkproject\FinanceApp\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\.qt\rcc\qrc_FinanceApp_translations.cpp
 
 CMakeFiles/FinanceApp.dir/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/.qt/rcc/qrc_FinanceApp_translations.cpp.i: cmake_force
@@ -209,6 +224,7 @@ FinanceApp_OBJECTS = \
 "CMakeFiles/FinanceApp.dir/registerdialog.cpp.obj" \
 "CMakeFiles/FinanceApp.dir/chartdialog.cpp.obj" \
 "CMakeFiles/FinanceApp.dir/database.cpp.obj" \
+"CMakeFiles/FinanceApp.dir/admindialog.cpp.obj" \
 "CMakeFiles/FinanceApp.dir/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/.qt/rcc/qrc_FinanceApp_translations.cpp.obj"
 
 # External object files for target FinanceApp
@@ -221,6 +237,7 @@ FinanceApp.exe: CMakeFiles/FinanceApp.dir/logindialog.cpp.obj
 FinanceApp.exe: CMakeFiles/FinanceApp.dir/registerdialog.cpp.obj
 FinanceApp.exe: CMakeFiles/FinanceApp.dir/chartdialog.cpp.obj
 FinanceApp.exe: CMakeFiles/FinanceApp.dir/database.cpp.obj
+FinanceApp.exe: CMakeFiles/FinanceApp.dir/admindialog.cpp.obj
 FinanceApp.exe: CMakeFiles/FinanceApp.dir/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/.qt/rcc/qrc_FinanceApp_translations.cpp.obj
 FinanceApp.exe: CMakeFiles/FinanceApp.dir/build.make
 FinanceApp.exe: C:/qt/6.11.0/mingw_64/lib/libQt6Charts.a
@@ -237,7 +254,7 @@ FinanceApp.exe: C:/qt/6.11.0/mingw_64/lib/libQt6EntryPoint.a
 FinanceApp.exe: CMakeFiles/FinanceApp.dir/linkLibs.rsp
 FinanceApp.exe: CMakeFiles/FinanceApp.dir/objects1.rsp
 FinanceApp.exe: CMakeFiles/FinanceApp.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\apkproject\FinanceApp\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX executable FinanceApp.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\apkproject\FinanceApp\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX executable FinanceApp.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\FinanceApp.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

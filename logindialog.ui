@@ -1,26 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
  <class>LoginDialog</class>
-
  <widget class="QDialog" name="LoginDialog">
-
   <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
     <width>420</width>
-    <height>320</height>
+    <height>360</height>
    </rect>
   </property>
-
   <property name="windowTitle">
    <string>Login Finance App</string>
   </property>
 
   <!-- TITLE -->
-
   <widget class="QLabel" name="labelTitle">
-
    <property name="geometry">
     <rect>
      <x>95</x>
@@ -29,25 +24,16 @@
      <height>40</height>
     </rect>
    </property>
-
+   <property name="styleSheet">
+    <string notr="true">font-size:20px;font-weight:bold;color:#2196F3;</string>
+   </property>
    <property name="text">
     <string>Finance App Login</string>
    </property>
-
-   <property name="styleSheet">
-    <string notr="true">
-font-size:20px;
-font-weight:bold;
-color:#2196F3;
-    </string>
-   </property>
-
   </widget>
 
   <!-- USERNAME -->
-
   <widget class="QLabel" name="labelUsername">
-
    <property name="geometry">
     <rect>
      <x>40</x>
@@ -56,34 +42,26 @@ color:#2196F3;
      <height>30</height>
     </rect>
    </property>
-
    <property name="text">
     <string>Username</string>
    </property>
-
   </widget>
-
   <widget class="QLineEdit" name="inputUsername">
-
    <property name="geometry">
     <rect>
      <x>140</x>
      <y>80</y>
-     <width>220</width>
+     <width>240</width>
      <height>32</height>
     </rect>
    </property>
-
    <property name="placeholderText">
     <string>Masukkan username</string>
    </property>
-
   </widget>
 
   <!-- PASSWORD -->
-
   <widget class="QLabel" name="labelPassword">
-
    <property name="geometry">
     <rect>
      <x>40</x>
@@ -92,94 +70,82 @@ color:#2196F3;
      <height>30</height>
     </rect>
    </property>
-
    <property name="text">
     <string>Password</string>
    </property>
-
   </widget>
-
   <widget class="QLineEdit" name="inputPassword">
-
    <property name="geometry">
     <rect>
      <x>140</x>
      <y>130</y>
-     <width>220</width>
+     <width>240</width>
      <height>32</height>
     </rect>
    </property>
-
    <property name="echoMode">
-    <enum>QLineEdit::Password</enum>
+    <enum>QLineEdit::EchoMode::Password</enum>
    </property>
-
    <property name="placeholderText">
     <string>Masukkan password</string>
    </property>
-
   </widget>
 
-  <!-- LOGIN BUTTON -->
-
-  <widget class="QPushButton" name="btnLogin">
-
+  <!-- BTN LOGIN USER -->
+  <widget class="QPushButton" name="btnLoginUser">
    <property name="geometry">
     <rect>
      <x>140</x>
-     <y>190</y>
-     <width>220</width>
+     <y>185</y>
+     <width>240</width>
      <height>38</height>
     </rect>
    </property>
-
-   <property name="text">
-    <string>Login</string>
-   </property>
-
    <property name="styleSheet">
-    <string notr="true">
-background-color:#2196F3;
-color:white;
-font-weight:bold;
-font-size:14px;
-border-radius:8px;
-    </string>
+    <string notr="true">background-color:#2196F3;color:white;font-weight:bold;font-size:14px;border-radius:8px;</string>
    </property>
-
+   <property name="text">
+    <string>👤 Login sebagai User</string>
+   </property>
   </widget>
 
-  <!-- REGISTER BUTTON -->
+  <!-- BTN LOGIN ADMIN -->
+  <widget class="QPushButton" name="btnLoginAdmin">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>235</y>
+     <width>240</width>
+     <height>38</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:#F57C00;color:white;font-weight:bold;font-size:14px;border-radius:8px;</string>
+   </property>
+   <property name="text">
+    <string>🛡️ Login sebagai Admin</string>
+   </property>
+  </widget>
 
+  <!-- BTN REGISTER -->
   <widget class="QPushButton" name="btnRegister">
-
    <property name="geometry">
     <rect>
      <x>140</x>
-     <y>240</y>
-     <width>220</width>
+     <y>285</y>
+     <width>240</width>
      <height>38</height>
     </rect>
    </property>
-
-   <property name="text">
-    <string>Register</string>
-   </property>
-
    <property name="styleSheet">
-    <string notr="true">
-background-color:#4CAF50;
-color:white;
-font-weight:bold;
-font-size:14px;
-border-radius:8px;
-    </string>
+    <string notr="true">background-color:#4CAF50;color:white;font-weight:bold;font-size:14px;border-radius:8px;</string>
    </property>
-
+   <property name="text">
+    <string>📝 Register</string>
+   </property>
   </widget>
 
  </widget>
-
  <resources/>
  <connections/>
 </ui>

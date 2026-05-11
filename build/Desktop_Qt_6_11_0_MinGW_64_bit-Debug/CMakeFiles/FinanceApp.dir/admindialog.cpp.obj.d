@@ -1,6 +1,6 @@
-CMakeFiles/FinanceApp.dir/logindialog.cpp.obj: \
- C:\apkproject\FinanceApp\logindialog.cpp \
- C:\apkproject\FinanceApp\logindialog.h \
+CMakeFiles/FinanceApp.dir/admindialog.cpp.obj: \
+ C:\apkproject\FinanceApp\admindialog.cpp \
+ C:\apkproject\FinanceApp\admindialog.h \
  C:/qt/6.11.0/mingw_64/include/QtWidgets/QDialog \
  C:/qt/6.11.0/mingw_64/include/QtWidgets/qdialog.h \
  C:/qt/6.11.0/mingw_64/include/QtWidgets/qtwidgetsglobal.h \
@@ -385,7 +385,14 @@ CMakeFiles/FinanceApp.dir/logindialog.cpp.obj: \
  C:/qt/6.11.0/mingw_64/include/QtWidgets/qsizepolicy.h \
  C:/qt/6.11.0/mingw_64/include/QtGui/qcursor.h \
  C:/qt/6.11.0/mingw_64/include/QtGui/qbitmap.h \
- C:/apkproject/FinanceApp/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/FinanceApp_autogen/include/ui_logindialog.h \
+ C:/qt/6.11.0/mingw_64/include/QtCore/QList \
+ C:\apkproject\FinanceApp\transaction.h \
+ C:/qt/6.11.0/mingw_64/include/QtCore/QDate \
+ C:/qt/6.11.0/mingw_64/include/QtCore/qdatetime.h \
+ C:/qt/6.11.0/mingw_64/include/QtCore/qcalendar.h \
+ C:/qt/6.11.0/mingw_64/include/QtCore/qlocale.h \
+ C:/qt/6.11.0/mingw_64/include/QtCore/QString \
+ C:/apkproject/FinanceApp/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/FinanceApp_autogen/include/ui_admindialog.h \
  C:/qt/6.11.0/mingw_64/include/QtCore/QVariant \
  C:/qt/6.11.0/mingw_64/include/QtWidgets/QApplication \
  C:/qt/6.11.0/mingw_64/include/QtWidgets/qapplication.h \
@@ -399,12 +406,33 @@ CMakeFiles/FinanceApp.dir/logindialog.cpp.obj: \
  C:/qt/6.11.0/mingw_64/include/QtCore/qcoreapplication_platform.h \
  C:/qt/6.11.0/mingw_64/include/QtGui/qguiapplication.h \
  C:/qt/6.11.0/mingw_64/include/QtGui/qinputmethod.h \
- C:/qt/6.11.0/mingw_64/include/QtCore/qlocale.h \
  C:/qt/6.11.0/mingw_64/include/QtGui/qguiapplication_platform.h \
  C:/qt/6.11.0/mingw_64/include/QtWidgets/QDialog \
+ C:/qt/6.11.0/mingw_64/include/QtWidgets/QHBoxLayout \
+ C:/qt/6.11.0/mingw_64/include/QtWidgets/qboxlayout.h \
+ C:/qt/6.11.0/mingw_64/include/QtWidgets/qlayout.h \
+ C:/qt/6.11.0/mingw_64/include/QtWidgets/qlayoutitem.h \
+ C:/qt/6.11.0/mingw_64/include/QtWidgets/qgridlayout.h \
+ C:/qt/6.11.0/mingw_64/include/QtWidgets/QHeaderView \
+ C:/qt/6.11.0/mingw_64/include/QtWidgets/qheaderview.h \
+ C:/qt/6.11.0/mingw_64/include/QtWidgets/qabstractitemview.h \
+ C:/qt/6.11.0/mingw_64/include/QtWidgets/qabstractscrollarea.h \
+ C:/qt/6.11.0/mingw_64/include/QtWidgets/qframe.h \
+ C:/qt/6.11.0/mingw_64/include/QtCore/qabstractitemmodel.h \
+ C:/qt/6.11.0/mingw_64/include/QtCore/qitemselectionmodel.h \
+ C:/qt/6.11.0/mingw_64/include/QtWidgets/qabstractitemdelegate.h \
+ C:/qt/6.11.0/mingw_64/include/QtWidgets/qstyleoption.h \
+ C:/qt/6.11.0/mingw_64/include/QtWidgets/qabstractspinbox.h \
+ C:/qt/6.11.0/mingw_64/include/QtGui/qvalidator.h \
+ C:/qt/6.11.0/mingw_64/include/QtCore/qregularexpression.h \
+ C:/qt/6.11.0/mingw_64/include/QtWidgets/qslider.h \
+ C:/qt/6.11.0/mingw_64/include/QtWidgets/qabstractslider.h \
+ C:/qt/6.11.0/mingw_64/include/QtWidgets/qstyle.h \
+ C:/qt/6.11.0/mingw_64/include/QtWidgets/qtabbar.h \
+ C:/qt/6.11.0/mingw_64/include/QtWidgets/qtabwidget.h \
+ C:/qt/6.11.0/mingw_64/include/QtWidgets/qrubberband.h \
  C:/qt/6.11.0/mingw_64/include/QtWidgets/QLabel \
  C:/qt/6.11.0/mingw_64/include/QtWidgets/qlabel.h \
- C:/qt/6.11.0/mingw_64/include/QtWidgets/qframe.h \
  C:/qt/6.11.0/mingw_64/include/QtGui/qpicture.h \
  C:/qt/6.11.0/mingw_64/include/QtCore/qiodevice.h \
  C:/qt/6.11.0/mingw_64/include/QtGui/qtextdocument.h \
@@ -418,7 +446,13 @@ CMakeFiles/FinanceApp.dir/logindialog.cpp.obj: \
  C:/qt/6.11.0/mingw_64/include/QtWidgets/QPushButton \
  C:/qt/6.11.0/mingw_64/include/QtWidgets/qpushbutton.h \
  C:/qt/6.11.0/mingw_64/include/QtWidgets/qabstractbutton.h \
- C:\apkproject\FinanceApp\registerdialog.h \
+ C:/qt/6.11.0/mingw_64/include/QtWidgets/QSpacerItem \
+ C:/qt/6.11.0/mingw_64/include/QtWidgets/QTabWidget \
+ C:/qt/6.11.0/mingw_64/include/QtWidgets/QTableWidget \
+ C:/qt/6.11.0/mingw_64/include/QtWidgets/qtablewidget.h \
+ C:/qt/6.11.0/mingw_64/include/QtWidgets/qtableview.h \
+ C:/qt/6.11.0/mingw_64/include/QtWidgets/QVBoxLayout \
+ C:/qt/6.11.0/mingw_64/include/QtWidgets/QWidget \
  C:\apkproject\FinanceApp\database.h \
  C:/qt/6.11.0/mingw_64/include/QtSql/QSqlDatabase \
  C:/qt/6.11.0/mingw_64/include/QtSql/qsqldatabase.h \
@@ -426,14 +460,13 @@ CMakeFiles/FinanceApp.dir/logindialog.cpp.obj: \
  C:/qt/6.11.0/mingw_64/include/QtSql/qtsql-config.h \
  C:/qt/6.11.0/mingw_64/include/QtSql/qtsqlexports.h \
  C:/qt/6.11.0/mingw_64/include/QtCore/qmetaobject.h \
- C:/qt/6.11.0/mingw_64/include/QtCore/QList \
- C:\apkproject\FinanceApp\transaction.h \
- C:/qt/6.11.0/mingw_64/include/QtCore/QDate \
- C:/qt/6.11.0/mingw_64/include/QtCore/qdatetime.h \
- C:/qt/6.11.0/mingw_64/include/QtCore/qcalendar.h \
- C:/qt/6.11.0/mingw_64/include/QtCore/QString \
  C:/qt/6.11.0/mingw_64/include/QtWidgets/QMessageBox \
  C:/qt/6.11.0/mingw_64/include/QtWidgets/qmessagebox.h \
  C:/qt/6.11.0/mingw_64/include/QtWidgets/qdialogbuttonbox.h \
- C:/qt/6.11.0/mingw_64/include/QtWidgets/QInputDialog \
- C:/qt/6.11.0/mingw_64/include/QtWidgets/qinputdialog.h
+ C:/qt/6.11.0/mingw_64/include/QtCore/QLocale \
+ C:/qt/6.11.0/mingw_64/include/QtWidgets/QTableWidgetItem \
+ C:/qt/6.11.0/mingw_64/include/QtWidgets/QHeaderView \
+ C:/qt/6.11.0/mingw_64/include/QtSql/QSqlQuery \
+ C:/qt/6.11.0/mingw_64/include/QtSql/qsqlquery.h \
+ C:/qt/6.11.0/mingw_64/include/QtSql/QSqlError \
+ C:/qt/6.11.0/mingw_64/include/QtSql/qsqlerror.h

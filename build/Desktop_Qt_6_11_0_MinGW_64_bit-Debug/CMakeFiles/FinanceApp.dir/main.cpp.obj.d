@@ -432,9 +432,10 @@ CMakeFiles/FinanceApp.dir/main.cpp.obj: C:\apkproject\FinanceApp\main.cpp \
  C:/qt/6.11.0/mingw_64/include/QtCore/QDate \
  C:\apkproject\FinanceApp\transaction.h \
  C:/qt/6.11.0/mingw_64/include/QtCore/QString \
- C:\apkproject\FinanceApp\logindialog.h \
+ C:\apkproject\FinanceApp\admindialog.h \
  C:/qt/6.11.0/mingw_64/include/QtWidgets/QDialog \
  C:/qt/6.11.0/mingw_64/include/QtWidgets/qdialog.h \
+ C:\apkproject\FinanceApp\logindialog.h \
  C:\apkproject\FinanceApp\database.h \
  C:/qt/6.11.0/mingw_64/include/QtSql/QSqlDatabase \
  C:/qt/6.11.0/mingw_64/include/QtSql/qsqldatabase.h \

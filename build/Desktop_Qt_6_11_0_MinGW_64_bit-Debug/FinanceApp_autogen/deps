@@ -1,5 +1,7 @@
 FinanceApp_autogen/timestamp: \
 	C:/apkproject/FinanceApp/CMakeLists.txt \
+	C:/apkproject/FinanceApp/admindialog.cpp \
+	C:/apkproject/FinanceApp/admindialog.h \
 	C:/apkproject/FinanceApp/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/.qtcreator/cmake-helper/maintenance_tool_provider.cmake \
 	C:/apkproject/FinanceApp/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/.qtcreator/cmake-helper/package-manager.cmake \
 	C:/apkproject/FinanceApp/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/.qtcreator/cmake-helper/qtcreator-project.cmake \
@@ -903,6 +905,7 @@ FinanceApp_autogen/timestamp: \
 	C:/qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/time.h \
 	C:/qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/vadefs.h \
 	C:/qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/wchar.h \
+	C:/apkproject/FinanceApp/admindialog.ui \
 	C:/apkproject/FinanceApp/logindialog.ui \
 	C:/apkproject/FinanceApp/mainwindow.ui \
 	C:/apkproject/FinanceApp/registerdialog.ui \

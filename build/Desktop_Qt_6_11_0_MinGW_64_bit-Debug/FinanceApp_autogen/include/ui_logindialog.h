@@ -26,55 +26,44 @@ public:
     QLineEdit *inputUsername;
     QLabel *labelPassword;
     QLineEdit *inputPassword;
-    QPushButton *btnLogin;
+    QPushButton *btnLoginUser;
+    QPushButton *btnLoginAdmin;
     QPushButton *btnRegister;
 
     void setupUi(QDialog *LoginDialog)
     {
         if (LoginDialog->objectName().isEmpty())
             LoginDialog->setObjectName("LoginDialog");
-        LoginDialog->resize(420, 320);
+        LoginDialog->resize(420, 360);
         labelTitle = new QLabel(LoginDialog);
         labelTitle->setObjectName("labelTitle");
         labelTitle->setGeometry(QRect(95, 20, 240, 40));
-        labelTitle->setStyleSheet(QString::fromUtf8("\n"
-"font-size:20px;\n"
-"font-weight:bold;\n"
-"color:#2196F3;\n"
-"    "));
+        labelTitle->setStyleSheet(QString::fromUtf8("font-size:20px;font-weight:bold;color:#2196F3;"));
         labelUsername = new QLabel(LoginDialog);
         labelUsername->setObjectName("labelUsername");
         labelUsername->setGeometry(QRect(40, 80, 100, 30));
         inputUsername = new QLineEdit(LoginDialog);
         inputUsername->setObjectName("inputUsername");
-        inputUsername->setGeometry(QRect(140, 80, 220, 32));
+        inputUsername->setGeometry(QRect(140, 80, 240, 32));
         labelPassword = new QLabel(LoginDialog);
         labelPassword->setObjectName("labelPassword");
         labelPassword->setGeometry(QRect(40, 130, 100, 30));
         inputPassword = new QLineEdit(LoginDialog);
         inputPassword->setObjectName("inputPassword");
-        inputPassword->setGeometry(QRect(140, 130, 220, 32));
-        inputPassword->setEchoMode(QLineEdit::Password);
-        btnLogin = new QPushButton(LoginDialog);
-        btnLogin->setObjectName("btnLogin");
-        btnLogin->setGeometry(QRect(140, 190, 220, 38));
-        btnLogin->setStyleSheet(QString::fromUtf8("\n"
-"background-color:#2196F3;\n"
-"color:white;\n"
-"font-weight:bold;\n"
-"font-size:14px;\n"
-"border-radius:8px;\n"
-"    "));
+        inputPassword->setGeometry(QRect(140, 130, 240, 32));
+        inputPassword->setEchoMode(QLineEdit::EchoMode::Password);
+        btnLoginUser = new QPushButton(LoginDialog);
+        btnLoginUser->setObjectName("btnLoginUser");
+        btnLoginUser->setGeometry(QRect(140, 185, 240, 38));
+        btnLoginUser->setStyleSheet(QString::fromUtf8("background-color:#2196F3;color:white;font-weight:bold;font-size:14px;border-radius:8px;"));
+        btnLoginAdmin = new QPushButton(LoginDialog);
+        btnLoginAdmin->setObjectName("btnLoginAdmin");
+        btnLoginAdmin->setGeometry(QRect(140, 235, 240, 38));
+        btnLoginAdmin->setStyleSheet(QString::fromUtf8("background-color:#F57C00;color:white;font-weight:bold;font-size:14px;border-radius:8px;"));
         btnRegister = new QPushButton(LoginDialog);
         btnRegister->setObjectName("btnRegister");
-        btnRegister->setGeometry(QRect(140, 240, 220, 38));
-        btnRegister->setStyleSheet(QString::fromUtf8("\n"
-"background-color:#4CAF50;\n"
-"color:white;\n"
-"font-weight:bold;\n"
-"font-size:14px;\n"
-"border-radius:8px;\n"
-"    "));
+        btnRegister->setGeometry(QRect(140, 285, 240, 38));
+        btnRegister->setStyleSheet(QString::fromUtf8("background-color:#4CAF50;color:white;font-weight:bold;font-size:14px;border-radius:8px;"));
 
         retranslateUi(LoginDialog);
 
@@ -89,8 +78,9 @@ public:
         inputUsername->setPlaceholderText(QCoreApplication::translate("LoginDialog", "Masukkan username", nullptr));
         labelPassword->setText(QCoreApplication::translate("LoginDialog", "Password", nullptr));
         inputPassword->setPlaceholderText(QCoreApplication::translate("LoginDialog", "Masukkan password", nullptr));
-        btnLogin->setText(QCoreApplication::translate("LoginDialog", "Login", nullptr));
-        btnRegister->setText(QCoreApplication::translate("LoginDialog", "Register", nullptr));
+        btnLoginUser->setText(QCoreApplication::translate("LoginDialog", "\360\237\221\244 Login sebagai User", nullptr));
+        btnLoginAdmin->setText(QCoreApplication::translate("LoginDialog", "\360\237\233\241\357\270\217 Login sebagai Admin", nullptr));
+        btnRegister->setText(QCoreApplication::translate("LoginDialog", "\360\237\223\235 Register", nullptr));
     } // retranslateUi
 
 };

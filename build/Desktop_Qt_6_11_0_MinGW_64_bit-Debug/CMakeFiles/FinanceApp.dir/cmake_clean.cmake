@@ -5,6 +5,8 @@ file(REMOVE_RECURSE
   "FinanceApp_autogen"
   "CMakeFiles/FinanceApp.dir/FinanceApp_autogen/mocs_compilation.cpp.obj"
   "CMakeFiles/FinanceApp.dir/FinanceApp_autogen/mocs_compilation.cpp.obj.d"
+  "CMakeFiles/FinanceApp.dir/admindialog.cpp.obj"
+  "CMakeFiles/FinanceApp.dir/admindialog.cpp.obj.d"
   "CMakeFiles/FinanceApp.dir/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/.qt/rcc/qrc_FinanceApp_translations.cpp.obj"
   "CMakeFiles/FinanceApp.dir/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/.qt/rcc/qrc_FinanceApp_translations.cpp.obj.d"
   "CMakeFiles/FinanceApp.dir/chartdialog.cpp.obj"
