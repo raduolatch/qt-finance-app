@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
-
  <class>MainWindow</class>
-
  <widget class="QMainWindow" name="MainWindow">
-
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -13,15 +10,10 @@
     <height>620</height>
    </rect>
   </property>
-
   <property name="windowTitle">
    <string>Finance App</string>
   </property>
-
-  <!-- CENTRAL WIDGET -->
   <widget class="QWidget" name="centralwidget">
-
-   <!-- DATE -->
    <widget class="QDateEdit" name="inputDate">
     <property name="geometry">
      <rect>
@@ -32,8 +24,6 @@
      </rect>
     </property>
    </widget>
-
-   <!-- TYPE -->
    <widget class="QComboBox" name="comboType">
     <property name="geometry">
      <rect>
@@ -43,22 +33,17 @@
       <height>35</height>
      </rect>
     </property>
-
     <item>
      <property name="text">
       <string>Income</string>
      </property>
     </item>
-
     <item>
      <property name="text">
       <string>Expense</string>
      </property>
     </item>
-
    </widget>
-
-   <!-- CATEGORY -->
    <widget class="QLineEdit" name="inputCategory">
     <property name="geometry">
      <rect>
@@ -68,13 +53,10 @@
       <height>35</height>
      </rect>
     </property>
-
     <property name="placeholderText">
      <string>Category</string>
     </property>
    </widget>
-
-   <!-- AMOUNT -->
    <widget class="QLineEdit" name="inputAmount">
     <property name="geometry">
      <rect>
@@ -84,13 +66,10 @@
       <height>35</height>
      </rect>
     </property>
-
     <property name="placeholderText">
      <string>Amount</string>
     </property>
    </widget>
-
-   <!-- ADD BUTTON -->
    <widget class="QPushButton" name="btnAdd">
     <property name="geometry">
      <rect>
@@ -100,13 +79,10 @@
       <height>35</height>
      </rect>
     </property>
-
     <property name="text">
      <string>Add</string>
     </property>
    </widget>
-
-   <!-- DELETE BUTTON -->
    <widget class="QPushButton" name="btnDelete">
     <property name="geometry">
      <rect>
@@ -116,15 +92,11 @@
       <height>35</height>
      </rect>
     </property>
-
     <property name="text">
      <string>Delete</string>
     </property>
    </widget>
-
-   <!-- TABLE -->
    <widget class="QTableWidget" name="tableWidget">
-
     <property name="geometry">
      <rect>
       <x>20</x>
@@ -133,40 +105,31 @@
       <height>300</height>
      </rect>
     </property>
-
     <property name="columnCount">
      <number>4</number>
     </property>
-
     <column>
      <property name="text">
       <string>Date</string>
      </property>
     </column>
-
     <column>
      <property name="text">
       <string>Type</string>
      </property>
     </column>
-
     <column>
      <property name="text">
       <string>Category</string>
      </property>
     </column>
-
     <column>
      <property name="text">
       <string>Amount</string>
      </property>
     </column>
-
    </widget>
-
-   <!-- CHART BUTTON -->
    <widget class="QPushButton" name="btnChart">
-
     <property name="geometry">
      <rect>
       <x>20</x>
@@ -175,16 +138,11 @@
       <height>45</height>
      </rect>
     </property>
-
     <property name="text">
      <string>Show Chart</string>
     </property>
-
    </widget>
-
-   <!-- API BUTTON -->
    <widget class="QPushButton" name="btnAPI">
-
     <property name="geometry">
      <rect>
       <x>220</x>
@@ -193,16 +151,11 @@
       <height>45</height>
      </rect>
     </property>
-
     <property name="text">
      <string>Cek Kurs USD</string>
     </property>
-
    </widget>
-
-   <!-- AI SUMMARY -->
    <widget class="QPushButton" name="btnAI">
-
     <property name="geometry">
      <rect>
       <x>420</x>
@@ -211,16 +164,30 @@
       <height>45</height>
      </rect>
     </property>
-
     <property name="text">
      <string>AI Summary</string>
     </property>
-
    </widget>
 
-   <!-- BALANCE -->
-   <widget class="QLabel" name="labelBalance">
+   <!-- ✅ TOMBOL LOGOUT -->
+   <widget class="QPushButton" name="btnLogout">
+    <property name="geometry">
+     <rect>
+      <x>620</x>
+      <y>410</y>
+      <width>180</width>
+      <height>45</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:#757575;color:white;font-weight:bold;border-radius:6px;</string>
+    </property>
+    <property name="text">
+     <string>🚪 Logout</string>
+    </property>
+   </widget>
 
+   <widget class="QLabel" name="labelBalance">
     <property name="geometry">
      <rect>
       <x>20</x>
@@ -229,23 +196,14 @@
       <height>30</height>
      </rect>
     </property>
-
+    <property name="styleSheet">
+     <string notr="true">font-size: 14pt;font-weight: bold;</string>
+    </property>
     <property name="text">
      <string>Total Saldo: Rp 0</string>
     </property>
-
-    <property name="styleSheet">
-     <string notr="true">
-font-size: 14pt;
-font-weight: bold;
-     </string>
-    </property>
-
    </widget>
-
-   <!-- KURS -->
    <widget class="QLabel" name="labelKurs">
-
     <property name="geometry">
      <rect>
       <x>20</x>
@@ -254,16 +212,11 @@ font-weight: bold;
       <height>25</height>
      </rect>
     </property>
-
     <property name="text">
      <string>Kurs: -</string>
     </property>
-
    </widget>
-
-   <!-- CHAT INPUT -->
    <widget class="QLineEdit" name="inputChat">
-
     <property name="geometry">
      <rect>
       <x>420</x>
@@ -272,16 +225,11 @@ font-weight: bold;
       <height>35</height>
      </rect>
     </property>
-
     <property name="placeholderText">
      <string>Tanya AI Finance...</string>
     </property>
-
    </widget>
-
-   <!-- CHAT BUTTON -->
    <widget class="QPushButton" name="btnChat">
-
     <property name="geometry">
      <rect>
       <x>690</x>
@@ -290,16 +238,11 @@ font-weight: bold;
       <height>35</height>
      </rect>
     </property>
-
     <property name="text">
      <string>Kirim</string>
     </property>
-
    </widget>
-
-   <!-- VOICE BUTTON -->
    <widget class="QPushButton" name="btnVoice">
-
     <property name="geometry">
      <rect>
       <x>690</x>
@@ -308,16 +251,11 @@ font-weight: bold;
       <height>35</height>
      </rect>
     </property>
-
     <property name="text">
      <string>🎤 Voice</string>
     </property>
-
    </widget>
-
-   <!-- CHAT OUTPUT -->
    <widget class="QTextEdit" name="chatOutput">
-
     <property name="geometry">
      <rect>
       <x>420</x>
@@ -326,21 +264,13 @@ font-weight: bold;
       <height>60</height>
      </rect>
     </property>
-
     <property name="readOnly">
      <bool>true</bool>
     </property>
-
    </widget>
-
   </widget>
-
-  <!-- STATUS BAR -->
   <widget class="QStatusBar" name="statusbar"/>
-
  </widget>
-
  <resources/>
  <connections/>
-
 </ui>

@@ -39,6 +39,7 @@ public:
     QPushButton *btnChart;
     QPushButton *btnAPI;
     QPushButton *btnAI;
+    QPushButton *btnLogout;
     QLabel *labelBalance;
     QLabel *labelKurs;
     QLineEdit *inputChat;
@@ -97,13 +98,14 @@ public:
         btnAI = new QPushButton(centralwidget);
         btnAI->setObjectName("btnAI");
         btnAI->setGeometry(QRect(420, 410, 180, 45));
+        btnLogout = new QPushButton(centralwidget);
+        btnLogout->setObjectName("btnLogout");
+        btnLogout->setGeometry(QRect(620, 410, 180, 45));
+        btnLogout->setStyleSheet(QString::fromUtf8("background-color:#757575;color:white;font-weight:bold;border-radius:6px;"));
         labelBalance = new QLabel(centralwidget);
         labelBalance->setObjectName("labelBalance");
         labelBalance->setGeometry(QRect(20, 480, 350, 30));
-        labelBalance->setStyleSheet(QString::fromUtf8("\n"
-"font-size: 14pt;\n"
-"font-weight: bold;\n"
-"     "));
+        labelBalance->setStyleSheet(QString::fromUtf8("font-size: 14pt;font-weight: bold;"));
         labelKurs = new QLabel(centralwidget);
         labelKurs->setObjectName("labelKurs");
         labelKurs->setGeometry(QRect(20, 520, 250, 25));
@@ -151,6 +153,7 @@ public:
         btnChart->setText(QCoreApplication::translate("MainWindow", "Show Chart", nullptr));
         btnAPI->setText(QCoreApplication::translate("MainWindow", "Cek Kurs USD", nullptr));
         btnAI->setText(QCoreApplication::translate("MainWindow", "AI Summary", nullptr));
+        btnLogout->setText(QCoreApplication::translate("MainWindow", "\360\237\232\252 Logout", nullptr));
         labelBalance->setText(QCoreApplication::translate("MainWindow", "Total Saldo: Rp 0", nullptr));
         labelKurs->setText(QCoreApplication::translate("MainWindow", "Kurs: -", nullptr));
         inputChat->setPlaceholderText(QCoreApplication::translate("MainWindow", "Tanya AI Finance...", nullptr));

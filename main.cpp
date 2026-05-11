@@ -11,10 +11,13 @@ int main(int argc, char *argv[])
     // Inisialisasi database sebelum apapun
     Database::connect();
 
-    // Tampilkan login dialog
-    LoginDialog login;
-    if (login.exec() == QDialog::Accepted)
+    // Loop login — supaya bisa logout dan login ulang
+    while (true)
     {
+        LoginDialog login;
+        if (login.exec() != QDialog::Accepted)
+            break; // user tutup app → keluar
+
         QString username = login.getUsername();
         QString role     = login.getRole();
 
@@ -22,16 +25,16 @@ int main(int argc, char *argv[])
         {
             // Buka Admin Panel
             AdminDialog adminWindow(username);
-            adminWindow.show();
-            return a.exec();
+            adminWindow.exec(); // exec() supaya blocking, setelah tutup balik ke login
         }
         else
         {
             // Buka Main Window biasa
             MainWindow window(username);
             window.show();
-            return a.exec();
+            a.exec(); // tunggu sampai window ditutup
         }
+        // Setelah window ditutup → loop kembali ke login
     }
 
     return 0;
