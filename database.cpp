@@ -24,9 +24,9 @@ void Database::connect()
         "DRIVER={MySQL ODBC 9.7 Unicode Driver};"
         "SERVER=sql12.freesqldatabase.com;"
         "PORT=3306;"
-        "DATABASE=sql12827122;"
-        "USER=sql12827122;"
-        "PASSWORD=LmsNGvgYg6;"
+        "DATABASE=sql12829057;"
+        "USER=sql12829057;"
+        "PASSWORD=NLunhzaDhH;"
         "OPTION=3;"
         );
 
